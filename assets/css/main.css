@@ -296,6 +296,11 @@ p {
   grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
 }
 
+.hero__copy,
+.hero__visual {
+  min-width: 0;
+}
+
 .hero h1 {
   max-width: 780px;
   margin-bottom: 1.6rem;
@@ -1454,7 +1459,7 @@ p {
 
 @media (max-width: 620px) {
   h1 {
-    font-size: clamp(2.65rem, 14vw, 4rem);
+    font-size: clamp(2.05rem, 10.2vw, 3.6rem);
   }
 
   .hero {
