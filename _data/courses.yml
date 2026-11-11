@@ -1,0 +1,24 @@
+- title: SchulLia – Funktionen im Überblick
+  type: Beispielkurs
+  description: Ein Kurs, der wichtige SchulLia-Funktionen direkt erlebbar macht.
+  source: MINT-the-GAP/Aufgabensammlung
+  live_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/README.md
+  editor_url: https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/MINT-the-GAP/Aufgabensammlung/main/README.md
+  repo_url: https://github.com/MINT-the-GAP/Aufgabensammlung
+  accent: violet
+
+- title: LiaScript Demo / Tutorial
+  type: Einführung
+  description: Ein geführter Einstieg in Struktur, Multimedia und interaktive Elemente von LiaScript.
+  source: MINT-the-GAP/Demo-2025
+  live_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Demo-2025/refs/heads/main/README.md
+  editor_url: https://liascript.github.io/LiveEditor/?/show/file/https://raw.githubusercontent.com/MINT-the-GAP/Demo-2025/refs/heads/main/README.md
+  repo_url: https://github.com/MINT-the-GAP/Demo-2025
+  accent: turquoise
+
+- title: Aufgabensammlung
+  type: Materialsammlung
+  description: Die öffentliche Sammlung mit SchulLia-Aufgaben, Beispielen und zugehörigen Materialien.
+  source: MINT-the-GAP/Aufgabensammlung
+  repo_url: https://github.com/MINT-the-GAP/Aufgabensammlung
+  accent: yellow

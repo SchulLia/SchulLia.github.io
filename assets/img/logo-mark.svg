@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' role='img' aria-label='SchulLia'>
+  <rect width='64' height='64' rx='18' fill='#5147a8'/>
+  <path d='M17 20.5 32 14l15 6.5L32 27z' fill='#f4c95d'/>
+  <path d='M21 25v13.5c0 5 4.9 9 11 9s11-4 11-9V25l-11 4.8z' fill='#fff'/>
+  <path d='M47 22v13' fill='none' stroke='#f4c95d' stroke-linecap='round' stroke-width='3'/>
+  <circle cx='47' cy='38' r='3' fill='#e96d8c'/>
+  <path d='M27 38h10M32 33v10' fill='none' stroke='#087f83' stroke-linecap='round' stroke-width='3'/>
+</svg>

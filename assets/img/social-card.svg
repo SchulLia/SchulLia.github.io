@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630' role='img' aria-label='SchulLia – interaktive Lernmaterialien für den Unterricht'>
+  <rect width='1200' height='630' fill='#fffdf8'/>
+  <circle cx='1080' cy='70' r='260' fill='#fff4cf'/>
+  <circle cx='90' cy='610' r='230' fill='#dff5f1'/>
+  <rect x='92' y='84' width='76' height='76' rx='21' fill='#5147a8'/>
+  <path d='m112 109 18-8 18 8-18 8z' fill='#f4c95d'/>
+  <path d='M116 115v17c0 6 6 11 14 11s14-5 14-11v-17l-14 6z' fill='#fff'/>
+  <text x='195' y='143' fill='#1e2340' font-family='Georgia, serif' font-size='58' font-weight='700'>Schul<tspan fill='#5147a8'>Lia</tspan></text>
+  <text x='92' y='300' fill='#1e2340' font-family='Georgia, serif' font-size='82' font-weight='700'>Lernmaterialien,</text>
+  <text x='92' y='395' fill='#5147a8' font-family='Georgia, serif' font-size='82' font-weight='700'>die mehr können.</text>
+  <rect x='95' y='425' width='570' height='14' rx='7' fill='#f4c95d'/>
+  <text x='96' y='510' fill='#60657c' font-family='Arial, sans-serif' font-size='31'>Interaktive Kurse, Templates und Beispiele</text>
+  <text x='96' y='552' fill='#60657c' font-family='Arial, sans-serif' font-size='31'>für Schule und Unterricht.</text>
+</svg>

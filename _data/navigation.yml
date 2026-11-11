@@ -1,0 +1,8 @@
+- label: Start
+  url: /
+- label: Kurse
+  url: /kurse/
+- label: Templates
+  url: /templates/
+- label: Neuigkeiten
+  url: /news/

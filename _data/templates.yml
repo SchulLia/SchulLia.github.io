@@ -1,0 +1,143 @@
+- name: ABCjs
+  category: Musik
+  category_slug: musik
+  description: Zeigt Noten an und macht Musik direkt im Kurs hörbar.
+  url: https://github.com/LiaTemplates/ABCjs
+
+- name: Algebrite
+  category: Mathematik
+  category_slug: mathematik
+  description: Prüft Terme, Gleichungen und mathematisch gleichwertige Antworten.
+  url: https://github.com/LiaTemplates/Algebrite
+
+- name: AVR8js
+  category: Technik
+  category_slug: technik
+  description: Simuliert Mikrocontrollerprogramme und elektronische Schaltungen im Browser.
+  url: https://github.com/LiaTemplates/AVR8js
+
+- name: JSXGraph
+  category: Mathematik
+  category_slug: mathematik
+  description: Erstellt dynamische Geometrie und interaktive mathematische Darstellungen.
+  url: https://github.com/LiaTemplates/JSXGraph
+
+- name: Speech-Recognition-Quiz
+  category: Sprache
+  category_slug: sprache
+  description: Ermöglicht gesprochene Antworten und Übungen zur Aussprache.
+  url: https://github.com/LiaTemplates/Speech-Recognition-Quiz
+
+- name: lia-annotation
+  category: Präsentation
+  category_slug: praesentation
+  description: Ergänzt Folien um Stift, Radierer, Rückgängig und optionale Handschrifterkennung.
+  url: https://github.com/MINT-the-GAP/lia-annotation
+
+- name: lia-board-mode
+  category: Präsentation
+  category_slug: praesentation
+  description: Optimiert Kurse für Tafel, Beamer und eine gut lesbare Präsentationsansicht.
+  url: https://github.com/MINT-the-GAP/lia-board-mode
+
+- name: lia-canvas-ocr
+  category: Mathematik
+  category_slug: mathematik
+  description: Nimmt Handschrift, Rechenwege und Skizzen auf und kann sie erkennen lassen.
+  url: https://github.com/MINT-the-GAP/lia-canvas-ocr
+
+- name: lia-coordinate
+  category: Mathematik
+  category_slug: mathematik
+  description: Baut Koordinatensysteme, Konstruktionen und interaktive Geometrieaufgaben.
+  url: https://github.com/MINT-the-GAP/lia-coordinate
+
+- name: lia-DynFlex
+  category: Kursgestaltung
+  category_slug: kursgestaltung
+  description: Ordnet Materialien und Aufgaben flexibel nebeneinander an.
+  url: https://github.com/MINT-the-GAP/lia-DynFlex
+
+- name: lia-electro
+  category: Technik
+  category_slug: technik
+  description: Lässt Gleichstrom-Schaltpläne zeichnen, ergänzen und prüfen.
+  url: https://github.com/MINT-the-GAP/lia-electro
+
+- name: lia-freeze-v2
+  category: Kursgestaltung
+  category_slug: kursgestaltung
+  description: Sichert einen Arbeitsstand als Abgabe oder eingefrorenen Schnappschuss.
+  url: https://github.com/MINT-the-GAP/lia-freeze-v2
+
+- name: lia-globalquiz
+  category: Quiz
+  category_slug: quiz
+  description: Legt gemeinsame Vorgaben für viele Quizze fest und erlaubt gezielte Ausnahmen.
+  url: https://github.com/MINT-the-GAP/lia-globalquiz
+
+- name: lia-kachel
+  category: Sprache
+  category_slug: sprache
+  description: Erstellt Zuordnungs- und Reihenfolgeaufgaben mit verschiebbaren Kacheln.
+  url: https://github.com/MINT-the-GAP/lia-kachel
+
+- name: lia-llm
+  category: Sprache
+  category_slug: sprache
+  description: Gibt offenen Antworten Rückmeldung nach festgelegten inhaltlichen und sprachlichen Kriterien.
+  url: https://github.com/MINT-the-GAP/lia-llm
+
+- name: lia-loot
+  category: Gamification
+  category_slug: gamification
+  description: Ergänzt fertige Kurse um Funde, Werkzeuge, Freigaben und weitere Spielelemente.
+  url: https://github.com/MINT-the-GAP/lia-loot
+
+- name: lia-marker
+  category: Sprache
+  category_slug: sprache
+  description: Macht Textstellen farbig markierbar und daraus auf Wunsch eine Aufgabe.
+  url: https://github.com/MINT-the-GAP/lia-marker
+
+- name: lia-Mathe
+  category: Mathematik
+  category_slug: mathematik
+  description: Unterstützt Brüche, Flächenanteile, Strichlisten und anschauliche Mathematikaufgaben.
+  url: https://github.com/MINT-the-GAP/lia-Mathe
+
+- name: lia-mathpath
+  category: Mathematik
+  category_slug: mathematik
+  description: Ergänzt Erklärungen, Begriffe, Tooltips und passende Hilfen im Aufgabenkontext.
+  url: https://github.com/MINT-the-GAP/lia-mathpath
+
+- name: lia-navigation
+  category: Kursgestaltung
+  category_slug: kursgestaltung
+  description: Erleichtert die Orientierung in längeren Kursen mit Inhaltsverzeichnis und Lesezeichen.
+  url: https://github.com/MINT-the-GAP/lia-navigation
+
+- name: lia-orthography
+  category: Sprache
+  category_slug: sprache
+  description: Erstellt Übungen zu Rechtschreibung, Textkorrektur und Diktat.
+  url: https://github.com/MINT-the-GAP/lia-orthography
+
+- name: lia-pentominos
+  category: Mathematik
+  category_slug: mathematik
+  description: Ermöglicht Legeaufgaben mit Polyominos, Flächen und Zahlenfeldern.
+  url: https://github.com/MINT-the-GAP/lia-pentominos
+
+- name: lia-resetter
+  category: Kursgestaltung
+  category_slug: kursgestaltung
+  description: Setzt einzelne Aufgaben oder Abschnitte gezielt auf den Anfangszustand zurück.
+  url: https://github.com/MINT-the-GAP/lia-resetter
+
+- name: lia-timer
+  category: Quiz
+  category_slug: quiz
+  description: Gibt Lösungen nach einer festgelegten Bearbeitungszeit frei.
+  url: https://github.com/MINT-the-GAP/lia-timer

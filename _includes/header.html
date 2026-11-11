@@ -1,0 +1,24 @@
+<header class='site-header'>
+  <div class='shell site-header__inner'>
+    <a class='brand' href='/' aria-label='SchulLia – Startseite'>
+      <img src='/assets/img/logo-mark.svg' width='44' height='44' alt=''>
+      <span>Schul<span>Lia</span></span>
+    </a>
+    <button class='nav-toggle' type='button' aria-expanded='false' aria-controls='site-navigation'>
+      <span class='nav-toggle__label'>Menü</span>
+      <span class='nav-toggle__icon' aria-hidden='true'></span>
+    </button>
+    <nav id='site-navigation' class='site-nav' aria-label='Hauptnavigation'>
+      {% for item in site.data.navigation %}
+        {% assign is_active = false %}
+        {% if page.url == item.url %}
+          {% assign is_active = true %}
+        {% elsif item.url.size > 1 and page.url contains item.url %}
+          {% assign is_active = true %}
+        {% endif %}
+        <a href='{{ item.url }}'{% if is_active %} aria-current='page'{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+      <a class='button button--small' href='https://liascript.github.io/LiveEditor/'>LiveEditor</a>
+    </nav>
+  </div>
+</header>
