@@ -1,207 +1,178 @@
 ---
-title: Interaktive Lernmaterialien für den Unterricht
-description: SchulLia bündelt Kurse, Templates und Beispiele für interaktive Lernmaterialien mit LiaScript.
+title: Interaktive Unterrichtsmaterialien einfach nutzen
+description: SchulLia bündelt fertige LiaScript-Kurse, verständlich erklärte Werkzeuge und einen browserbasierten Editor für Lehrkräfte.
 body_class: home
 ---
 
 <section class="hero">
-  <div class="shell hero__grid">
-    <div class="hero__copy">
-      <p class="eyebrow">Offen · interaktiv · für den Unterricht</p>
-      <h1>Lernmaterialien, die <span>mehr können.</span></h1>
-      <p class="hero__lede">
-        SchulLia verbindet die einfache Arbeit mit Text mit interaktiven
-        Aufgaben, anschaulichen Werkzeugen und direkt nutzbaren Kursen.
-      </p>
-      <p class="hero__meta">Für Lehrer:innen · für Lernende · offen nutzbar</p>
-      <p class="hero__prompt">Direkt im Browser loslegen</p>
-      <div class="hero__actions">
-        <a
-          class="button button--primary"
-          href="https://liascript.github.io/LiveEditor/"
-          >Im LiveEditor starten <span aria-hidden="true">↗</span></a
-        >
-        <a class="button button--ghost" href="/kurse/"
-          >Kurse entdecken <span aria-hidden="true">→</span></a
-        >
-        <a class="button button--ghost" href="/templates/"
-          >Templates ansehen <span aria-hidden="true">→</span></a
-        >
-      </div>
-      <p class="hero__note">
-        Keine Installation nötig. Der LiveEditor verwendet beim ersten Öffnen
-        die Sprache des Browsers.
-      </p>
-    </div>
-    <div class="hero__visual">
-      <div class="demo-window">
-        <div class="demo-window__bar">
-          <span></span><span></span><span></span>
-          <strong>Meine Mathematikaufgabe</strong>
-        </div>
-        <div class="demo-window__body">
-          <div class="demo-note">
-            <span>Aufgabe</span>
-            Zeichne die Gerade und markiere den Ordinatenabschnitt.
-          </div>
-          <svg
-            class="coordinate-sketch"
-            viewBox="0 0 420 250"
-            role="img"
-            aria-label="Koordinatensystem mit einer eingezeichneten Geraden"
+  <div class="shell hero__content">
+    <p class="eyebrow">SchulLia für Lehrer:innen</p>
+    <h1>Interaktive Unterrichts&shy;materialien einfach nutzen.</h1>
+    <p class="hero__lede">
+      Öffnen Sie fertige Kurse, passen Sie Materialien an oder erstellen Sie
+      eigene interaktive Aufgaben – direkt im Browser.
+    </p>
+    <p class="hero__note">
+      <strong>Sie brauchen nichts zu installieren.</strong> Zum Ausprobieren ist
+      kein Benutzerkonto nötig.
+    </p>
+
+    <div class="start-panel">
+      <h2>Was möchten Sie tun?</h2>
+      <div class="start-grid">
+        <a class="start-card start-card--primary" href="/kurse/">
+          <span class="start-card__number" aria-hidden="true">1</span>
+          <strong>Kurse ausprobieren</strong>
+          <span>Fertige Beispiele direkt öffnen und ansehen.</span>
+        </a>
+        <a class="start-card" href="https://liascript.github.io/LiveEditor/">
+          <span class="start-card__number" aria-hidden="true">2</span>
+          <strong>Eigenes Material erstellen</strong>
+          <span>Im LiveEditor schreiben und Änderungen sofort sehen.</span>
+        </a>
+        <a class="start-card" href="/templates/">
+          <span class="start-card__number" aria-hidden="true">3</span>
+          <strong>Werkzeuge auswählen</strong>
+          <span
+            >Templates für Quizze, Mathematik, Sprache und mehr finden.</span
           >
-            <g class="grid-lines">
-              <path
-                d="M40 25V225M90 25V225M140 25V225M190 25V225M240 25V225M290 25V225M340 25V225M390 25V225"
-              />
-              <path
-                d="M40 25H390M40 65H390M40 105H390M40 145H390M40 185H390M40 225H390"
-              />
-            </g>
-            <path class="axis" d="M40 145H397M190 232V20" />
-            <path class="graph-line" d="M72 220L332 40" />
-            <circle class="graph-point" cx="190" cy="138" r="7" />
-          </svg>
-          <div class="demo-feedback">
-            <span aria-hidden="true">✓</span> Der Ordinatenabschnitt ist richtig
-            markiert.
-          </div>
-        </div>
-      </div>
-      <div class="floating-chip floating-chip--pen">
-        <span aria-hidden="true">✎</span> annotieren
-      </div>
-      <div class="floating-chip floating-chip--quiz">
-        <span aria-hidden="true">?</span> prüfen
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section examples">
+<section class="section course-preview-section">
+  <div class="shell preview-layout">
+    <div class="preview-copy">
+      <p class="eyebrow">Ein erster Blick</p>
+      <h2>So sieht ein LiaScript-Kurs aus</h2>
+      <p>
+        Links finden Sie die Kapitel. Rechts stehen Texte, Aufgaben und
+        interaktive Elemente. Mit den Pfeilen wechseln Sie zur nächsten oder
+        vorherigen Seite.
+      </p>
+      <a
+        class="button button--primary"
+        href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Demo-2025/refs/heads/main/README.md"
+        >Beispielkurs öffnen <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <figure class="course-preview">
+      <img
+        src="/assets/img/liascript-kurs.png"
+        width="1280"
+        height="800"
+        alt="Echter LiaScript-Beispielkurs mit Kapitelübersicht links und Kursinhalt rechts"
+      />
+      <figcaption>
+        Originalansicht des öffentlichen Kurses „LiaScript Demo / Tutorial“.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--soft examples">
   <div class="shell">
     <div class="section-heading">
       <div>
         <p class="eyebrow">SchulLia in Aktion</p>
-        <h2>Kleine Ideen, die Unterrichtsmaterial lebendig machen</h2>
+        <h2>Drei konkrete Beispiele</h2>
       </div>
       <p>
-        Die Beispiele stammen aus den dokumentierten SchulLia-Templates und
-        zeigen bewusst nur einen kleinen Ausschnitt.
+        Die Beispiele stammen aus den dokumentierten SchulLia-Templates. Die
+        technischen Namen stehen klein dabei; entscheidend ist der Nutzen im
+        Unterricht.
       </p>
     </div>
+
     <div class="example-grid">
       <article class="example-card">
-        <div
-          class="example-card__preview example-card__preview--coordinate"
-          aria-hidden="true"
-        >
-          <span class="mini-task"
-            ><strong>Aufgabe:</strong> Zeichne f(x)=2x+1.</span
-          >
-          <span class="mini-axis mini-axis--x"></span>
-          <span class="mini-axis mini-axis--y"></span>
-          <span class="mini-line"></span>
-        </div>
         <p class="template-label">lia-coordinate</p>
-        <h3>Die Aufgabe bleibt im Blick</h3>
+        <h3>Die Aufgabe bleibt sichtbar</h3>
         <p>
-          Im Vollbild kann die Aufgabennotiz direkt unter dem Koordinatensystem
-          geöffnet und eingeklappt werden.
+          Im Vollbild kann eine Aufgabennotiz direkt unter dem Koordinatensystem
+          geöffnet und wieder eingeklappt werden.
         </p>
         <p class="micro-example">
-          Kurzbeispiel: „Zeichne die Gerade. Markiere den Ordinatenabschnitt.“
+          <strong>Beispiel:</strong> „Zeichnen Sie die Funktion f(x)=2x+1.
+          Markieren Sie den Ordinatenabschnitt.“
         </p>
       </article>
 
       <article class="example-card">
-        <div
-          class="example-card__preview example-card__preview--quiz"
-          aria-hidden="true"
-        >
-          <span class="quiz-rule">Hinweis nach <strong>2</strong></span>
-          <span class="quiz-rule">Lösung nach <strong>3</strong></span>
-          <span class="quiz-dots"><i></i><i></i><i></i></span>
-        </div>
         <p class="template-label">lia-globalquiz</p>
-        <h3>Quizregeln einmal festlegen</h3>
+        <h3>Hinweise einheitlich steuern</h3>
         <p>
-          Gemeinsame Vorgaben gelten für nachfolgende Quizze; einzelne Aufgaben
-          können gezielt davon abweichen.
+          Für mehrere Quizze lassen sich gemeinsame Regeln festlegen. Einzelne
+          Aufgaben können weiterhin eigene Einstellungen erhalten.
         </p>
         <p class="micro-example">
-          Kurzbeispiel: Hinweis nach 2 Versuchen, Lösung nach 3.
+          <strong>Beispiel:</strong> Hinweis nach zwei Fehlversuchen, Lösung
+          nach drei.
         </p>
       </article>
 
       <article class="example-card">
-        <div
-          class="example-card__preview example-card__preview--annotation"
-          aria-hidden="true"
-        >
-          <span class="pen-stroke pen-stroke--one"></span>
-          <span class="pen-stroke pen-stroke--two"></span>
-          <span class="annotation-cursor">＋</span>
-          <span class="annotation-label">Koordinatensystem platzieren</span>
-        </div>
         <p class="template-label">lia-annotation + lia-coordinate</p>
-        <h3>Vom Stift zum Koordinatensystem</h3>
+        <h3>Auf Folien zeichnen</h3>
         <p>
-          Beginnt der Stift in einer geöffneten Zeichenfläche, schreibt er
-          direkt ins Canvas. Ein auf der Folie skizziertes Achsenkreuz kann nach
+          Beginnt der Stift in einer geöffneten Zeichenfläche, wird dort
+          geschrieben. Ein frei auf der Folie gezeichnetes Achsenkreuz kann nach
           Bestätigung als Koordinatensystem platziert werden.
         </p>
         <p class="micro-example">
-          Hinweis: Die Erkennung des Achsenkreuzes ist experimentell.
+          <strong>Hinweis:</strong> Die Erkennung des Achsenkreuzes ist
+          experimentell.
         </p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section section--soft">
+<section class="section">
   <div class="shell">
     <div class="section-heading section-heading--center">
       <div>
         <p class="eyebrow">So funktioniert SchulLia</p>
-        <h2>Vom Gedanken zum interaktiven Kurs</h2>
+        <h2>In drei übersichtlichen Schritten</h2>
       </div>
     </div>
     <ol class="steps">
       <li>
         <span class="steps__number">1</span>
-        <h3>Im LiveEditor beginnen</h3>
+        <h3>Beispiel öffnen</h3>
         <p>
-          Inhalte als übersichtlichen Text schreiben und die Vorschau direkt
-          daneben sehen.
+          Sehen Sie sich zuerst einen fertigen Kurs an. Dabei kann nichts
+          kaputtgehen.
         </p>
       </li>
       <li>
         <span class="steps__number">2</span>
-        <h3>Passendes Template wählen</h3>
+        <h3>Material anpassen</h3>
         <p>
-          Zum Beispiel Koordinatensystem, Textmarker, Handschrift oder
-          Quizsteuerung ergänzen.
+          Öffnen Sie den Kurs im LiveEditor und ändern Sie Texte oder Aufgaben
+          in kleinen Schritten.
         </p>
       </li>
       <li>
         <span class="steps__number">3</span>
-        <h3>Teilen und weiterentwickeln</h3>
+        <h3>Link weitergeben</h3>
         <p>
-          Den Kurs per Link öffnen, gemeinsam bearbeiten und als offene Datei
-          weitergeben.
+          Teilen Sie den fertigen Kurs per Link mit Ihrer Lerngruppe oder mit
+          Kolleg:innen.
         </p>
       </li>
     </ol>
   </div>
 </section>
 
-<section class="section">
+<section class="section section--soft">
   <div class="shell">
     <div class="section-heading">
       <div>
         <p class="eyebrow">Neuigkeiten</p>
-        <h2>Was sich bei SchulLia bewegt</h2>
+        <h2>Was sich bei SchulLia verändert</h2>
       </div>
       <a class="text-link text-link--arrow" href="/news/">Alle Beiträge</a>
     </div>
@@ -220,7 +191,7 @@ body_class: home
   </div>
 </section>
 
-<section class="section faq section--soft">
+<section class="section faq">
   <div class="shell shell--narrow">
     <div class="section-heading section-heading--center">
       <div>
@@ -232,31 +203,31 @@ body_class: home
       <details>
         <summary>Was ist SchulLia?</summary>
         <p>
-          SchulLia bündelt Kurse, Beispiele und Templates rund um LiaScript für
-          den schulischen Unterricht.
+          SchulLia bündelt Kurse, Beispiele und Erweiterungen rund um LiaScript
+          für den schulischen Unterricht.
         </p>
       </details>
       <details>
         <summary>Muss ich etwas installieren?</summary>
         <p>
-          Nein. Kurse und LiveEditor laufen im Browser. Für die dauerhafte
-          Ablage eigener Materialien bietet sich ein GitHub-Repository an.
+          Nein. Die Kurse und der LiveEditor laufen im Browser. Zum Ausprobieren
+          benötigen Sie kein Benutzerkonto.
         </p>
       </details>
       <details>
-        <summary>Öffnet der LiveEditor auf Deutsch?</summary>
+        <summary>Kann ich zuerst nur einen fertigen Kurs ansehen?</summary>
         <p>
-          Der LiveEditor unterstützt eine deutsche Oberfläche. Beim ersten
-          Öffnen richtet er sich nach der Browsersprache, danach nach der
-          gespeicherten Auswahl.
+          Ja. Öffnen Sie einen Beispielkurs und klicken Sie sich in Ruhe durch
+          die Seiten. Erst wenn Sie möchten, wechseln Sie zum Bearbeiten in den
+          LiveEditor.
         </p>
       </details>
       <details>
         <summary>Was ist ein Template?</summary>
         <p>
-          Ein Template ergänzt einen Kurs um eine bestimmte Möglichkeit – etwa
-          ein Koordinatensystem, Handschrifterkennung oder besondere
-          Quizfunktionen.
+          Ein Template ist eine Erweiterung für eine bestimmte Funktion – zum
+          Beispiel für ein Koordinatensystem, besondere Quizregeln oder
+          Spracherkennung.
         </p>
       </details>
     </div>
@@ -266,13 +237,11 @@ body_class: home
 <section class="closing-cta">
   <div class="shell closing-cta__inner">
     <div>
-      <p class="eyebrow">Bereit für die erste Idee?</p>
-      <h2>Einfach öffnen, schreiben, ausprobieren.</h2>
+      <p class="eyebrow">Ohne Installation starten</p>
+      <h2>Öffnen Sie zuerst einen fertigen Kurs.</h2>
     </div>
-    <a
-      class="button button--light"
-      href="https://liascript.github.io/LiveEditor/"
-      >LiveEditor öffnen <span aria-hidden="true">↗</span></a
+    <a class="button button--light" href="/kurse/"
+      >Kurse ansehen <span aria-hidden="true">→</span></a
     >
   </div>
 </section>

@@ -3,47 +3,127 @@ title: Templates
 description: Die im SchulLia-Skill katalogisierten LiaScript-Templates in einer verständlichen Übersicht.
 ---
 
-<header class='page-hero page-hero--templates'>
-  <div class='shell shell--narrow'>
-    <p class='eyebrow'>24 Werkzeuge für interaktive Kurse</p>
+<header class="page-hero page-hero--templates">
+  <div class="shell shell--narrow">
+    <p class="eyebrow">24 Werkzeuge für interaktive Kurse</p>
     <h1>Templates</h1>
-    <p class='lede'>Finde die passende Erweiterung für deine Lernidee. Jede Karte führt zur öffentlichen Originalquelle.</p>
+    <p class="lede">
+      Templates sind Erweiterungen für bestimmte Funktionen. Filtern Sie nach
+      einem Bereich und öffnen Sie bei Bedarf die öffentliche Originalquelle.
+    </p>
   </div>
 </header>
 
-<section class='section section--page'>
-  <div class='shell'>
-    <div class='filter-bar' aria-label='Templates filtern'>
-      <button type='button' class='filter-button is-active' data-filter='all' aria-pressed='true'>Alle</button>
-      <button type='button' class='filter-button' data-filter='mathematik' aria-pressed='false'>Mathematik</button>
-      <button type='button' class='filter-button' data-filter='sprache' aria-pressed='false'>Sprache</button>
-      <button type='button' class='filter-button' data-filter='kursgestaltung' aria-pressed='false'>Kursgestaltung</button>
-      <button type='button' class='filter-button' data-filter='praesentation' aria-pressed='false'>Präsentation</button>
-      <button type='button' class='filter-button' data-filter='quiz' aria-pressed='false'>Quiz</button>
-      <button type='button' class='filter-button' data-filter='technik' aria-pressed='false'>Technik</button>
-      <button type='button' class='filter-button' data-filter='musik' aria-pressed='false'>Musik</button>
-      <button type='button' class='filter-button' data-filter='gamification' aria-pressed='false'>Gamification</button>
+<section class="section section--page">
+  <div class="shell">
+    <div class="filter-bar" aria-label="Templates filtern">
+      <button
+        type="button"
+        class="filter-button is-active"
+        data-filter="all"
+        aria-pressed="true"
+      >
+        Alle
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="mathematik"
+        aria-pressed="false"
+      >
+        Mathematik
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="sprache"
+        aria-pressed="false"
+      >
+        Sprache
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="kursgestaltung"
+        aria-pressed="false"
+      >
+        Kursgestaltung
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="praesentation"
+        aria-pressed="false"
+      >
+        Präsentation
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="quiz"
+        aria-pressed="false"
+      >
+        Quiz
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="technik"
+        aria-pressed="false"
+      >
+        Technik
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="musik"
+        aria-pressed="false"
+      >
+        Musik
+      </button>
+      <button
+        type="button"
+        class="filter-button"
+        data-filter="gamification"
+        aria-pressed="false"
+      >
+        Gamification
+      </button>
     </div>
 
-    <p class='filter-status' aria-live='polite'><span data-template-count>{{ site.data.templates | size }}</span> Templates werden angezeigt.</p>
+    <p class="filter-status" aria-live="polite">
+      <span data-template-count>{{ site.data.templates | size }}</span>
+      Templates werden angezeigt.
+    </p>
 
-    <div class='template-grid' data-template-grid>
+    <div class="template-grid" data-template-grid>
       {% for template in site.data.templates %}
-        <article class='template-card' data-category='{{ template.category_slug }}'>
-          <div class='template-card__top'>
-            <span class='template-card__mark' aria-hidden='true'>{{ template.name | slice: 0 }}</span>
-            <span class='pill'>{{ template.category }}</span>
-          </div>
-          <h2>{{ template.name }}</h2>
-          <p>{{ template.description }}</p>
-          <a class='text-link text-link--arrow' href='{{ template.url }}'>Originalquelle</a>
-        </article>
+      <article
+        class="template-card"
+        data-category="{{ template.category_slug }}"
+      >
+        <div class="template-card__top">
+          <span class="template-card__mark" aria-hidden="true"
+            >{{ template.name | slice: 0 }}</span
+          >
+          <span class="pill">{{ template.category }}</span>
+        </div>
+        <h2>{{ template.name }}</h2>
+        <p>{{ template.description }}</p>
+        <a class="text-link text-link--arrow" href="{{ template.url }}"
+          >Originalquelle</a
+        >
+      </article>
       {% endfor %}
     </div>
 
-    <aside class='source-note'>
+    <aside class="source-note">
       <strong>Stand: 11. November 2026</strong>
-      <p>Die Auswahl entspricht dem synchronisierten Quellenumfang des SchulLia-Skills. Sie ist keine vollständige Liste aller weltweit verfügbaren LiaScript-Templates.</p>
+      <p>
+        Die Auswahl entspricht dem synchronisierten Quellenumfang des
+        SchulLia-Skills. Sie ist keine vollständige Liste aller weltweit
+        verfügbaren LiaScript-Templates.
+      </p>
     </aside>
   </div>
 </section>

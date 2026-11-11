@@ -3,24 +3,30 @@ title: Kurse
 description: SchulLia-Kurse und Sammlungen direkt öffnen, ausprobieren und bearbeiten.
 ---
 
-<header class='page-hero'>
-  <div class='shell shell--narrow'>
-    <p class='eyebrow'>Ansehen · ausprobieren · anpassen</p>
+<header class="page-hero">
+  <div class="shell shell--narrow">
+    <p class="eyebrow">Ansehen · ausprobieren · anpassen</p>
     <h1>Kurse und Sammlungen</h1>
-    <p class='lede'>Öffne einen Kurs direkt in LiaScript oder nimm ihn im LiveEditor als Ausgangspunkt für eigene Materialien.</p>
+    <p class="lede">
+      Öffnen Sie einen Kurs direkt in LiaScript. Wenn Sie ihn anpassen möchten,
+      können Sie ihn anschließend im LiveEditor bearbeiten.
+    </p>
   </div>
 </header>
 
-<section class='section section--page'>
-  <div class='shell'>
-    <div class='course-grid'>
-      {% for course in site.data.courses %}
-        {% include course-card.html course=course %}
-      {% endfor %}
+<section class="section section--page">
+  <div class="shell">
+    <div class="course-grid">
+      {% for course in site.data.courses %} {% include course-card.html
+      course=course %} {% endfor %}
     </div>
-    <aside class='source-note'>
+    <aside class="source-note">
       <strong>Nachvollziehbare Quellen</strong>
-      <p>Alle hier genannten Materialien verweisen auf öffentliche Repositories von MINT-the-GAP. Es werden keine erfundenen Kursziele oder Vorschaudaten verwendet.</p>
+      <p>
+        Alle hier genannten Materialien verweisen auf öffentliche Repositories
+        von MINT-the-GAP. Es werden keine erfundenen Kursziele oder
+        Vorschaudaten verwendet.
+      </p>
     </aside>
   </div>
 </section>
