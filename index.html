@@ -4,211 +4,275 @@ description: SchulLia bündelt Kurse, Templates und Beispiele für interaktive L
 body_class: home
 ---
 
-<section class='hero'>
-  <div class='shell hero__grid'>
-    <div class='hero__copy'>
-      <p class='eyebrow'>Offen · interaktiv · für den Unterricht</p>
+<section class="hero">
+  <div class="shell hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Offen · interaktiv · für den Unterricht</p>
       <h1>Lernmaterialien, die <span>mehr können.</span></h1>
-      <p class='hero__lede'>SchulLia verbindet die einfache Arbeit mit Text mit interaktiven Aufgaben, anschaulichen Werkzeugen und direkt nutzbaren Kursen.</p>
-      <div class='hero__actions'>
-        <a class='button button--primary' href='https://liascript.github.io/LiveEditor/'>Im LiveEditor starten <span aria-hidden='true'>↗</span></a>
-        <a class='button button--ghost' href='#entdecken'>SchulLia entdecken</a>
+      <p class="hero__lede">
+        SchulLia verbindet die einfache Arbeit mit Text mit interaktiven
+        Aufgaben, anschaulichen Werkzeugen und direkt nutzbaren Kursen.
+      </p>
+      <p class="hero__meta">Für Lehrer:innen · für Lernende · offen nutzbar</p>
+      <p class="hero__prompt">Direkt im Browser loslegen</p>
+      <div class="hero__actions">
+        <a
+          class="button button--primary"
+          href="https://liascript.github.io/LiveEditor/"
+          >Im LiveEditor starten <span aria-hidden="true">↗</span></a
+        >
+        <a class="button button--ghost" href="/kurse/"
+          >Kurse entdecken <span aria-hidden="true">→</span></a
+        >
+        <a class="button button--ghost" href="/templates/"
+          >Templates ansehen <span aria-hidden="true">→</span></a
+        >
       </div>
-      <p class='hero__note'>Keine Installation nötig. Der LiveEditor verwendet beim ersten Öffnen die Sprache des Browsers.</p>
+      <p class="hero__note">
+        Keine Installation nötig. Der LiveEditor verwendet beim ersten Öffnen
+        die Sprache des Browsers.
+      </p>
     </div>
-    <div class='hero__visual'>
-      <div class='demo-window'>
-        <div class='demo-window__bar'>
+    <div class="hero__visual">
+      <div class="demo-window">
+        <div class="demo-window__bar">
           <span></span><span></span><span></span>
           <strong>Meine Mathematikaufgabe</strong>
         </div>
-        <div class='demo-window__body'>
-          <div class='demo-note'>
+        <div class="demo-window__body">
+          <div class="demo-note">
             <span>Aufgabe</span>
             Zeichne die Gerade und markiere den Ordinatenabschnitt.
           </div>
-          <svg class='coordinate-sketch' viewBox='0 0 420 250' role='img' aria-label='Koordinatensystem mit einer eingezeichneten Geraden'>
-            <g class='grid-lines'>
-              <path d='M40 25V225M90 25V225M140 25V225M190 25V225M240 25V225M290 25V225M340 25V225M390 25V225'/>
-              <path d='M40 25H390M40 65H390M40 105H390M40 145H390M40 185H390M40 225H390'/>
+          <svg
+            class="coordinate-sketch"
+            viewBox="0 0 420 250"
+            role="img"
+            aria-label="Koordinatensystem mit einer eingezeichneten Geraden"
+          >
+            <g class="grid-lines">
+              <path
+                d="M40 25V225M90 25V225M140 25V225M190 25V225M240 25V225M290 25V225M340 25V225M390 25V225"
+              />
+              <path
+                d="M40 25H390M40 65H390M40 105H390M40 145H390M40 185H390M40 225H390"
+              />
             </g>
-            <path class='axis' d='M40 145H397M190 232V20'/>
-            <path class='graph-line' d='M72 220L332 40'/>
-            <circle class='graph-point' cx='190' cy='138' r='7'/>
+            <path class="axis" d="M40 145H397M190 232V20" />
+            <path class="graph-line" d="M72 220L332 40" />
+            <circle class="graph-point" cx="190" cy="138" r="7" />
           </svg>
-          <div class='demo-feedback'><span aria-hidden='true'>✓</span> Der Ordinatenabschnitt ist richtig markiert.</div>
+          <div class="demo-feedback">
+            <span aria-hidden="true">✓</span> Der Ordinatenabschnitt ist richtig
+            markiert.
+          </div>
         </div>
       </div>
-      <div class='floating-chip floating-chip--pen'><span aria-hidden='true'>✎</span> annotieren</div>
-      <div class='floating-chip floating-chip--quiz'><span aria-hidden='true'>?</span> prüfen</div>
+      <div class="floating-chip floating-chip--pen">
+        <span aria-hidden="true">✎</span> annotieren
+      </div>
+      <div class="floating-chip floating-chip--quiz">
+        <span aria-hidden="true">?</span> prüfen
+      </div>
     </div>
   </div>
 </section>
 
-<section id='entdecken' class='section section--tight'>
-  <div class='shell'>
-    <div class='path-grid'>
-      <a class='path-card path-card--editor' href='https://liascript.github.io/LiveEditor/'>
-        <span class='path-card__icon' aria-hidden='true'>✎</span>
-        <span class='path-card__overline'>Direkt loslegen</span>
-        <strong>LiveEditor</strong>
-        <span>Material schreiben und sofort ansehen.</span>
-        <span class='path-card__arrow' aria-hidden='true'>→</span>
-      </a>
-      <a class='path-card path-card--courses' href='/kurse/'>
-        <span class='path-card__icon' aria-hidden='true'>▤</span>
-        <span class='path-card__overline'>Ansehen &amp; nutzen</span>
-        <strong>Kurse</strong>
-        <span>Beispiele öffnen, ausprobieren und bearbeiten.</span>
-        <span class='path-card__arrow' aria-hidden='true'>→</span>
-      </a>
-      <a class='path-card path-card--templates' href='/templates/'>
-        <span class='path-card__icon' aria-hidden='true'>✦</span>
-        <span class='path-card__overline'>Gezielt erweitern</span>
-        <strong>Templates</strong>
-        <span>Passende Werkzeuge für die eigene Aufgabe finden.</span>
-        <span class='path-card__arrow' aria-hidden='true'>→</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class='section examples'>
-  <div class='shell'>
-    <div class='section-heading'>
+<section class="section examples">
+  <div class="shell">
+    <div class="section-heading">
       <div>
-        <p class='eyebrow'>SchulLia in Aktion</p>
+        <p class="eyebrow">SchulLia in Aktion</p>
         <h2>Kleine Ideen, die Unterrichtsmaterial lebendig machen</h2>
       </div>
-      <p>Die Beispiele stammen aus den dokumentierten SchulLia-Templates und zeigen bewusst nur einen kleinen Ausschnitt.</p>
+      <p>
+        Die Beispiele stammen aus den dokumentierten SchulLia-Templates und
+        zeigen bewusst nur einen kleinen Ausschnitt.
+      </p>
     </div>
-    <div class='example-grid'>
-      <article class='example-card'>
-        <div class='example-card__preview example-card__preview--coordinate' aria-hidden='true'>
-          <span class='mini-task'><strong>Aufgabe:</strong> Zeichne f(x)=2x+1.</span>
-          <span class='mini-axis mini-axis--x'></span>
-          <span class='mini-axis mini-axis--y'></span>
-          <span class='mini-line'></span>
+    <div class="example-grid">
+      <article class="example-card">
+        <div
+          class="example-card__preview example-card__preview--coordinate"
+          aria-hidden="true"
+        >
+          <span class="mini-task"
+            ><strong>Aufgabe:</strong> Zeichne f(x)=2x+1.</span
+          >
+          <span class="mini-axis mini-axis--x"></span>
+          <span class="mini-axis mini-axis--y"></span>
+          <span class="mini-line"></span>
         </div>
-        <p class='template-label'>lia-coordinate</p>
+        <p class="template-label">lia-coordinate</p>
         <h3>Die Aufgabe bleibt im Blick</h3>
-        <p>Im Vollbild kann die Aufgabennotiz direkt unter dem Koordinatensystem geöffnet und eingeklappt werden.</p>
-        <p class='micro-example'>Kurzbeispiel: „Zeichne die Gerade. Markiere den Ordinatenabschnitt.“</p>
+        <p>
+          Im Vollbild kann die Aufgabennotiz direkt unter dem Koordinatensystem
+          geöffnet und eingeklappt werden.
+        </p>
+        <p class="micro-example">
+          Kurzbeispiel: „Zeichne die Gerade. Markiere den Ordinatenabschnitt.“
+        </p>
       </article>
 
-      <article class='example-card'>
-        <div class='example-card__preview example-card__preview--quiz' aria-hidden='true'>
-          <span class='quiz-rule'>Hinweis nach <strong>2</strong></span>
-          <span class='quiz-rule'>Lösung nach <strong>3</strong></span>
-          <span class='quiz-dots'><i></i><i></i><i></i></span>
+      <article class="example-card">
+        <div
+          class="example-card__preview example-card__preview--quiz"
+          aria-hidden="true"
+        >
+          <span class="quiz-rule">Hinweis nach <strong>2</strong></span>
+          <span class="quiz-rule">Lösung nach <strong>3</strong></span>
+          <span class="quiz-dots"><i></i><i></i><i></i></span>
         </div>
-        <p class='template-label'>lia-globalquiz</p>
+        <p class="template-label">lia-globalquiz</p>
         <h3>Quizregeln einmal festlegen</h3>
-        <p>Gemeinsame Vorgaben gelten für nachfolgende Quizze; einzelne Aufgaben können gezielt davon abweichen.</p>
-        <p class='micro-example'>Kurzbeispiel: Hinweis nach 2 Versuchen, Lösung nach 3.</p>
+        <p>
+          Gemeinsame Vorgaben gelten für nachfolgende Quizze; einzelne Aufgaben
+          können gezielt davon abweichen.
+        </p>
+        <p class="micro-example">
+          Kurzbeispiel: Hinweis nach 2 Versuchen, Lösung nach 3.
+        </p>
       </article>
 
-      <article class='example-card'>
-        <div class='example-card__preview example-card__preview--annotation' aria-hidden='true'>
-          <span class='pen-stroke pen-stroke--one'></span>
-          <span class='pen-stroke pen-stroke--two'></span>
-          <span class='annotation-cursor'>＋</span>
-          <span class='annotation-label'>Koordinatensystem platzieren</span>
+      <article class="example-card">
+        <div
+          class="example-card__preview example-card__preview--annotation"
+          aria-hidden="true"
+        >
+          <span class="pen-stroke pen-stroke--one"></span>
+          <span class="pen-stroke pen-stroke--two"></span>
+          <span class="annotation-cursor">＋</span>
+          <span class="annotation-label">Koordinatensystem platzieren</span>
         </div>
-        <p class='template-label'>lia-annotation + lia-coordinate</p>
+        <p class="template-label">lia-annotation + lia-coordinate</p>
         <h3>Vom Stift zum Koordinatensystem</h3>
-        <p>Beginnt der Stift in einer geöffneten Zeichenfläche, schreibt er direkt ins Canvas. Ein auf der Folie skizziertes Achsenkreuz kann nach Bestätigung als Koordinatensystem platziert werden.</p>
-        <p class='micro-example'>Hinweis: Die Erkennung des Achsenkreuzes ist experimentell.</p>
+        <p>
+          Beginnt der Stift in einer geöffneten Zeichenfläche, schreibt er
+          direkt ins Canvas. Ein auf der Folie skizziertes Achsenkreuz kann nach
+          Bestätigung als Koordinatensystem platziert werden.
+        </p>
+        <p class="micro-example">
+          Hinweis: Die Erkennung des Achsenkreuzes ist experimentell.
+        </p>
       </article>
     </div>
   </div>
 </section>
 
-<section class='section section--soft'>
-  <div class='shell'>
-    <div class='section-heading section-heading--center'>
+<section class="section section--soft">
+  <div class="shell">
+    <div class="section-heading section-heading--center">
       <div>
-        <p class='eyebrow'>So funktioniert SchulLia</p>
+        <p class="eyebrow">So funktioniert SchulLia</p>
         <h2>Vom Gedanken zum interaktiven Kurs</h2>
       </div>
     </div>
-    <ol class='steps'>
+    <ol class="steps">
       <li>
-        <span class='steps__number'>1</span>
+        <span class="steps__number">1</span>
         <h3>Im LiveEditor beginnen</h3>
-        <p>Inhalte als übersichtlichen Text schreiben und die Vorschau direkt daneben sehen.</p>
+        <p>
+          Inhalte als übersichtlichen Text schreiben und die Vorschau direkt
+          daneben sehen.
+        </p>
       </li>
       <li>
-        <span class='steps__number'>2</span>
+        <span class="steps__number">2</span>
         <h3>Passendes Template wählen</h3>
-        <p>Zum Beispiel Koordinatensystem, Textmarker, Handschrift oder Quizsteuerung ergänzen.</p>
+        <p>
+          Zum Beispiel Koordinatensystem, Textmarker, Handschrift oder
+          Quizsteuerung ergänzen.
+        </p>
       </li>
       <li>
-        <span class='steps__number'>3</span>
+        <span class="steps__number">3</span>
         <h3>Teilen und weiterentwickeln</h3>
-        <p>Den Kurs per Link öffnen, gemeinsam bearbeiten und als offene Datei weitergeben.</p>
+        <p>
+          Den Kurs per Link öffnen, gemeinsam bearbeiten und als offene Datei
+          weitergeben.
+        </p>
       </li>
     </ol>
   </div>
 </section>
 
-<section class='section'>
-  <div class='shell'>
-    <div class='section-heading'>
+<section class="section">
+  <div class="shell">
+    <div class="section-heading">
       <div>
-        <p class='eyebrow'>Neuigkeiten</p>
+        <p class="eyebrow">Neuigkeiten</p>
         <h2>Was sich bei SchulLia bewegt</h2>
       </div>
-      <a class='text-link text-link--arrow' href='/news/'>Alle Beiträge</a>
+      <a class="text-link text-link--arrow" href="/news/">Alle Beiträge</a>
     </div>
-    <div class='news-grid'>
+    <div class="news-grid">
       {% for post in site.posts limit: 3 %}
-        <article class='news-card'>
-          <time datetime='{{ post.date | date_to_xmlschema }}'>{{ post.date | date: '%d.%m.%Y' }}</time>
-          <h3><a href='{{ post.url }}'>{{ post.title }}</a></h3>
-          <p>{{ post.description }}</p>
-          <a class='text-link' href='{{ post.url }}'>Weiterlesen</a>
-        </article>
+      <article class="news-card">
+        <time datetime="{{ post.date | date_to_xmlschema }}"
+          >{{ post.date | date: '%d.%m.%Y' }}</time
+        >
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description }}</p>
+        <a class="text-link" href="{{ post.url }}">Weiterlesen</a>
+      </article>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class='section faq section--soft'>
-  <div class='shell shell--narrow'>
-    <div class='section-heading section-heading--center'>
+<section class="section faq section--soft">
+  <div class="shell shell--narrow">
+    <div class="section-heading section-heading--center">
       <div>
-        <p class='eyebrow'>Kurz beantwortet</p>
+        <p class="eyebrow">Kurz beantwortet</p>
         <h2>Häufige Fragen</h2>
       </div>
     </div>
-    <div class='faq-list'>
+    <div class="faq-list">
       <details>
         <summary>Was ist SchulLia?</summary>
-        <p>SchulLia bündelt Kurse, Beispiele und Templates rund um LiaScript für den schulischen Unterricht.</p>
+        <p>
+          SchulLia bündelt Kurse, Beispiele und Templates rund um LiaScript für
+          den schulischen Unterricht.
+        </p>
       </details>
       <details>
         <summary>Muss ich etwas installieren?</summary>
-        <p>Nein. Kurse und LiveEditor laufen im Browser. Für die dauerhafte Ablage eigener Materialien bietet sich ein GitHub-Repository an.</p>
+        <p>
+          Nein. Kurse und LiveEditor laufen im Browser. Für die dauerhafte
+          Ablage eigener Materialien bietet sich ein GitHub-Repository an.
+        </p>
       </details>
       <details>
         <summary>Öffnet der LiveEditor auf Deutsch?</summary>
-        <p>Der LiveEditor unterstützt eine deutsche Oberfläche. Beim ersten Öffnen richtet er sich nach der Browsersprache, danach nach der gespeicherten Auswahl.</p>
+        <p>
+          Der LiveEditor unterstützt eine deutsche Oberfläche. Beim ersten
+          Öffnen richtet er sich nach der Browsersprache, danach nach der
+          gespeicherten Auswahl.
+        </p>
       </details>
       <details>
         <summary>Was ist ein Template?</summary>
-        <p>Ein Template ergänzt einen Kurs um eine bestimmte Möglichkeit – etwa ein Koordinatensystem, Handschrifterkennung oder besondere Quizfunktionen.</p>
+        <p>
+          Ein Template ergänzt einen Kurs um eine bestimmte Möglichkeit – etwa
+          ein Koordinatensystem, Handschrifterkennung oder besondere
+          Quizfunktionen.
+        </p>
       </details>
     </div>
   </div>
 </section>
 
-<section class='closing-cta'>
-  <div class='shell closing-cta__inner'>
+<section class="closing-cta">
+  <div class="shell closing-cta__inner">
     <div>
-      <p class='eyebrow'>Bereit für die erste Idee?</p>
+      <p class="eyebrow">Bereit für die erste Idee?</p>
       <h2>Einfach öffnen, schreiben, ausprobieren.</h2>
     </div>
-    <a class='button button--light' href='https://liascript.github.io/LiveEditor/'>LiveEditor öffnen <span aria-hidden='true'>↗</span></a>
+    <a
+      class="button button--light"
+      href="https://liascript.github.io/LiveEditor/"
+      >LiveEditor öffnen <span aria-hidden="true">↗</span></a
+    >
   </div>
 </section>
