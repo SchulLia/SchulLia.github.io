@@ -4,6 +4,8 @@
   url: https://liascript.github.io/course/
 - label: LiveEditor
   url: https://liascript.github.io/LiveEditor/
+- label: Exporter
+  url: https://liascript.github.io/LiaScript-Exporter/
 - label: Templates
   url: /templates/
 - label: Neuigkeiten
