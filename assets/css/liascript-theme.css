@@ -15,7 +15,8 @@
   --max-width: 1320px;
   --radius: 12px;
   --shadow: 0 28px 75px rgba(0, 0, 0, 0.34);
-  --section-space: clamp(4.5rem, 7vw, 6rem);
+  --section-space: clamp(2.25rem, 3.5vw, 3rem);
+  color-scheme: dark;
 }
 
 body {
@@ -92,6 +93,12 @@ h3 {
   min-height: 92px;
 }
 
+.site-header__brand-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .brand {
   gap: 0.55rem;
   color: #fff;
@@ -109,6 +116,43 @@ h3 {
 
 .brand > span > span {
   color: var(--teal-light);
+}
+
+.theme-toggle {
+  display: inline-grid;
+  width: 2.9rem;
+  height: 2.25rem;
+  flex: 0 0 auto;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #777;
+  border-radius: 999px;
+  background: #fff;
+  color: #171717;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--teal-light);
+}
+
+.theme-toggle__icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.theme-toggle__icon--moon {
+  fill: currentColor;
+  stroke: none;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
 }
 
 .site-nav {
@@ -659,6 +703,143 @@ h3 {
   text-align: center;
 }
 
+:root[data-theme="light"] {
+  --ink: #1b2024;
+  --muted: #57545b;
+  --paper: #f7f7f5;
+  --surface: #ffffff;
+  --soft: #eef1f0;
+  --dark: #f7f7f5;
+  --dark-soft: #ffffff;
+  --blue: #246f73;
+  --green: #2f7950;
+  --teal: #287f83;
+  --teal-light: #176f73;
+  --line: #cfd4d3;
+  --shadow: 0 24px 65px rgba(27, 32, 36, 0.14);
+  color-scheme: light;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] .hero h1,
+[data-theme="light"] .start-card strong,
+[data-theme="light"] .patchnote h3 a,
+[data-theme="light"] .news-card h3 a,
+[data-theme="light"] .news-list h2 a,
+[data-theme="light"] .faq-list summary,
+[data-theme="light"] .closing-cta h2 {
+  color: var(--ink);
+}
+
+[data-theme="light"] .site-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(247, 247, 245, 0.97);
+}
+
+[data-theme="light"] .brand,
+[data-theme="light"] .brand:hover,
+[data-theme="light"] .site-nav > a:not(.button),
+[data-theme="light"] .nav-toggle {
+  color: var(--ink);
+}
+
+[data-theme="light"] .theme-toggle {
+  border-color: #50555a;
+  background: #22272b;
+  color: #fff;
+}
+
+[data-theme="light"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+[data-theme="light"] .button {
+  border-color: #8b9092;
+  color: var(--ink);
+}
+
+[data-theme="light"] .button:hover {
+  border-color: var(--teal);
+  background: #e5f1f1;
+  color: var(--ink);
+}
+
+[data-theme="light"] .button--primary,
+[data-theme="light"] .button--small {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+}
+
+[data-theme="light"] .button--primary:hover,
+[data-theme="light"] .button--small:hover {
+  border-color: #176f73;
+  background: #176f73;
+  color: #fff;
+}
+
+[data-theme="light"] .hero__lede,
+[data-theme="light"] .start-panel h2,
+[data-theme="light"] .page-hero .lede {
+  color: #444148;
+}
+
+[data-theme="light"] .start-card:hover,
+[data-theme="light"] .start-card--primary:hover {
+  background: #e7f2f1;
+  color: var(--ink);
+}
+
+[data-theme="light"] .section--soft,
+[data-theme="light"] .course-preview-section,
+[data-theme="light"] .page-hero {
+  border-color: var(--line);
+}
+
+[data-theme="light"] .patchnotes-window::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 247, 245, 0),
+    rgba(247, 247, 245, 0.76) 48%,
+    rgba(247, 247, 245, 0.98) 86%,
+    var(--paper)
+  );
+}
+
+[data-theme="light"] .micro-example,
+[data-theme="light"] .site-footer a,
+[data-theme="light"] .filter-button {
+  color: var(--ink);
+}
+
+[data-theme="light"] .pill {
+  background: #dcebea;
+  color: #195d60;
+}
+
+[data-theme="light"] .source-note {
+  background: #e3efee;
+}
+
+[data-theme="light"] .source-note p {
+  color: #31585a;
+}
+
+[data-theme="light"] .template-card__mark {
+  background: #e1efe6;
+  color: #286a44;
+}
+
+[data-theme="light"] .site-footer {
+  background: #eceeec;
+}
+
 @media (max-width: 960px) {
   .shell {
     width: calc(100% - 2rem);
@@ -703,7 +884,7 @@ h3 {
   }
 
   .section {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   .patchnotes-scroll {

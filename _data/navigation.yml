@@ -1,7 +1,7 @@
 - label: Start
   url: /
 - label: Kurse
-  url: /kurse/
+  url: https://liascript.github.io/course/
 - label: Templates
   url: /templates/
 - label: Neuigkeiten

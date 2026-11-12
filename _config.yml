@@ -9,6 +9,12 @@ permalink: /news/:title/
 markdown: kramdown
 future: false
 
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
 defaults:
   - scope:
       path: ""

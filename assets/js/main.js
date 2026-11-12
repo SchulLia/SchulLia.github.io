@@ -1,5 +1,58 @@
 document.documentElement.classList.add("js");
 
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeColor = document.querySelector("#theme-color");
+const systemTheme = window.matchMedia("(prefers-color-scheme: light)");
+
+const storedTheme = () => {
+  try {
+    return localStorage.getItem("schullia-theme");
+  } catch (_error) {
+    return null;
+  }
+};
+
+const applyTheme = (theme) => {
+  const isDark = theme === "dark";
+  const actionLabel = isDark
+    ? "Helles Design aktivieren"
+    : "Dunkles Design aktivieren";
+
+  document.documentElement.dataset.theme = theme;
+  if (themeColor) themeColor.content = isDark ? "#1c1c1c" : "#f7f7f5";
+
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-label", actionLabel);
+    themeToggle.setAttribute("title", actionLabel);
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+  }
+};
+
+applyTheme(
+  document.documentElement.dataset.theme ||
+    storedTheme() ||
+    (systemTheme.matches ? "light" : "dark"),
+);
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const nextTheme =
+      document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+
+    try {
+      localStorage.setItem("schullia-theme", nextTheme);
+    } catch (_error) {
+      // Der Schalter funktioniert auch, wenn der Browser Speicher blockiert.
+    }
+
+    applyTheme(nextTheme);
+  });
+}
+
+systemTheme.addEventListener("change", (event) => {
+  if (!storedTheme()) applyTheme(event.matches ? "light" : "dark");
+});
+
 const navToggle = document.querySelector(".nav-toggle");
 const navigation = document.querySelector(".site-nav");
 
