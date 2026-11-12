@@ -1,5 +1,5 @@
 ---
-title: SchulLia-Patchnotes vom 10.11.2026
+title: Patchnotes – 10.11.2026
 description: Bessere Zusammenarbeit der Templates, neue Aufgabenhinweise, klarere Bedienung und eine übersichtlichere Aufgabensammlung.
 ---
 
@@ -30,5 +30,7 @@ description: Bessere Zusammenarbeit der Templates, neue Aufgabenhinweise, klarer
   Kurzer Beispielprompt, damit der Skill sicher berücksichtigt wird:
 
   ```text
-  Nutze https://github.com/MINT-the-GAP/skill-schullia: Lies zuerst die SKILL.md vollständig und bearbeite dann: [Restlicher Prompt]
+  Nutze https://github.com/MINT-the-GAP/skill-schullia:
+  Lies zuerst die SKILL.md vollständig und bearbeite dann:
+  [Restlicher Prompt]
   ```
