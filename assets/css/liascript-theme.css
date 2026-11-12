@@ -790,6 +790,10 @@ h3 {
   color: #444148;
 }
 
+[data-theme="light"] .hero__note strong {
+  color: var(--ink);
+}
+
 [data-theme="light"] .start-card:hover,
 [data-theme="light"] .start-card--primary:hover {
   background: #e7f2f1;
