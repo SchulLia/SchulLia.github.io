@@ -15,6 +15,7 @@
   --max-width: 1320px;
   --radius: 12px;
   --shadow: 0 28px 75px rgba(0, 0, 0, 0.34);
+  --section-space: clamp(4.5rem, 7vw, 6rem);
 }
 
 body {
@@ -298,7 +299,7 @@ h3 {
 }
 
 .section {
-  padding: clamp(4.5rem, 7vw, 6rem) 0;
+  padding: var(--section-space) 0;
 }
 
 .section--soft {
@@ -315,7 +316,6 @@ h3 {
 }
 
 .course-preview-section {
-  padding-top: 0;
   border-bottom: 1px solid #292929;
   background: var(--paper);
 }
@@ -330,7 +330,8 @@ h3 {
 }
 
 .preview-copy {
-  max-width: 720px;
+  width: 100%;
+  max-width: none;
   text-align: center;
 }
 
@@ -338,15 +339,24 @@ h3 {
   color: var(--muted);
 }
 
+.section-subinfo {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 1.5rem;
+}
+
 .course-preview {
   width: 100%;
   max-width: none;
 }
 
-.course-preview img {
+.course-preview__frame {
+  display: block;
+  width: 100%;
+  height: clamp(36rem, 56vw, 52rem);
   border: 1px solid var(--line);
   border-radius: 14px;
-  background: var(--surface);
+  background: #fff;
   box-shadow: var(--shadow);
 }
 
@@ -694,10 +704,6 @@ h3 {
 
   .section {
     padding: 4rem 0;
-  }
-
-  .course-preview-section {
-    padding-top: 0;
   }
 
   .patchnotes-scroll {

@@ -83,8 +83,9 @@ body_class: home
 <section class="section course-preview-section">
   <div class="shell preview-layout">
     <div class="preview-copy">
+      <p class="eyebrow">Beispielkurs</p>
       <h2>So sieht ein LiaScript-Kurs aus</h2>
-      <p>
+      <p class="section-subinfo">
         Links finden Sie die Kapitel. Rechts stehen Texte, Aufgaben und
         interaktive Elemente. Mit den Pfeilen wechseln Sie zur nächsten oder
         vorherigen Seite.
@@ -92,18 +93,27 @@ body_class: home
       <a
         class="button button--primary"
         href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
-        >Beispielkurs öffnen <span aria-hidden="true">↗</span></a
+        target="_blank"
+        rel="noopener"
+        >Kurs separat öffnen <span aria-hidden="true">↗</span></a
       >
     </div>
     <figure class="course-preview">
-      <img
-        src="/assets/img/liascript-kurs.png"
-        width="1280"
-        height="800"
-        alt="Echter LiaScript-Beispielkurs mit Kapitelübersicht links und Kursinhalt rechts"
-      />
+      <iframe
+        class="course-preview__frame"
+        src="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
+        title="Interaktiver LiaScript-Beispielkurs Erkunden"
+        loading="eager"
+        allow="fullscreen; clipboard-read; clipboard-write"
+        allowfullscreen
+      >
+        <a
+          href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
+          >Beispielkurs öffnen</a
+        >
+      </iframe>
       <figcaption>
-        Originalansicht des öffentlichen Kurses „LiaScript Demo / Tutorial“.
+        Der Beispielkurs wird hier direkt mit LiaScript geladen.
       </figcaption>
     </figure>
   </div>
