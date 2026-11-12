@@ -219,6 +219,22 @@ h3 {
   font-style: italic;
 }
 
+@media (min-width: 1200px) {
+  .hero h1,
+  .hero__lede,
+  .hero__note {
+    white-space: nowrap;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 2.8vw, 3.15rem);
+  }
+
+  .hero__lede {
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+  }
+}
+
 .start-panel {
   max-width: none;
   margin-inline: auto;
