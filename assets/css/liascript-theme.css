@@ -909,6 +909,7 @@ h3 {
   .site-nav {
     border-top-color: var(--line);
     background: var(--paper);
+    gap: 0;
   }
 }
 
