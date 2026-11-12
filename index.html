@@ -20,22 +20,44 @@ body_class: home
     <div class="start-panel">
       <h2>Was möchten Sie tun?</h2>
       <div class="start-grid">
-        <a class="start-card start-card--primary" href="/kurse/">
+        <article class="start-card start-card--courses">
           <span class="start-card__number" aria-hidden="true">1</span>
           <strong>Kurse ausprobieren</strong>
-          <span>Fertige Beispiele direkt öffnen und ansehen.</span>
+          <span class="start-card__description"
+            >Drei fertige Beispiele direkt öffnen:</span
+          >
+          <div class="start-card__course-links">
+            <a
+              class="start-card__course-link"
+              href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/5/Lia5_SK.md"
+              >Sachunterricht · Klasse 5 <span aria-hidden="true">↗</span></a
+            >
+            <a
+              class="start-card__course-link"
+              href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/6/Deutsch/Lia6_05.md"
+              >Deutsch · Klasse 6 · Woche 5
+              <span aria-hidden="true">↗</span></a
+            >
+            <a
+              class="start-card__course-link"
+              href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MINT-the-GAP/Wochenaufgabe/refs/heads/main/9/Mathematik/Lia9_01.md"
+              >Mathematik · Klasse 9 · Woche 1
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <a
+          class="start-card"
+          href="https://mint-the-gap.github.io/Aufgabensammlung/"
+        >
+          <span class="start-card__number" aria-hidden="true">2</span>
+          <strong>Sammlung durchstöbern</strong>
+          <span>Aufgaben auswählen und schnell Kurse erzeugen.</span>
         </a>
         <a class="start-card" href="https://liascript.github.io/LiveEditor/">
-          <span class="start-card__number" aria-hidden="true">2</span>
+          <span class="start-card__number" aria-hidden="true">3</span>
           <strong>Eigenes Material erstellen</strong>
           <span>Im LiveEditor schreiben und Änderungen sofort sehen.</span>
-        </a>
-        <a class="start-card" href="/templates/">
-          <span class="start-card__number" aria-hidden="true">3</span>
-          <strong>Werkzeuge auswählen</strong>
-          <span
-            >Templates für Quizze, Mathematik, Sprache und mehr finden.</span
-          >
         </a>
       </div>
     </div>
@@ -153,48 +175,5 @@ body_class: home
         </p>
       </li>
     </ol>
-  </div>
-</section>
-
-<section class="section faq">
-  <div class="shell shell--narrow">
-    <div class="section-heading section-heading--center">
-      <div>
-        <p class="eyebrow">Kurz beantwortet</p>
-        <h2>Häufige Fragen</h2>
-      </div>
-    </div>
-    <div class="faq-list">
-      <details>
-        <summary>Was ist SchulLia?</summary>
-        <p>
-          SchulLia bündelt Kurse, Beispiele und Erweiterungen rund um LiaScript
-          für den schulischen Unterricht.
-        </p>
-      </details>
-      <details>
-        <summary>Muss ich etwas installieren?</summary>
-        <p>
-          Nein. Die Kurse und der LiveEditor laufen im Browser. Zum Ausprobieren
-          benötigen Sie kein Benutzerkonto.
-        </p>
-      </details>
-      <details>
-        <summary>Kann ich zuerst nur einen fertigen Kurs ansehen?</summary>
-        <p>
-          Ja. Öffnen Sie einen Beispielkurs und klicken Sie sich in Ruhe durch
-          die Seiten. Erst wenn Sie möchten, wechseln Sie zum Bearbeiten in den
-          LiveEditor.
-        </p>
-      </details>
-      <details>
-        <summary>Was ist ein Template?</summary>
-        <p>
-          Ein Template ist eine Erweiterung für eine bestimmte Funktion – zum
-          Beispiel für ein Koordinatensystem, besondere Quizregeln oder
-          Spracherkennung.
-        </p>
-      </details>
-    </div>
   </div>
 </section>

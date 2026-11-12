@@ -2,6 +2,8 @@
   url: /
 - label: Kurse
   url: https://liascript.github.io/course/
+- label: LiveEditor
+  url: https://liascript.github.io/LiveEditor/
 - label: Templates
   url: /templates/
 - label: Neuigkeiten
