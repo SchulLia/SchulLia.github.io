@@ -59,3 +59,31 @@ if (filterButtons.length && templateCards.length) {
     });
   });
 }
+
+const patchnotesWindow = document.querySelector("[data-patchnotes-window]");
+const patchnotesScroll = document.querySelector("[data-patchnotes-scroll]");
+
+if (patchnotesWindow && patchnotesScroll) {
+  const updatePatchnoteFade = () => {
+    const scrollable =
+      patchnotesScroll.scrollHeight > patchnotesScroll.clientHeight + 1;
+    const atEnd =
+      !scrollable ||
+      patchnotesScroll.scrollTop + patchnotesScroll.clientHeight >=
+        patchnotesScroll.scrollHeight - 2;
+
+    patchnotesWindow.classList.toggle("is-scrollable", scrollable);
+    patchnotesWindow.classList.toggle("is-at-end", atEnd);
+  };
+
+  patchnotesScroll.addEventListener("scroll", updatePatchnoteFade, {
+    passive: true,
+  });
+
+  if ("ResizeObserver" in window) {
+    new ResizeObserver(updatePatchnoteFade).observe(patchnotesScroll);
+  }
+
+  window.addEventListener("load", updatePatchnoteFade, { once: true });
+  requestAnimationFrame(updatePatchnoteFade);
+}
