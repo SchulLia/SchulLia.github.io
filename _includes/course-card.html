@@ -1,17 +1,13 @@
-<article class='course-card course-card--{{ include.course.accent }}'>
+<a
+  class='course-card course-card--{{ include.course.accent }}'
+  href='{{ include.course.live_url }}'
+  aria-label='{{ include.course.title }} direkt in LiaScript öffnen'
+>
   <div class='course-card__top'>
     <span class='pill'>{{ include.course.type }}</span>
     <span class='course-card__source'>{{ include.course.source }}</span>
   </div>
   <h2>{{ include.course.title }}</h2>
   <p>{{ include.course.description }}</p>
-  <div class='course-card__actions'>
-    {% if include.course.live_url %}
-      <a class='button' href='{{ include.course.live_url }}'>Kurs öffnen <span aria-hidden='true'>↗</span></a>
-    {% endif %}
-    {% if include.course.editor_url %}
-      <a class='text-link' href='{{ include.course.editor_url }}'>Im LiveEditor bearbeiten</a>
-    {% endif %}
-    <a class='text-link' href='{{ include.course.repo_url }}'>Auf GitHub ansehen</a>
-  </div>
-</article>
+  <span class='course-card__cta'>Kurs öffnen <span aria-hidden='true'>↗</span></span>
+</a>
