@@ -676,6 +676,13 @@ h3 {
   font-weight: 800;
 }
 
+.course-card__source {
+  min-width: 0;
+  max-width: 60%;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
 @media (max-width: 960px) {
   .course-grid {
     grid-template-columns: 1fr;
