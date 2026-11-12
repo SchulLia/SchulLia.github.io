@@ -92,10 +92,18 @@ h3 {
 }
 
 .brand {
+  gap: 0.55rem;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.025em;
+}
+
+.brand__logo {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .brand > span > span {
@@ -185,21 +193,12 @@ h3 {
   text-align: center;
 }
 
-.hero__logo {
-  position: absolute;
-  z-index: 1;
-  top: 4.5rem;
-  right: 0;
-  width: clamp(7rem, 9vw, 9.25rem);
-  height: auto;
-}
-
 .hero .eyebrow {
   color: var(--teal-light);
 }
 
 .hero h1 {
-  max-width: 820px;
+  max-width: none;
   margin: 0 auto 1.25rem;
   color: #fff;
   font-size: clamp(2.75rem, 3.6vw, 3.15rem);
@@ -207,13 +206,14 @@ h3 {
 }
 
 .hero__lede {
-  max-width: 760px;
+  max-width: none;
   margin: 0 auto 0.9rem;
   color: #d0ccd1;
   font-size: clamp(1.05rem, 1.7vw, 1.2rem);
 }
 
 .hero__note {
+  max-width: none;
   margin: 0 auto 2.7rem;
   color: var(--muted);
   font-style: italic;
@@ -341,6 +341,8 @@ h3 {
 
 .patchnotes-window {
   position: relative;
+  width: 75%;
+  margin-inline: auto;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -352,11 +354,12 @@ h3 {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 8rem;
+  height: 11rem;
   background: linear-gradient(
     to bottom,
     rgba(28, 28, 28, 0),
-    rgba(28, 28, 28, 0.96) 84%,
+    rgba(28, 28, 28, 0.74) 48%,
+    rgba(28, 28, 28, 0.98) 86%,
     var(--paper)
   );
   content: "";
@@ -367,6 +370,16 @@ h3 {
 
 .js .patchnotes-window.is-scrollable:not(.is-at-end)::after {
   opacity: 1;
+}
+
+.js .patchnotes-window.is-scrollable:not(.is-at-end) .patchnotes-scroll {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 62%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to bottom, #000 0%, #000 62%, transparent 100%);
 }
 
 .patchnotes-scroll {
@@ -385,6 +398,7 @@ h3 {
   width: min(100% - 3rem, 900px);
   margin-inline: auto;
   padding: 2.5rem 0;
+  text-align: left;
 }
 
 .patchnote {
@@ -624,17 +638,13 @@ h3 {
     width: calc(100% - 2rem);
   }
 
+  .patchnotes-window {
+    width: 100%;
+  }
+
   .start-grid {
     max-width: 680px;
     margin-inline: auto;
-  }
-}
-
-@media (max-width: 1200px) {
-  .hero__logo {
-    position: static;
-    width: 5.5rem;
-    margin: 0 auto 1.5rem;
   }
 }
 
