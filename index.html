@@ -299,16 +299,58 @@ body_class: home
           Teilen Sie den fertigen Kurs per Link mit Ihrer Lerngruppe oder mit
           Kolleg:innen.
         </p>
-        <a
+        <button
           class='button button--primary'
-          href='https://liascript.github.io/course/'
-          target='_blank'
-          rel='noopener'
+          type='button'
+          aria-expanded='false'
+          aria-controls='url-sharing-guide'
+          data-share-guide-toggle
         >
-          LiaScript-Kurse öffnen
-        </a>
+          Anleitung ansehen
+        </button>
       </article>
     </div>
+
+    <section
+      id='url-sharing-guide'
+      class='share-guide'
+      aria-labelledby='url-sharing-guide-title'
+      data-share-guide
+      hidden
+    >
+      <div class='share-guide__heading'>
+        <p class='eyebrow'>Kurzanleitung</p>
+        <h3 id='url-sharing-guide-title'>Einen Kurs als URL teilen</h3>
+        <p>
+          Kurze Kurse lassen sich direkt als URL erzeugen und ohne zusätzliche
+          Plattform weitergeben.
+        </p>
+      </div>
+      <figure class='share-guide__figure'>
+        <img
+          class='share-guide__gif share-guide__gif--dark'
+          src='/artifacts/liveeditor-kurs-als-url-teilen-dark.gif'
+          width='960'
+          height='600'
+          loading='lazy'
+          decoding='async'
+          alt='Animierte Anleitung: Einen kurzen LiaScript-Kurs im LiveEditor als URL teilen.'
+        />
+        <img
+          class='share-guide__gif share-guide__gif--light'
+          src='/artifacts/liveeditor-kurs-als-url-teilen-light.gif'
+          width='960'
+          height='600'
+          loading='lazy'
+          decoding='async'
+          alt='Animierte Anleitung: Einen kurzen LiaScript-Kurs im LiveEditor als URL teilen.'
+        />
+        <figcaption>
+          Die URL enthält den Kurstext. Bilder und weitere Dateien werden nicht
+          mit eingebettet.
+        </figcaption>
+      </figure>
+    </section>
 
   </div>
 </section>

@@ -1254,6 +1254,66 @@ h3 {
   margin-top: auto;
 }
 
+.share-guide {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid var(--line);
+}
+
+.share-guide[hidden] {
+  display: none;
+}
+
+.share-guide__heading {
+  max-width: 58rem;
+  margin: 0 auto clamp(1.5rem, 3vw, 2.25rem);
+  text-align: center;
+}
+
+.share-guide__heading h3 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.share-guide__heading p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.share-guide__figure {
+  width: min(100%, 68rem);
+  margin: 0 auto;
+}
+
+.share-guide__gif {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.share-guide__gif--light {
+  display: none;
+}
+
+[data-theme='light'] .share-guide__gif--dark {
+  display: none;
+}
+
+[data-theme='light'] .share-guide__gif--light {
+  display: block;
+}
+
+.share-guide__figure figcaption {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
 /* Bedarfe */
 .needs-list {
   display: grid;

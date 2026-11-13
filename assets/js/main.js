@@ -181,3 +181,19 @@ if (courseSwitcherButtons.length && coursePreview) {
     });
   });
 }
+
+const shareGuideToggle = document.querySelector('[data-share-guide-toggle]');
+const shareGuide = document.querySelector('[data-share-guide]');
+
+if (shareGuideToggle && shareGuide) {
+  shareGuideToggle.addEventListener('click', () => {
+    const expanded = shareGuideToggle.getAttribute('aria-expanded') === 'true';
+    const nextExpanded = !expanded;
+
+    shareGuideToggle.setAttribute('aria-expanded', String(nextExpanded));
+    shareGuideToggle.textContent = nextExpanded
+      ? 'Anleitung schließen'
+      : 'Anleitung ansehen';
+    shareGuide.hidden = !nextExpanded;
+  });
+}
