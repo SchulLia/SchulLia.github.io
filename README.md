@@ -6,6 +6,7 @@ Deutschsprachige SchulLia-Homepage mit Kursen, Templates, kurzen Beispielen und 
 
 - Kurse: **_data/courses.yml**
 - Templates: **_data/templates.yml**
+- Bedarfsstand: **_data/bedarfe.yml**
 - Neuigkeiten: Markdown-Dateien unter **_posts/**
 - Startseite: **index.html**
 - Gestaltung: **assets/css/main.css**

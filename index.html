@@ -4,6 +4,14 @@ description: SchulLia bündelt fertige LiaScript-Kurse, verständlich erklärte 
 body_class: home
 ---
 
+{% assign needs = site.data.bedarfe.items %}
+{% assign needs_total = needs | size %}
+{% assign needs_fulfilled = needs | where: 'status', 'erfuellt' %}
+{% assign needs_partial = needs | where: 'status', 'teilweise_erfuellt' %}
+{% assign needs_progress = needs | where: 'status', 'in_arbeit' %}
+{% assign needs_open = needs | where: 'status', 'offen_geplant' %}
+{% assign needs_unclassified = needs | where: 'status', 'noch_einzuordnen' %}
+
 <section class="hero">
   <div class="shell hero__content">
     <p class="eyebrow">SchulLia - LiaScript für Lehrer:innen</p>
@@ -47,142 +55,452 @@ body_class: home
       <strong>Sie brauchen nichts zu installieren und keinen Account.</strong>
     </p>
 
-    <div class="start-panel">
-      <h2>Was möchten Sie tun?</h2>
-      <div class="start-grid">
-        <a class="start-card start-card--primary" href="/kurse/">
-          <span class="start-card__number" aria-hidden="true">1</span>
-          <strong>Kurse ausprobieren</strong>
-          <span>Drei fertige Beispielkurse auswählen und direkt öffnen.</span>
-        </a>
-        <a
-          class="start-card"
-          href="https://mint-the-gap.github.io/Aufgabensammlung/"
-        >
-          <span class="start-card__number" aria-hidden="true">2</span>
-          <strong>Sammlung durchstöbern</strong>
-          <span>Aufgaben auswählen und schnell Kurse erzeugen.</span>
-        </a>
-        <a class="start-card" href="https://liascript.github.io/LiveEditor/">
-          <span class="start-card__number" aria-hidden="true">3</span>
-          <strong>Eigenes Material erstellen</strong>
-          <span>Im LiveEditor schreiben und Änderungen sofort sehen.</span>
-        </a>
-      </div>
-    </div>
+    <nav class='start-panel' aria-labelledby='start-title'>
+      <h2 id='start-title'>Was möchten Sie tun?</h2>
+      <ol class='start-grid'>
+        <li>
+          <a class='start-card' href='#orientieren'>
+            <img class='start-card__icon' src='/pics/Kompass.png' alt='' width='52' height='52' />
+            <span class='start-card__step'>
+              <span class='start-card__number' aria-hidden='true'>1</span>
+              Orientieren
+            </span>
+            <strong>SchulLia kennenlernen</strong>
+            <span class='start-card__copy'>Idee, Nutzen und Voraussetzungen überblicken.</span>
+          </a>
+        </li>
+        <li>
+          <a class='start-card' href='#erkunden'>
+            <img class='start-card__icon' src='/pics/Work.png' alt='' width='52' height='52' />
+            <span class='start-card__step'>
+              <span class='start-card__number' aria-hidden='true'>2</span>
+              Erkunden
+            </span>
+            <strong>Kurse ausprobieren</strong>
+            <span class='start-card__copy'>Einen fertigen Beispielkurs direkt öffnen.</span>
+          </a>
+        </li>
+        <li>
+          <a class='start-card' href='#ordnen'>
+            <img class='start-card__icon' src='/pics/Puzzle.png' alt='' width='52' height='52' />
+            <span class='start-card__step'>
+              <span class='start-card__number' aria-hidden='true'>3</span>
+              Ordnen
+            </span>
+            <strong>Aufgaben zusammenstellen</strong>
+            <span class='start-card__copy'>Sammlung und Templates gezielt nutzen.</span>
+          </a>
+        </li>
+        <li>
+          <a class='start-card' href='#vernetzen'>
+            <img class='start-card__icon' src='/pics/Netz.png' alt='' width='52' height='52' />
+            <span class='start-card__step'>
+              <span class='start-card__number' aria-hidden='true'>4</span>
+              Vernetzen
+            </span>
+            <strong>Bearbeiten und weitergeben</strong>
+            <span class='start-card__copy'>Material anpassen, exportieren und teilen.</span>
+          </a>
+        </li>
+        <li>
+          <a class='start-card' href='#reflektieren'>
+            <img class='start-card__icon' src='/pics/Reflekt.png' alt='' width='52' height='52' />
+            <span class='start-card__step'>
+              <span class='start-card__number' aria-hidden='true'>5</span>
+              Reflektieren
+            </span>
+            <strong>Stand und Entwicklung ansehen</strong>
+            <span class='start-card__copy'>Bedarfe, Patchnotes und offene Fragen prüfen.</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
   </div>
 </section>
 
-<section class="section section--soft patchnotes-section">
-  <div class="shell">
-    <div class="section-heading section-heading--center">
+<section id='orientieren' class='section section--soft journey-section' aria-labelledby='orientieren-title'>
+  <div class='shell'>
+    <header class='journey-heading'>
+      <span class='journey-heading__marker' aria-hidden='true'>
+        <img src='/pics/Kompass.png' alt='' width='72' height='72' />
+        <span>1</span>
+      </span>
       <div>
-        <p class="eyebrow">Neuigkeiten</p>
-        <h2>Was sich bei SchulLia verändert</h2>
+        <p class='eyebrow'>Orientieren</p>
+        <h2 id='orientieren-title'>Einfach mit SchulLia beginnen</h2>
+        <p class='journey-heading__intro'>
+          SchulLia bündelt fertige LiaScript-Kurse, verständlich erklärte
+          Werkzeuge und einen browserbasierten Editor für Lehrkräfte.
+        </p>
       </div>
+    </header>
+
+    <div class='orientation-layout'>
+      <article class='journey-card'>
+        <h3>Der Einstieg bleibt unkompliziert</h3>
+        <ul class='feature-list'>
+          <li>Direkt im Browser arbeiten</li>
+          <li>Keine Software vorab installieren</li>
+          <li>Ohne Account einen Beispielkurs ansehen</li>
+        </ul>
+        <p>
+          Beginnen Sie mit einem fertigen Kurs. Dabei kann nichts kaputtgehen,
+          und Aufbau sowie Bedienung werden unmittelbar sichtbar.
+        </p>
+        <a class='button' href='/kurse/'>Fertige Kurse ansehen</a>
+      </article>
+
+      <aside class='status-teaser' aria-labelledby='status-teaser-title'>
+        <p class='eyebrow'>Dokumentierter Bedarfsstand</p>
+        <h3 id='status-teaser-title'>
+          {{ needs_fulfilled | size }} von {{ needs_total }} Bedarfen sind
+          eindeutig als erfüllt markiert.
+        </h3>
+        <p>
+          Für {{ needs_unclassified | size }} weitere Bedarfe ist im
+          Vortragsstand kein eindeutiger Erfüllungsstatus erkennbar.
+        </p>
+        <a class='text-link text-link--arrow' href='#bedarfe'>
+          Bedarfe im Detail ansehen
+        </a>
+      </aside>
     </div>
 
-    <div class="patchnotes-window" data-patchnotes-window>
-      <div
-        class="patchnotes-scroll"
-        data-patchnotes-scroll
-        tabindex="0"
-        aria-label="Aktuelle SchulLia-Patchnotes"
-      >
-        <div class="patchnotes-scroll__content">
-          {% for post in site.posts limit: 2 %}
-          <article class="patchnote">
-            <time datetime="{{ post.date | date_to_xmlschema }}"
-              >{{ post.date | date: '%d.%m.%Y' }}</time
-            >
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <div class="patchnote__content">{{ post.content }}</div>
-          </article>
-          {% endfor %}
+    <a class='journey-next' href='#erkunden'>
+      Weiter zu Schritt 2: Erkunden <span aria-hidden='true'>↓</span>
+    </a>
+  </div>
+</section>
 
-          <div class="patchnotes-end">
-            <a class="button button--primary" href="/news/"
-              >Alle Patchnotes ansehen</a
-            >
-          </div>
+<section id='erkunden' class='section course-preview-section journey-section' aria-labelledby='erkunden-title'>
+  <div class='shell'>
+    <header class='journey-heading'>
+      <span class='journey-heading__marker' aria-hidden='true'>
+        <img src='/pics/Work.png' alt='' width='72' height='72' />
+        <span>2</span>
+      </span>
+      <div>
+        <p class='eyebrow'>Erkunden</p>
+        <h2 id='erkunden-title'>Einen fertigen Kurs ausprobieren</h2>
+        <p class='journey-heading__intro'>
+          Sehen Sie sich zunächst an, wie Texte, Aufgaben und interaktive
+          Elemente in einem LiaScript-Kurs zusammenspielen.
+        </p>
+      </div>
+    </header>
+
+    <div class='preview-layout'>
+      <div class='preview-copy'>
+        <h3>So sieht ein LiaScript-Kurs aus</h3>
+        <p class='section-subinfo'>
+          Links finden Sie die Kapitel. Rechts stehen Texte, Aufgaben und
+          interaktive Elemente. Mit den Pfeilen wechseln Sie zur nächsten oder
+          vorherigen Seite.
+        </p>
+        <div class='button-row'>
+          <a class='button button--primary' href='/kurse/'>Kurse auswählen</a>
+          <a
+            class='button'
+            href='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'
+            target='_blank'
+            rel='noopener'
+          >
+            Beispiel separat öffnen <span aria-hidden='true'>↗</span>
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section course-preview-section">
-  <div class="shell preview-layout">
-    <div class="preview-copy">
-      <p class="eyebrow">Beispielkurs</p>
-      <h2>So sieht ein LiaScript-Kurs aus</h2>
-      <p class="section-subinfo">
-        Links finden Sie die Kapitel. Rechts stehen Texte, Aufgaben und
-        interaktive Elemente. Mit den Pfeilen wechseln Sie zur nächsten oder
-        vorherigen Seite.
-      </p>
-      <a
-        class="button button--primary"
-        href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
-        target="_blank"
-        rel="noopener"
-        >Kurs separat öffnen <span aria-hidden="true">↗</span></a
-      >
-    </div>
-    <figure class="course-preview">
-      <iframe
-        class="course-preview__frame"
-        src="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
-        title="Interaktiver LiaScript-Beispielkurs Erkunden"
-        loading="eager"
-        allow="fullscreen; clipboard-read; clipboard-write"
-        allowfullscreen
-      >
-        <a
-          href="https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md"
-          >Beispielkurs öffnen</a
+      <figure class='course-preview'>
+        <iframe
+          class='course-preview__frame'
+          src='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'
+          title='Interaktiver LiaScript-Beispielkurs Erkunden'
+          loading='eager'
+          allow='fullscreen; clipboard-read; clipboard-write'
+          allowfullscreen
         >
-      </iframe>
-      <figcaption>
-        Der Beispielkurs wird hier direkt mit LiaScript geladen.
-      </figcaption>
-    </figure>
+          <a href='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'>
+            Beispielkurs öffnen
+          </a>
+        </iframe>
+        <figcaption>
+          Der Beispielkurs wird hier direkt mit LiaScript geladen.
+        </figcaption>
+      </figure>
+    </div>
+
+    <a class='journey-next' href='#ordnen'>
+      Weiter zu Schritt 3: Ordnen <span aria-hidden='true'>↓</span>
+    </a>
   </div>
 </section>
 
-<section class="section">
-  <div class="shell">
-    <div class="section-heading section-heading--center">
+<section id='ordnen' class='section section--soft journey-section' aria-labelledby='ordnen-title'>
+  <div class='shell'>
+    <header class='journey-heading'>
+      <span class='journey-heading__marker' aria-hidden='true'>
+        <img src='/pics/Puzzle.png' alt='' width='72' height='72' />
+        <span>3</span>
+      </span>
       <div>
-        <p class="eyebrow">So funktioniert SchulLia</p>
-        <h2>In drei übersichtlichen Schritten</h2>
+        <p class='eyebrow'>Ordnen</p>
+        <h2 id='ordnen-title'>Aufgaben finden und Werkzeuge auswählen</h2>
+        <p class='journey-heading__intro'>
+          Nutzen Sie die Aufgabensammlung für vorhandene Inhalte und wählen Sie
+          passende Templates für bestimmte Funktionen.
+        </p>
       </div>
+    </header>
+
+    <div class='action-grid'>
+      <article class='action-card'>
+        <h3>Aufgabensammlung durchstöbern</h3>
+        <p>
+          Wählen Sie Aufgaben aus und erzeugen Sie daraus schnell einen Kurs.
+        </p>
+        <a
+          class='button button--primary'
+          href='https://mint-the-gap.github.io/Aufgabensammlung/'
+          target='_blank'
+          rel='noopener'
+        >
+          Aufgabensammlung öffnen <span aria-hidden='true'>↗</span>
+        </a>
+      </article>
+      <article class='action-card'>
+        <h3>Templates vergleichen</h3>
+        <p>
+          Filtern Sie Erweiterungen nach ihrem Bereich und öffnen Sie bei
+          Bedarf die jeweilige öffentliche Originalquelle.
+        </p>
+        <a class='button' href='/templates/'>Templates ansehen</a>
+      </article>
     </div>
-    <ol class="steps">
-      <li>
-        <span class="steps__number">1</span>
-        <h3>Beispiel öffnen</h3>
-        <p>
-          Sehen Sie sich zuerst einen fertigen Kurs an. Dabei kann nichts
-          kaputtgehen.
+
+    <a class='journey-next' href='#vernetzen'>
+      Weiter zu Schritt 4: Vernetzen <span aria-hidden='true'>↓</span>
+    </a>
+  </div>
+</section>
+
+<section id='vernetzen' class='section journey-section' aria-labelledby='vernetzen-title'>
+  <div class='shell'>
+    <header class='journey-heading'>
+      <span class='journey-heading__marker' aria-hidden='true'>
+        <img src='/pics/Netz.png' alt='' width='72' height='72' />
+        <span>4</span>
+      </span>
+      <div>
+        <p class='eyebrow'>Vernetzen</p>
+        <h2 id='vernetzen-title'>Material bearbeiten, ausgeben und teilen</h2>
+        <p class='journey-heading__intro'>
+          Passen Sie einen Kurs im LiveEditor an und wählen Sie anschließend
+          den passenden Weg zur Weitergabe oder zur weiteren Nutzung.
         </p>
-      </li>
-      <li>
-        <span class="steps__number">2</span>
-        <h3>Material anpassen</h3>
+      </div>
+    </header>
+
+    <div class='action-grid action-grid--three'>
+      <article class='action-card'>
+        <h3>Im LiveEditor bearbeiten</h3>
         <p>
-          Öffnen Sie den Kurs im LiveEditor und ändern Sie Texte oder Aufgaben
-          in kleinen Schritten.
+          Ändern Sie Texte oder Aufgaben in kleinen Schritten und sehen Sie die
+          Änderungen sofort.
         </p>
-      </li>
-      <li>
-        <span class="steps__number">3</span>
-        <h3>Link weitergeben</h3>
+        <a
+          class='button button--primary'
+          href='https://liascript.github.io/LiveEditor/'
+          target='_blank'
+          rel='noopener'
+        >
+          LiveEditor öffnen <span aria-hidden='true'>↗</span>
+        </a>
+      </article>
+      <article class='action-card'>
+        <h3>Exporter öffnen</h3>
+        <p>
+          Nutzen Sie den LiaScript-Exporter, wenn das Material für eine weitere
+          Verwendung ausgegeben werden soll.
+        </p>
+        <a
+          class='button'
+          href='https://liascript.github.io/LiaScript-Exporter/'
+          target='_blank'
+          rel='noopener'
+        >
+          Exporter öffnen <span aria-hidden='true'>↗</span>
+        </a>
+      </article>
+      <article class='action-card'>
+        <h3>Per Link weitergeben</h3>
         <p>
           Teilen Sie den fertigen Kurs per Link mit Ihrer Lerngruppe oder mit
           Kolleg:innen.
         </p>
-      </li>
-    </ol>
+        <a
+          class='button'
+          href='https://liascript.github.io/course/'
+          target='_blank'
+          rel='noopener'
+        >
+          LiaScript-Kurse öffnen <span aria-hidden='true'>↗</span>
+        </a>
+      </article>
+    </div>
+
+    <a class='journey-next' href='#reflektieren'>
+      Weiter zu Schritt 5: Reflektieren <span aria-hidden='true'>↓</span>
+    </a>
+  </div>
+</section>
+
+<section id='reflektieren' class='section section--soft journey-section' aria-labelledby='reflektieren-title'>
+  <div class='shell'>
+    <header class='journey-heading'>
+      <span class='journey-heading__marker' aria-hidden='true'>
+        <img src='/pics/Reflekt.png' alt='' width='72' height='72' />
+        <span>5</span>
+      </span>
+      <div>
+        <p class='eyebrow'>Reflektieren</p>
+        <h2 id='reflektieren-title'>Stand prüfen und Entwicklung verfolgen</h2>
+        <p class='journey-heading__intro'>
+          Der Bedarfsstand zeigt, welche Anforderungen eindeutig erfüllt sind
+          und wo eine aktuelle Einordnung noch aussteht. Die Patchnotes
+          dokumentieren konkrete Veränderungen.
+        </p>
+      </div>
+    </header>
+
+    <section id='bedarfe' class='needs-panel' aria-labelledby='bedarfe-title'>
+      <div class='needs-panel__heading'>
+        <div>
+          <p class='eyebrow'>Stand: {{ site.data.bedarfe.updated }}</p>
+          <h3 id='bedarfe-title'>Bedarfe und Entwicklungsstand</h3>
+        </div>
+        <p>
+          Die Bereichsicons ordnen die Bedarfe den fünf Schritten zu. Der
+          Erfüllungsstatus wird davon unabhängig ausgewiesen.
+        </p>
+      </div>
+
+      <ul class='status-summary' aria-label='Zusammenfassung des Bedarfsstands'>
+        <li>
+          <strong>{{ needs_total }}</strong>
+          <span>Bedarfe insgesamt</span>
+        </li>
+        <li class='status-summary__item status-summary__item--fulfilled'>
+          <strong>{{ needs_fulfilled | size }}</strong>
+          <span>Erfüllt</span>
+        </li>
+        <li class='status-summary__item status-summary__item--partial'>
+          <strong>{{ needs_partial | size }}</strong>
+          <span>Teilweise erfüllt</span>
+        </li>
+        <li class='status-summary__item status-summary__item--progress'>
+          <strong>{{ needs_progress | size }}</strong>
+          <span>In Arbeit</span>
+        </li>
+        <li class='status-summary__item status-summary__item--open'>
+          <strong>{{ needs_open | size }}</strong>
+          <span>Offen oder geplant</span>
+        </li>
+        <li class='status-summary__item status-summary__item--unclassified'>
+          <strong>{{ needs_unclassified | size }}</strong>
+          <span>Noch einzuordnen</span>
+        </li>
+      </ul>
+
+      <div class='needs-groups'>
+        {% for stage in site.data.bedarfe.stages %}
+        {% assign stage_needs = needs | where: 'stage', stage.id %}
+        <details class='needs-group' {% if forloop.first %}open{% endif %}>
+          <summary>
+            <span class='needs-group__icon' aria-hidden='true'>
+              <img src='{{ stage.icon }}' alt='' width='44' height='44' />
+            </span>
+            <span class='needs-group__title'>
+              <span>Schritt {{ stage.number }}</span>
+              <strong>{{ stage.label }}</strong>
+            </span>
+            <span class='needs-group__count'>
+              {{ stage_needs | size }}
+              {% if stage_needs.size == 1 %}Bedarf{% else %}Bedarfe{% endif %}
+            </span>
+          </summary>
+
+          <ul class='needs-list'>
+            {% for need in stage_needs %}
+            <li class='need-card'>
+              <span class='need-card__title'>{{ need.title }}</span>
+              {% case need.status %}
+                {% when 'erfuellt' %}
+                  <span class='status-badge status-badge--fulfilled'>Erfüllt</span>
+                {% when 'teilweise_erfuellt' %}
+                  <span class='status-badge status-badge--partial'>Teilweise erfüllt</span>
+                {% when 'in_arbeit' %}
+                  <span class='status-badge status-badge--progress'>In Arbeit</span>
+                {% when 'offen_geplant' %}
+                  <span class='status-badge status-badge--open'>Offen oder geplant</span>
+                {% else %}
+                  <span class='status-badge status-badge--unclassified'>Noch einzuordnen</span>
+              {% endcase %}
+              {% if need.note %}
+                <span class='need-card__note'>{{ need.note }}</span>
+              {% endif %}
+              {% if need.evidence_url %}
+                <a class='need-card__evidence' href='{{ need.evidence_url }}'>Beleg öffnen</a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endfor %}
+      </div>
+
+      <p class='needs-source'>
+        {{ site.data.bedarfe.source_note }} Stand der Übertragung:
+        {{ site.data.bedarfe.updated }}.
+      </p>
+    </section>
+
+    <div class='reflection-news' aria-labelledby='patchnotes-title'>
+      <div class='section-heading section-heading--center'>
+        <div>
+          <p class='eyebrow'>Neuigkeiten</p>
+          <h3 id='patchnotes-title'>Was sich bei SchulLia verändert</h3>
+        </div>
+      </div>
+
+      <div class='patchnotes-window' data-patchnotes-window>
+        <div
+          class='patchnotes-scroll'
+          data-patchnotes-scroll
+          tabindex='0'
+          aria-label='Aktuelle SchulLia-Patchnotes'
+        >
+          <div class='patchnotes-scroll__content'>
+            {% for post in site.posts limit: 2 %}
+            <article class='patchnote'>
+              <time datetime='{{ post.date | date_to_xmlschema }}'>
+                {{ post.date | date: '%d.%m.%Y' }}
+              </time>
+              <h4><a href='{{ post.url }}'>{{ post.title }}</a></h4>
+              <div class='patchnote__content'>{{ post.content }}</div>
+            </article>
+            {% endfor %}
+
+            <div class='patchnotes-end'>
+              <a class='button button--primary' href='/news/'>
+                Alle Patchnotes ansehen
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class='journey-next' href='#start-title'>
+      Zurück zu den fünf Einstiegen <span aria-hidden='true'>↑</span>
+    </a>
   </div>
 </section>

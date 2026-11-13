@@ -1,0 +1,116 @@
+updated: 12. November 2026
+source_note: >-
+  Ausgangspunkt ist der dokumentierte Vortragsstand. Nur dort eindeutig mit
+  einem grünen Haken markierte Bedarfe gelten hier als erfüllt.
+
+stages:
+  - id: orientieren
+    number: 1
+    label: Orientieren
+    icon: /pics/Kompass.png
+  - id: erkunden
+    number: 2
+    label: Erkunden
+    icon: /pics/Work.png
+  - id: ordnen
+    number: 3
+    label: Ordnen
+    icon: /pics/Puzzle.png
+  - id: vernetzen
+    number: 4
+    label: Vernetzen
+    icon: /pics/Netz.png
+  - id: reflektieren
+    number: 5
+    label: Reflektieren
+    icon: /pics/Reflekt.png
+
+items:
+  - title: Kostenlos und frei zugänglich
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Nicht proprietär
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: DSGVO-konform
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Ohne jegliche Vorabinstallation nutzbar
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Ohne zusätzliche Infrastruktur nutzbar
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Bring-Your-Own-Device-tauglich
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Dezentral organisiert
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Auch offline weiter bearbeitbar
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-12
+
+  - title: Ohne Syntaxschulung benutzbar
+    stage: erkunden
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Automatisch in jede Sprache übersetzbar
+    stage: erkunden
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: In jedem Schulfach einsetzbar
+    stage: erkunden
+    status: noch_einzuordnen
+    updated: 2026-11-12
+
+  - title: Mathematische Schrifterkennung
+    stage: ordnen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Automatisierte Korrekturen mit händischer Nachkontrolle
+    stage: ordnen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Hochwertige und individualisierbare Aufgaben
+    stage: ordnen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Auch für Lehrkräfte ohne Syntaxschulung nutzbar
+    stage: ordnen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+
+  - title: Computer-Algebra-System eingebunden
+    stage: vernetzen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Dynamisches Geometriesystem eingebunden
+    stage: vernetzen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: In Lernmanagementsysteme wie OPAL oder Moodle integrierbar
+    stage: vernetzen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+
+  - title: Direkte Rückmeldungen für Lernende
+    stage: reflektieren
+    status: erfuellt
+    updated: 2026-11-12
+  - title: Individuelle Lernpfade
+    stage: reflektieren
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Statistische Auswertungen und Analysen für Lehrkräfte
+    stage: reflektieren
+    status: noch_einzuordnen
+    updated: 2026-11-12
