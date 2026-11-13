@@ -60,23 +60,34 @@ items:
     updated: 2026-11-12
 
   - title: Ohne Syntaxschulung benutzbar
-    stage: erkunden
+    stage: reflektieren
     status: noch_einzuordnen
     updated: 2026-11-12
-  - title: Automatisch in jede Sprache übersetzbar
-    stage: erkunden
-    status: noch_einzuordnen
-    updated: 2026-11-12
-  - title: In jedem Schulfach einsetzbar
-    stage: erkunden
-    status: noch_einzuordnen
-    updated: 2026-11-12
-
   - title: Mathematische Schrifterkennung
     stage: ordnen
     status: noch_einzuordnen
     updated: 2026-11-12
+  - title: Computer-Algebra-System eingebunden
+    stage: vernetzen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Dynamisches Geometriesystem eingebunden
+    stage: vernetzen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Direkte Rückmeldungen für Lernende
+    stage: reflektieren
+    status: erfuellt
+    updated: 2026-11-12
   - title: Automatisierte Korrekturen mit händischer Nachkontrolle
+    stage: ordnen
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Individuelle Lernpfade
+    stage: erkunden
+    status: noch_einzuordnen
+    updated: 2026-11-12
+  - title: Statistische Auswertungen und Analysen für Lehrkräfte
     stage: ordnen
     status: noch_einzuordnen
     updated: 2026-11-12
@@ -89,28 +100,15 @@ items:
     status: noch_einzuordnen
     updated: 2026-11-12
 
-  - title: Computer-Algebra-System eingebunden
-    stage: vernetzen
-    status: noch_einzuordnen
-    updated: 2026-11-12
-  - title: Dynamisches Geometriesystem eingebunden
-    stage: vernetzen
-    status: noch_einzuordnen
-    updated: 2026-11-12
   - title: In Lernmanagementsysteme wie OPAL oder Moodle integrierbar
     stage: vernetzen
     status: noch_einzuordnen
     updated: 2026-11-12
-
-  - title: Direkte Rückmeldungen für Lernende
-    stage: reflektieren
-    status: erfuellt
-    updated: 2026-11-12
-  - title: Individuelle Lernpfade
-    stage: reflektieren
+  - title: Automatisch in jede Sprache übersetzbar
+    stage: erkunden
     status: noch_einzuordnen
     updated: 2026-11-12
-  - title: Statistische Auswertungen und Analysen für Lehrkräfte
-    stage: reflektieren
+  - title: In jedem Schulfach einsetzbar
+    stage: erkunden
     status: noch_einzuordnen
     updated: 2026-11-12

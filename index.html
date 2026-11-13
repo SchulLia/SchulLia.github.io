@@ -5,12 +5,6 @@ body_class: home
 ---
 
 {% assign needs = site.data.bedarfe.items %}
-{% assign needs_total = needs | size %}
-{% assign needs_fulfilled = needs | where: 'status', 'erfuellt' %}
-{% assign needs_partial = needs | where: 'status', 'teilweise_erfuellt' %}
-{% assign needs_progress = needs | where: 'status', 'in_arbeit' %}
-{% assign needs_open = needs | where: 'status', 'offen_geplant' %}
-{% assign needs_unclassified = needs | where: 'status', 'noch_einzuordnen' %}
 
 <section class="hero">
   <div class="shell hero__content">
