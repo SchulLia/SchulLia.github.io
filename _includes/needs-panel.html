@@ -1,0 +1,91 @@
+<section id='bedarfe' class='needs-panel' aria-labelledby='bedarfe-title'>
+  <div class='needs-panel__heading'>
+    <div>
+      <p class='eyebrow'>Stand: {{ site.data.bedarfe.updated }}</p>
+      <h3 id='bedarfe-title'>Bedarfe und Entwicklungsstand</h3>
+    </div>
+    <p>
+      Die Bereichsicons ordnen die Bedarfe den fünf Schritten zu. Der
+      Erfüllungsstatus wird davon unabhängig ausgewiesen.
+    </p>
+  </div>
+
+  <ul class='status-summary' aria-label='Zusammenfassung des Bedarfsstands'>
+    <li>
+      <strong>{{ needs_total }}</strong>
+      <span>Bedarfe insgesamt</span>
+    </li>
+    <li class='status-summary__item status-summary__item--fulfilled'>
+      <strong>{{ needs_fulfilled | size }}</strong>
+      <span>Erfüllt</span>
+    </li>
+    <li class='status-summary__item status-summary__item--partial'>
+      <strong>{{ needs_partial | size }}</strong>
+      <span>Teilweise erfüllt</span>
+    </li>
+    <li class='status-summary__item status-summary__item--progress'>
+      <strong>{{ needs_progress | size }}</strong>
+      <span>In Arbeit</span>
+    </li>
+    <li class='status-summary__item status-summary__item--open'>
+      <strong>{{ needs_open | size }}</strong>
+      <span>Offen oder geplant</span>
+    </li>
+    <li class='status-summary__item status-summary__item--unclassified'>
+      <strong>{{ needs_unclassified | size }}</strong>
+      <span>Noch einzuordnen</span>
+    </li>
+  </ul>
+
+  <div class='needs-groups'>
+    {% for stage in site.data.bedarfe.stages %}
+    {% assign stage_needs = needs | where: 'stage', stage.id %}
+    <section class='needs-group' aria-labelledby='needs-{{ stage.id }}'>
+      <header class='needs-group__heading'>
+        <span class='needs-group__icon' aria-hidden='true'>
+          <img src='{{ stage.icon }}' alt='' width='44' height='44' />
+        </span>
+        <span class='needs-group__title'>
+          <span>Bereich</span>
+          <strong id='needs-{{ stage.id }}'>{{ stage.label }}</strong>
+        </span>
+        <span class='needs-group__count'>
+          {{ stage_needs | size }}
+          {% if stage_needs.size == 1 %}Bedarf{% else %}Bedarfe{% endif %}
+        </span>
+      </header>
+
+      <ul class='needs-list'>
+        {% for need in stage_needs %}
+        <li class='need-card'>
+          <span class='need-card__title'>{{ need.title }}</span>
+          {% case need.status %}
+            {% when 'erfuellt' %}
+              <span class='need-card__status need-card__status--fulfilled' role='img' aria-label='Erf&uuml;llt' title='Erf&uuml;llt'>&#10003;</span>
+            {% when 'teilweise_erfuellt' %}
+              <span class='need-card__status need-card__status--partial' role='img' aria-label='Teilweise erf&uuml;llt' title='Teilweise erf&uuml;llt'>&#9680;</span>
+            {% when 'in_arbeit' %}
+              <span class='need-card__status need-card__status--progress' role='img' aria-label='In Arbeit' title='In Arbeit'>&#8635;</span>
+            {% when 'offen_geplant' %}
+              <span class='need-card__status need-card__status--open' role='img' aria-label='Offen oder geplant' title='Offen oder geplant'>&#9675;</span>
+            {% else %}
+              <span class='need-card__status need-card__status--unclassified' role='img' aria-label='Noch einzuordnen' title='Noch einzuordnen'>?</span>
+          {% endcase %}
+          {% if need.note %}
+            <span class='need-card__note'>{{ need.note }}</span>
+          {% endif %}
+          {% if need.evidence_url %}
+            <a class='need-card__evidence' href='{{ need.evidence_url }}'>Beleg öffnen</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+  </div>
+
+  <p class='needs-source'>
+    {{ site.data.bedarfe.source_note }} Stand der Übertragung:
+    {{ site.data.bedarfe.updated }}.
+  </p>
+</section>
