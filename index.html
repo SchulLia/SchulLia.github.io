@@ -155,9 +155,6 @@ body_class: home
       </aside>
     </div>
 
-    <a class='journey-next' href='#erkunden'>
-      Weiter zu Erkunden <span aria-hidden='true'>↓</span>
-    </a>
   </div>
 </section>
 
@@ -216,9 +213,6 @@ body_class: home
       </figure>
     </div>
 
-    <a class='journey-next' href='#ordnen'>
-      Weiter zu Ordnen <span aria-hidden='true'>↓</span>
-    </a>
   </div>
 </section>
 
@@ -263,9 +257,6 @@ body_class: home
       </article>
     </div>
 
-    <a class='journey-next' href='#vernetzen'>
-      Weiter zu Vernetzen <span aria-hidden='true'>↓</span>
-    </a>
   </div>
 </section>
 
@@ -333,9 +324,6 @@ body_class: home
       </article>
     </div>
 
-    <a class='journey-next' href='#reflektieren'>
-      Weiter zu Reflektieren <span aria-hidden='true'>↓</span>
-    </a>
   </div>
 </section>
 
@@ -398,20 +386,20 @@ body_class: home
       <div class='needs-groups'>
         {% for stage in site.data.bedarfe.stages %}
         {% assign stage_needs = needs | where: 'stage', stage.id %}
-        <details class='needs-group' {% if forloop.first %}open{% endif %}>
-          <summary>
+        <section class='needs-group' aria-labelledby='needs-{{ stage.id }}'>
+          <header class='needs-group__heading'>
             <span class='needs-group__icon' aria-hidden='true'>
               <img src='{{ stage.icon }}' alt='' width='44' height='44' />
             </span>
             <span class='needs-group__title'>
               <span>Bereich</span>
-              <strong>{{ stage.label }}</strong>
+              <strong id='needs-{{ stage.id }}'>{{ stage.label }}</strong>
             </span>
             <span class='needs-group__count'>
               {{ stage_needs | size }}
               {% if stage_needs.size == 1 %}Bedarf{% else %}Bedarfe{% endif %}
             </span>
-          </summary>
+          </header>
 
           <ul class='needs-list'>
             {% for need in stage_needs %}
@@ -419,15 +407,15 @@ body_class: home
               <span class='need-card__title'>{{ need.title }}</span>
               {% case need.status %}
                 {% when 'erfuellt' %}
-                  <span class='status-badge status-badge--fulfilled'>Erfüllt</span>
+                  <span class='need-card__status need-card__status--fulfilled' role='img' aria-label='Erf&uuml;llt' title='Erf&uuml;llt'>&#10003;</span>
                 {% when 'teilweise_erfuellt' %}
-                  <span class='status-badge status-badge--partial'>Teilweise erfüllt</span>
+                  <span class='need-card__status need-card__status--partial' role='img' aria-label='Teilweise erf&uuml;llt' title='Teilweise erf&uuml;llt'>&#9680;</span>
                 {% when 'in_arbeit' %}
-                  <span class='status-badge status-badge--progress'>In Arbeit</span>
+                  <span class='need-card__status need-card__status--progress' role='img' aria-label='In Arbeit' title='In Arbeit'>&#8635;</span>
                 {% when 'offen_geplant' %}
-                  <span class='status-badge status-badge--open'>Offen oder geplant</span>
+                  <span class='need-card__status need-card__status--open' role='img' aria-label='Offen oder geplant' title='Offen oder geplant'>&#9675;</span>
                 {% else %}
-                  <span class='status-badge status-badge--unclassified'>Noch einzuordnen</span>
+                  <span class='need-card__status need-card__status--unclassified' role='img' aria-label='Noch einzuordnen' title='Noch einzuordnen'>?</span>
               {% endcase %}
               {% if need.note %}
                 <span class='need-card__note'>{{ need.note }}</span>
@@ -438,7 +426,7 @@ body_class: home
             </li>
             {% endfor %}
           </ul>
-        </details>
+        </section>
         {% endfor %}
       </div>
 
@@ -484,8 +472,5 @@ body_class: home
       </div>
     </div>
 
-    <a class='journey-next' href='#start-title'>
-      Zurück zu den fünf Einstiegen <span aria-hidden='true'>↑</span>
-    </a>
   </div>
 </section>
