@@ -1,128 +1,225 @@
 ---
-title: Templates
-description: Die im SchulLia-Skill katalogisierten LiaScript-Templates in einer verständlichen Übersicht.
+title: CheatSheets & Templates
+description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vorschau und vollständig kopierbarem Kurscode.
 ---
 
 <header class="page-hero page-hero--templates">
   <div class="shell shell--narrow">
-    <p class="eyebrow">24 Werkzeuge für interaktive Kurse</p>
-    <h1>Templates</h1>
+    <p class="eyebrow">Nach Werkzeugen geordnet</p>
+    <h1>CheatSheets & Templates</h1>
     <p class="lede">
-      Templates sind Erweiterungen für bestimmte Funktionen. Filtern Sie nach
-      einem Bereich und öffnen Sie bei Bedarf die öffentliche Originalquelle.
+      Wählen Sie links einen Standard oder ein Template. Rechts finden Sie die
+      passende CheatSheet-Seite, eine direkte Vorschau und ein vollständiges
+      LiaScript-Beispiel einschließlich Dokumentkopf und Importen.
     </p>
   </div>
 </header>
 
 <section class="section section--page">
   <div class="shell">
-    <div class="filter-bar" aria-label="Templates filtern">
-      <button
-        type="button"
-        class="filter-button is-active"
-        data-filter="all"
-        aria-pressed="true"
-      >
-        Alle
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="mathematik"
-        aria-pressed="false"
-      >
-        Mathematik
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="sprache"
-        aria-pressed="false"
-      >
-        Sprache
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="kursgestaltung"
-        aria-pressed="false"
-      >
-        Kursgestaltung
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="praesentation"
-        aria-pressed="false"
-      >
-        Präsentation
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="quiz"
-        aria-pressed="false"
-      >
-        Quiz
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="technik"
-        aria-pressed="false"
-      >
-        Technik
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="musik"
-        aria-pressed="false"
-      >
-        Musik
-      </button>
-      <button
-        type="button"
-        class="filter-button"
-        data-filter="gamification"
-        aria-pressed="false"
-      >
-        Gamification
-      </button>
-    </div>
+    <div class="template-library" data-template-library>
+      <aside class="template-library__catalog" aria-label="Bausteine auswählen">
+        <label class="template-library__search">
+          <span>Baustein suchen</span>
+          <input
+            type="search"
+            placeholder="z. B. Koordinaten oder Quiz"
+            autocomplete="off"
+            data-library-search
+          />
+        </label>
 
-    <p class="filter-status" aria-live="polite">
-      <span data-template-count>{{ site.data.templates | size }}</span>
-      Templates werden angezeigt.
-    </p>
-
-    <div class="template-grid" data-template-grid>
-      {% for template in site.data.templates %}
-      <article
-        class="template-card"
-        data-category="{{ template.category_slug }}"
-      >
-        <div class="template-card__top">
-          <span class="template-card__mark" aria-hidden="true"
-            >{{ template.name | slice: 0 }}</span
-          >
-          <span class="pill">{{ template.category }}</span>
+        <div class="template-library__group" data-library-group>
+          <div class="template-library__group-heading">
+            <h2>Standards</h2>
+            <span>kein zusätzlicher Import</span>
+          </div>
+          <div class="template-library__items">
+            {% for item in site.data.template_library.standards %}
+            <button
+              type="button"
+              class="template-library__item"
+              data-library-item
+              data-name="{{ item.name | escape }}"
+              data-category="{{ item.category | escape }}"
+              data-description="{{ item.description | escape }}"
+              data-topics="{{ item.topics | join: ' · ' | escape }}"
+              data-cheat-page="{{ item.cheat_page }}"
+              data-cheat-title="{{ item.cheat_title | escape }}"
+              data-example-url="{{ item.example_path | relative_url }}"
+              data-public-url="{{ site.url }}{{ item.example_path }}"
+              data-source-url="{{ item.source_url }}"
+              aria-pressed="false"
+            >
+              <span>{{ item.name }}</span>
+              <small>Standard</small>
+            </button>
+            {% endfor %}
+          </div>
         </div>
-        <h2>{{ template.name }}</h2>
-        <p>{{ template.description }}</p>
-        <a class="text-link text-link--arrow" href="{{ template.url }}"
-          >Originalquelle</a
+
+        <div class="template-library__group" data-library-group>
+          <div class="template-library__group-heading">
+            <h2>Templates</h2>
+            <span>Import erforderlich</span>
+          </div>
+          <div class="template-library__items">
+            {% for item in site.data.template_library.templates %}
+            <button
+              type="button"
+              class="template-library__item"
+              data-library-item
+              data-name="{{ item.name | escape }}"
+              data-category="{{ item.category | escape }}"
+              data-description="{{ item.description | escape }}"
+              data-topics="{{ item.topics | join: ' · ' | escape }}"
+              data-cheat-page="{{ item.cheat_page }}"
+              data-cheat-title="{{ item.cheat_title | escape }}"
+              data-example-url="{{ item.example_path | relative_url }}"
+              data-public-url="{{ site.url }}{{ item.example_path }}"
+              data-source-url="{{ item.source_url }}"
+              aria-pressed="false"
+            >
+              <span>{{ item.name }}</span>
+              <small>{{ item.category }}</small>
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+
+        <p class="template-library__empty" data-library-empty hidden>
+          Kein passender Baustein gefunden.
+        </p>
+      </aside>
+
+      <article class="template-library__detail" aria-live="polite">
+        <header class="template-library__detail-heading">
+          <div>
+            <p class="eyebrow" data-library-category>Baustein</p>
+            <h2 data-library-title>Auswahl wird geladen</h2>
+            <p data-library-description></p>
+          </div>
+          <a
+            class="button button--secondary template-library__source"
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            data-library-source
+          >Originalquelle</a>
+        </header>
+
+        <ul class="template-library__topics" data-library-topics></ul>
+
+        <div class="template-library__tabs" role="tablist" aria-label="Ansicht wählen">
+          <button
+            type="button"
+            class="template-library__tab is-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="library-preview"
+            data-library-tab="preview"
+          >Vorschau</button>
+          <button
+            type="button"
+            class="template-library__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="library-cheatsheet"
+            data-library-tab="cheatsheet"
+          >CheatSheet</button>
+          <button
+            type="button"
+            class="template-library__tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="library-code"
+            data-library-tab="code"
+          >Code &amp; Imports</button>
+        </div>
+
+        <section
+          class="template-library__panel is-active"
+          id="library-preview"
+          role="tabpanel"
+          data-library-panel="preview"
         >
+          <div class="template-library__panel-heading">
+            <div>
+              <strong>Direkt in LiaScript ausprobieren</strong>
+              <span>Die Vorschau verwendet denselben Kurscode wie der Kopierbereich.</span>
+            </div>
+            <a
+              class="text-link"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              data-library-open-preview
+            >Groß öffnen</a>
+          </div>
+          <iframe
+            class="template-library__frame template-library__frame--course"
+            title="Interaktive LiaScript-Vorschau"
+            loading="lazy"
+            data-library-preview
+          ></iframe>
+        </section>
+
+        <section
+          class="template-library__panel"
+          id="library-cheatsheet"
+          role="tabpanel"
+          data-library-panel="cheatsheet"
+          hidden
+        >
+          <div class="template-library__panel-heading">
+            <div>
+              <strong data-library-cheat-heading>Passende CheatSheet-Seite</strong>
+              <span>Die Druckfassung bleibt parallel als kompakte Referenz erhalten.</span>
+            </div>
+            <a
+              class="text-link"
+              href="https://github.com/MLomma/Fortbildung26/blob/e2f53e2c6c432266b498620f3e2124ff2705d22c/cheatsheet.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >PDF öffnen</a>
+          </div>
+          <iframe
+            class="template-library__frame template-library__frame--sheet"
+            title="CheatSheet-Vorschau"
+            loading="lazy"
+            data-library-cheatsheet
+          ></iframe>
+        </section>
+
+        <section
+          class="template-library__panel"
+          id="library-code"
+          role="tabpanel"
+          data-library-panel="code"
+          hidden
+        >
+          <div class="template-library__panel-heading">
+            <div>
+              <strong>Vollständiger Kurscode</strong>
+              <span>Dokumentkopf, Direktimporte und Beispiel in einer Datei.</span>
+            </div>
+            <button
+              type="button"
+              class="button button--secondary template-library__copy"
+              data-library-copy
+            >Code kopieren</button>
+          </div>
+          <pre class="template-library__code"><code data-library-code>Beispiel wird geladen …</code></pre>
+        </section>
       </article>
-      {% endfor %}
     </div>
 
     <aside class="source-note">
-      <strong>Stand: 11. November 2026</strong>
+      <strong>CheatSheets aus der Fortbildung 2026</strong>
       <p>
-        Die Auswahl entspricht dem synchronisierten Quellenumfang des
-        SchulLia-Skills. Sie ist keine vollständige Liste aller weltweit
-        verfügbaren LiaScript-Templates.
+        Die Standards und Templates sind nach ihrem Einsatz geordnet. Die
+        Onlinebeispiele ergänzen die kompakte Druckfassung; bei technischen
+        Details bleibt die verlinkte Originalquelle maßgeblich.
       </p>
     </aside>
   </div>

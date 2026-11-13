@@ -1,0 +1,323 @@
+standards:
+  - id: markdown-grundlagen
+    name: Markdown-Grundlagen
+    category: LiaScript-Standard
+    description: Überschriften, Hervorhebungen, Listen und Links ohne zusätzliches Template.
+    topics:
+      - Überschriften
+      - Listen
+      - Links
+      - Hervorhebungen
+    cheat_page: 1
+    cheat_title: Markdown
+    example_path: /examples/template-library/markdown-grundlagen.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+  - id: medien-tabellen
+    name: Medien und Tabellen
+    category: LiaScript-Standard
+    description: Bilder, Audio, Video und übersichtliche Tabellen direkt in einem Kurs verwenden.
+    topics:
+      - Bilder
+      - Audio
+      - Video
+      - Tabellen
+    cheat_page: 1
+    cheat_title: Markdown
+    example_path: /examples/template-library/medien-tabellen.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+  - id: diagramme-animationen
+    name: Diagramme und Animationen
+    category: LiaScript-Standard
+    description: Daten visualisieren und Inhalte schrittweise auf einer Folie einblenden.
+    topics:
+      - Diagramme
+      - Animationen
+      - Folien
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/diagramme-animationen.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+  - id: native-quizze
+    name: Native Quizze
+    category: LiaScript-Standard
+    description: Auswahl-, Eingabe-, Zuordnungs- und Matrixaufgaben ohne zusätzliches Template.
+    topics:
+      - Auswahl
+      - Eingabe
+      - Kacheln
+      - Matrix
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/native-quizze.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+  - id: programmcode
+    name: Programmcode ausführen
+    category: LiaScript-Standard
+    description: Quelltext im Browser bearbeiten, ausführen und seine Ausgabe untersuchen.
+    topics:
+      - JavaScript
+      - Konsolenausgabe
+      - editierbarer Code
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/programmcode.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+  - id: quiz-steuerung
+    name: Quizze steuern
+    category: LiaScript-Standard
+    description: Hinweise, Lösungsfreigabe, Versuche und zufällige Reihenfolgen über Quiz-Kommentare steuern.
+    topics:
+      - Hinweise
+      - Lösungen
+      - Versuche
+      - Zufallsreihenfolge
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/quiz-steuerung.md
+    source_url: https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaScript/docs/master/README.md
+
+templates:
+  - id: abcjs
+    name: ABCjs
+    category: Musik
+    description: Noten in ABC-Notation darstellen, abspielen und auf Wunsch editierbar machen.
+    topics: [Musiknotation, Wiedergabe, ABC]
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/abcjs.md
+    source_url: https://github.com/LiaTemplates/ABCjs
+
+  - id: algebrite
+    name: Algebrite
+    category: Mathematik
+    description: Terme, Gleichungen, Wertebereiche und mathematisch gleichwertige Antworten prüfen.
+    topics: [Terme, Gleichungen, Einheiten]
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/algebrite.md
+    source_url: https://github.com/LiaTemplates/Algebrite
+
+  - id: avr8js
+    name: AVR8js
+    category: Technik
+    description: Arduino-Programme und elektronische Schaltungen direkt im Browser simulieren.
+    topics: [Arduino, C++, Simulation]
+    cheat_page:
+    cheat_title:
+    example_path: /examples/template-library/avr8js.md
+    source_url: https://github.com/LiaTemplates/AVR8js
+
+  - id: jsxgraph
+    name: JSXGraph
+    category: Mathematik
+    description: Dynamische Geometrie, Funktionen und interaktive mathematische Darstellungen erzeugen.
+    topics: [Geometrie, Funktionen, Visualisierung]
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/jsxgraph.md
+    source_url: https://github.com/LiaTemplates/JSXGraph
+
+  - id: speech-recognition
+    name: Speech-Recognition-Quiz
+    category: Sprache
+    description: Gesprochene Antworten und Übungen zur Aussprache prüfen.
+    topics: [Aussprache, Spracheingabe, Feedback]
+    cheat_page: 2
+    cheat_title: LiaScript
+    example_path: /examples/template-library/speech-recognition.md
+    source_url: https://github.com/LiaTemplates/Speech-Recognition-Quiz
+
+  - id: lia-annotation
+    name: lia-annotation
+    category: Präsentation
+    description: Folien und interaktive Darstellungen mit Stift, Radierer und Handschrifterkennung ergänzen.
+    topics: [Annotation, Stift, Tafelbild]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-annotation.md
+    source_url: https://github.com/MINT-the-GAP/lia-annotation
+
+  - id: lia-board-mode
+    name: lia-board-mode
+    category: Präsentation
+    description: Kurse für Tafel, Beamer und unterschiedliche LiaScript-Ansichten optimieren.
+    topics: [Tafel, Folien, Ansichten]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-board-mode.md
+    source_url: https://github.com/MINT-the-GAP/lia-board-mode
+
+  - id: lia-canvas-ocr
+    name: lia-canvas-ocr
+    category: Mathematik
+    description: Handschriftliche Rechenwege aufnehmen, erkennen und mathematisch prüfen.
+    topics: [Handschrift, OCR, Rechenwege]
+    cheat_page: 7
+    cheat_title: Weitere Bausteine
+    example_path: /examples/template-library/lia-canvas-ocr.md
+    source_url: https://github.com/MINT-the-GAP/lia-canvas-ocr
+
+  - id: lia-coordinate
+    name: lia-coordinate
+    category: Mathematik
+    description: Koordinatensysteme, Konstruktionen, Funktionsgraphen und Geometrieaufgaben bauen.
+    topics: [Koordinaten, DGS, Funktionen]
+    cheat_page: 4
+    cheat_title: Fächer & Visualisierung
+    example_path: /examples/template-library/lia-coordinate.md
+    source_url: https://github.com/MINT-the-GAP/lia-coordinate
+
+  - id: lia-dynflex
+    name: lia-DynFlex
+    category: Kursgestaltung
+    description: Materialien und Aufgaben in flexibel skalierbaren Spalten nebeneinander anordnen.
+    topics: [Layout, Spalten, Responsive]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-dynflex.md
+    source_url: https://github.com/MINT-the-GAP/lia-DynFlex
+
+  - id: lia-electro
+    name: lia-electro
+    category: Technik
+    description: Gleichstrom-Schaltpläne zeichnen, verändern und als Aufgabe prüfen.
+    topics: [Schaltplan, Elektronik, DGS]
+    cheat_page:
+    cheat_title:
+    example_path: /examples/template-library/lia-electro.md
+    source_url: https://github.com/MINT-the-GAP/lia-electro
+
+  - id: lia-freeze-v2
+    name: lia-freeze-v2
+    category: Kursgestaltung
+    description: Arbeitsstände als Abgabe sichern und anschließend strukturiert auswerten.
+    topics: [Abgabe, Auswertung, Prüfung]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-freeze-v2.md
+    source_url: https://github.com/MINT-the-GAP/lia-freeze-v2
+
+  - id: lia-globalquiz
+    name: lia-globalquiz
+    category: Quiz
+    description: Gemeinsame Quizvorgaben setzen und bei Bedarf lokal überschreiben.
+    topics: [Quizregeln, Hinweise, Lösungen]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-globalquiz.md
+    source_url: https://github.com/MINT-the-GAP/lia-globalquiz
+
+  - id: lia-kachel
+    name: lia-kachel
+    category: Sprache
+    description: Zuordnungs- und Reihenfolgeaufgaben mit verschiebbaren Kacheln erstellen.
+    topics: [Zuordnung, Reihenfolge, Drag-and-drop]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-kachel.md
+    source_url: https://github.com/MINT-the-GAP/lia-kachel
+
+  - id: lia-llm
+    name: lia-llm
+    category: Sprache
+    description: Offene Antworten anhand transparenter inhaltlicher und sprachlicher Kriterien prüfen.
+    topics: [Freitext, Kriterien, Feedback]
+    cheat_page: 4
+    cheat_title: Fächer & Visualisierung
+    example_path: /examples/template-library/lia-llm.md
+    source_url: https://github.com/MINT-the-GAP/lia-llm
+
+  - id: lia-loot
+    name: lia-loot
+    category: Gamification
+    description: Fertige Kurse gezielt um Ressourcen, Funde, Werkzeuge und Freigaben erweitern.
+    topics: [Ressourcen, Werkzeuge, Freigaben]
+    cheat_page: 5
+    cheat_title: Gamification
+    example_path: /examples/template-library/lia-loot.md
+    source_url: https://github.com/MINT-the-GAP/lia-loot
+
+  - id: lia-marker
+    name: lia-marker
+    category: Sprache
+    description: Textstellen farbig markieren lassen und daraus eine überprüfbare Aufgabe machen.
+    topics: [Textmarker, Wortarten, Quiz]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-marker.md
+    source_url: https://github.com/MINT-the-GAP/lia-marker
+
+  - id: lia-mathe
+    name: lia-Mathe
+    category: Mathematik
+    description: Brüche, Flächenanteile, Gleichungslücken und Strichlisten anschaulich darstellen.
+    topics: [Brüche, Flächen, Gleichungen]
+    cheat_page: 4
+    cheat_title: Fächer & Visualisierung
+    example_path: /examples/template-library/lia-mathe.md
+    source_url: https://github.com/MINT-the-GAP/lia-Mathe
+
+  - id: lia-mathpath
+    name: lia-mathpath
+    category: Mathematik
+    description: Erklärhinweise, Glossarbegriffe und passende Hilfen in Aufgaben einbinden.
+    topics: [Erklärpfad, Tooltip, Glossar]
+    cheat_page: 4
+    cheat_title: Fächer & Visualisierung
+    example_path: /examples/template-library/lia-mathpath.md
+    source_url: https://github.com/MINT-the-GAP/lia-mathpath
+
+  - id: lia-navigation
+    name: lia-navigation
+    category: Kursgestaltung
+    description: Längere Kurse mit aufklappbarem Inhaltsverzeichnis und Lesezeichen übersichtlich machen.
+    topics: [Navigation, Inhaltsverzeichnis, Lesezeichen]
+    cheat_page: 7
+    cheat_title: Weitere Bausteine
+    example_path: /examples/template-library/lia-navigation.md
+    source_url: https://github.com/MINT-the-GAP/lia-navigation
+
+  - id: lia-orthography
+    name: lia-orthography
+    category: Sprache
+    description: Übungen zu Rechtschreibung, Textkorrektur und Diktat erstellen.
+    topics: [Rechtschreibung, Diktat, Textkorrektur]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-orthography.md
+    source_url: https://github.com/MINT-the-GAP/lia-orthography
+
+  - id: lia-pentominos
+    name: lia-pentominos
+    category: Mathematik
+    description: Legeaufgaben mit Polyominos, Flächen und Zahlenfeldern gestalten.
+    topics: [Pentominos, Flächen, Legespiel]
+    cheat_page: 7
+    cheat_title: Weitere Bausteine
+    example_path: /examples/template-library/lia-pentominos.md
+    source_url: https://github.com/MINT-the-GAP/lia-pentominos
+
+  - id: lia-resetter
+    name: lia-resetter
+    category: Kursgestaltung
+    description: Einzelne Aufgaben vollständig in ihren Anfangszustand zurücksetzen.
+    topics: [Neustart, Quiz, Üben]
+    cheat_page: 3
+    cheat_title: Unterricht & Interaktion
+    example_path: /examples/template-library/lia-resetter.md
+    source_url: https://github.com/MINT-the-GAP/lia-resetter
+
+  - id: lia-timer
+    name: lia-timer
+    category: Quiz
+    description: Hinweise oder Lösungen nach einer festgelegten Bearbeitungszeit freigeben.
+    topics: [Timer, Hinweise, Lösungen]
+    cheat_page: 7
+    cheat_title: Weitere Bausteine
+    example_path: /examples/template-library/lia-timer.md
+    source_url: https://github.com/MINT-the-GAP/lia-timer

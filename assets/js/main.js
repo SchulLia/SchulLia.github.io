@@ -197,3 +197,187 @@ if (shareGuideToggle && shareGuide) {
     shareGuide.hidden = !nextExpanded;
   });
 }
+
+const templateLibrary = document.querySelector('[data-template-library]');
+
+if (templateLibrary) {
+  const items = [...templateLibrary.querySelectorAll('[data-library-item]')];
+  const groups = [...templateLibrary.querySelectorAll('[data-library-group]')];
+  const search = templateLibrary.querySelector('[data-library-search]');
+  const emptyState = templateLibrary.querySelector('[data-library-empty]');
+  const category = templateLibrary.querySelector('[data-library-category]');
+  const title = templateLibrary.querySelector('[data-library-title]');
+  const description = templateLibrary.querySelector(
+    '[data-library-description]',
+  );
+  const topics = templateLibrary.querySelector('[data-library-topics]');
+  const source = templateLibrary.querySelector('[data-library-source]');
+  const preview = templateLibrary.querySelector('[data-library-preview]');
+  const openPreview = templateLibrary.querySelector(
+    '[data-library-open-preview]',
+  );
+  const cheatsheet = templateLibrary.querySelector(
+    '[data-library-cheatsheet]',
+  );
+  const cheatHeading = templateLibrary.querySelector(
+    '[data-library-cheat-heading]',
+  );
+  const code = templateLibrary.querySelector('[data-library-code]');
+  const copyButton = templateLibrary.querySelector('[data-library-copy]');
+  const tabs = [...templateLibrary.querySelectorAll('[data-library-tab]')];
+  const cheatTab = templateLibrary.querySelector(
+    '[data-library-tab="cheatsheet"]',
+  );
+  const panels = [...templateLibrary.querySelectorAll('[data-library-panel]')];
+  const cheatsheetBase =
+    'https://raw.githubusercontent.com/MLomma/Fortbildung26/e2f53e2c6c432266b498620f3e2124ff2705d22c/cheatsheet.pdf';
+  let currentCode = '';
+  let requestId = 0;
+
+  const selectTab = (name) => {
+    tabs.forEach((tab) => {
+      const active = tab.dataset.libraryTab === name;
+      tab.classList.toggle('is-active', active);
+      tab.setAttribute('aria-selected', String(active));
+    });
+
+    panels.forEach((panel) => {
+      const active = panel.dataset.libraryPanel === name;
+      panel.classList.toggle('is-active', active);
+      panel.hidden = !active;
+    });
+  };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => selectTab(tab.dataset.libraryTab));
+  });
+
+  const loadCode = async (url) => {
+    const ownRequest = ++requestId;
+    currentCode = '';
+    code.textContent = 'Beispiel wird geladen …';
+    copyButton.disabled = true;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(String(response.status));
+      const value = await response.text();
+      if (ownRequest !== requestId) return;
+      currentCode = value;
+      code.textContent = value;
+      copyButton.disabled = false;
+    } catch (_error) {
+      if (ownRequest !== requestId) return;
+      code.textContent =
+        'Das Beispiel konnte nicht geladen werden. Bitte öffnen Sie die Vorschau erneut.';
+    }
+  };
+
+  const selectItem = (item) => {
+    items.forEach((candidate) => {
+      const active = candidate === item;
+      candidate.classList.toggle('is-active', active);
+      candidate.setAttribute('aria-pressed', String(active));
+    });
+
+    category.textContent = item.dataset.category;
+    title.textContent = item.dataset.name;
+    description.textContent = item.dataset.description;
+    source.href = item.dataset.sourceUrl;
+
+    topics.replaceChildren();
+    item.dataset.topics.split(' · ').forEach((topic) => {
+      const entry = document.createElement('li');
+      entry.textContent = topic;
+      topics.append(entry);
+    });
+
+    const liveUrl =
+      'https://liascript.github.io/course/?' + item.dataset.publicUrl;
+    if (preview.src !== liveUrl) preview.src = liveUrl;
+    preview.title = 'Interaktive LiaScript-Vorschau: ' + item.dataset.name;
+    openPreview.href = liveUrl;
+
+    const page = item.dataset.cheatPage;
+    if (cheatTab) cheatTab.hidden = !page;
+
+    if (page) {
+      const sheetUrl =
+        cheatsheetBase +
+        '#page=' +
+        page +
+        '&view=FitH&toolbar=0&navpanes=0';
+      if (cheatsheet.src !== sheetUrl) cheatsheet.src = sheetUrl;
+      cheatsheet.title =
+        'CheatSheet-Seite ' + page + ': ' + item.dataset.cheatTitle;
+      cheatHeading.textContent =
+        'CheatSheet Seite ' + page + ' · ' + item.dataset.cheatTitle;
+    } else if (
+      templateLibrary.querySelector('[data-library-tab].is-active') === cheatTab
+    ) {
+      selectTab('preview');
+    }
+
+    loadCode(item.dataset.exampleUrl);
+  };
+
+  items.forEach((item) => {
+    item.addEventListener('click', () => selectItem(item));
+  });
+
+  if (search) {
+    search.addEventListener('input', () => {
+      const query = search.value.trim().toLocaleLowerCase('de');
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const haystack = [
+          item.dataset.name,
+          item.dataset.category,
+          item.dataset.description,
+          item.dataset.topics,
+        ]
+          .join(' ')
+          .toLocaleLowerCase('de');
+        const visible = !query || haystack.includes(query);
+        item.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+
+      groups.forEach((group) => {
+        group.hidden = !group.querySelector('[data-library-item]:not([hidden])');
+      });
+
+      emptyState.hidden = visibleCount !== 0;
+    });
+  }
+
+  if (copyButton) {
+    copyButton.addEventListener('click', async () => {
+      if (!currentCode) return;
+      const originalLabel = copyButton.textContent;
+
+      try {
+        await navigator.clipboard.writeText(currentCode);
+        copyButton.textContent = 'Kopiert';
+      } catch (_error) {
+        const textArea = document.createElement('textarea');
+        textArea.value = currentCode;
+        textArea.setAttribute('readonly', '');
+        textArea.style.position = 'fixed';
+        textArea.style.opacity = '0';
+        document.body.append(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        textArea.remove();
+        copyButton.textContent = 'Kopiert';
+      }
+
+      window.setTimeout(() => {
+        copyButton.textContent = originalLabel;
+      }, 1600);
+    });
+  }
+
+  if (items[0]) selectItem(items[0]);
+}
