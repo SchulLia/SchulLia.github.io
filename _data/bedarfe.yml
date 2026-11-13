@@ -102,13 +102,13 @@ items:
 
   - title: In Lernmanagementsysteme wie OPAL oder Moodle integrierbar
     stage: vernetzen
-    status: noch_einzuordnen
+    status: erfuellt
     updated: 2026-11-12
   - title: Automatisch in jede Sprache übersetzbar
     stage: erkunden
-    status: noch_einzuordnen
+    status: erfuellt
     updated: 2026-11-12
   - title: In jedem Schulfach einsetzbar
     stage: erkunden
-    status: noch_einzuordnen
+    status: erfuellt
     updated: 2026-11-12

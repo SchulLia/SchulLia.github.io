@@ -1,5 +1,12 @@
 <ul id='bedarfe' class='needs-list' aria-label='Bedarfe und Entwicklungsstand'>
-  {% for need in needs %}
+  {% assign fulfilled_needs = needs | where: 'status', 'erfuellt' %}
+  {% assign reflecting_needs = needs | where: 'stage', 'reflektieren' | where: 'status', 'noch_einzuordnen' %}
+  {% assign networking_needs = needs | where: 'stage', 'vernetzen' | where: 'status', 'noch_einzuordnen' %}
+  {% assign organizing_needs = needs | where: 'stage', 'ordnen' | where: 'status', 'noch_einzuordnen' %}
+  {% assign exploring_needs = needs | where: 'stage', 'erkunden' | where: 'status', 'noch_einzuordnen' %}
+  {% assign orienting_needs = needs | where: 'stage', 'orientieren' | where: 'status', 'noch_einzuordnen' %}
+  {% assign sorted_needs = fulfilled_needs | concat: reflecting_needs | concat: networking_needs | concat: organizing_needs | concat: exploring_needs | concat: orienting_needs %}
+  {% for need in sorted_needs %}
   {% assign need_stage = site.data.bedarfe.stages | where: 'id', need.stage | first %}
   <li class='need-card'>
     <span class='need-card__title'>{{ need.title }}</span>
