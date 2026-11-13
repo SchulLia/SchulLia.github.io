@@ -1025,6 +1025,7 @@ h3 {
 }
 
 .start-grid {
+  max-width: none;
   margin: 0;
   padding: 0;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1034,56 +1035,55 @@ h3 {
 .start-grid > li {
   display: flex;
   min-width: 0;
+  list-style: none;
+}
+
+.start-grid > li::marker {
+  content: '';
 }
 
 .start-card,
 .start-card--primary {
-  display: grid;
+  display: flex;
   width: 100%;
-  min-height: 205px;
+  min-height: 150px;
+  align-items: center;
+  gap: 0.85rem;
   padding: 1rem;
-  grid-template-rows: auto auto auto 1fr;
+  flex-direction: row;
 }
 
 .start-card__icon {
   width: 3.25rem;
   height: 3.25rem;
-  margin-bottom: 0.7rem;
+  flex: 0 0 3.25rem;
+  margin: 0;
   object-fit: contain;
 }
 
-.start-card__step {
+.start-card__content {
   display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 0.65rem;
-  color: var(--teal-light);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  min-width: 0;
+  flex-direction: column;
 }
 
-.start-card__number {
-  position: static;
-  width: 1.45rem;
-  height: 1.45rem;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  background: transparent;
-  color: inherit;
-  font-size: 0.7rem;
+.start-card > .start-card__content {
+  font-size: inherit;
+  opacity: 1;
 }
 
 .start-card strong {
+  display: block;
   margin-bottom: 0.45rem;
   font-size: 1rem;
   line-height: 1.25;
 }
 
 .start-card__copy {
-  align-self: start;
+  display: block;
+  font-size: 0.9rem;
   line-height: 1.45;
+  opacity: 0.82;
 }
 
 .journey-section {
@@ -1114,22 +1114,6 @@ h3 {
   width: 4.5rem;
   height: 4.5rem;
   object-fit: contain;
-}
-
-.journey-heading__marker > span {
-  position: absolute;
-  right: -0.25rem;
-  bottom: 0;
-  display: grid;
-  width: 1.7rem;
-  height: 1.7rem;
-  place-items: center;
-  border: 2px solid var(--paper);
-  border-radius: 50%;
-  background: var(--teal);
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 900;
 }
 
 .journey-heading .eyebrow {
@@ -1548,10 +1532,6 @@ h3 {
 }
 
 @media (max-width: 1100px) {
-  .start-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .status-summary {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
