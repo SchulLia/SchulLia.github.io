@@ -426,16 +426,16 @@ h3 {
 .course-switcher {
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .course-switcher__button {
-  display: grid;
+  display: flex;
   min-width: 0;
-  min-height: 4.75rem;
-  padding: 0.7rem 0.9rem;
-  align-content: center;
-  gap: 0.2rem;
+  min-height: 10rem;
+  padding: 1rem 1.1rem;
+  flex-direction: column;
+  gap: 0.5rem;
   border: 1px solid var(--line);
   border-top: 4px solid #8a72ca;
   border-radius: 9px;
@@ -448,6 +448,10 @@ h3 {
     border-color 160ms ease,
     background 160ms ease,
     transform 160ms ease;
+}
+
+.course-switcher__button--explore {
+  border-top-color: #f18b2b;
 }
 
 .course-switcher__button--turquoise {
@@ -471,6 +475,10 @@ h3 {
 }
 
 .course-switcher__meta {
+  width: fit-content;
+  padding: 0.18rem 0.4rem;
+  border-radius: 4px;
+  background: #303a3b;
   color: var(--teal-light);
   font-size: 0.68rem;
   font-weight: 850;
@@ -478,10 +486,44 @@ h3 {
   text-transform: uppercase;
 }
 
+.course-switcher__top {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.course-switcher__source {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.65rem;
+  text-align: right;
+}
+
 .course-switcher__button strong {
   overflow-wrap: anywhere;
-  font-size: 0.98rem;
+  font-size: 1.15rem;
   line-height: 1.2;
+}
+
+.course-switcher__description {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.course-switcher__cta {
+  margin-top: auto;
+  color: var(--teal-light);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 .section-subinfo {
@@ -1344,6 +1386,10 @@ h3 {
 }
 
 @media (min-width: 1500px) {
+  .course-switcher {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .needs-list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
