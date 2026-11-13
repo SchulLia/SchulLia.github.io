@@ -143,7 +143,7 @@ body_class: home
       <div class='preview-copy'>
         <div class='course-switcher' role='group' aria-label='Beispielkurs auswählen'>
           <button
-            class='course-switcher__button course-switcher__button--explore is-active'
+            class='course-switcher__button is-active'
             type='button'
             data-course-url='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'
             data-course-title='Erkundungskurs für die LiaScript-Fortbildung'
@@ -158,11 +158,10 @@ body_class: home
             <span class='course-switcher__description'>
               Die wichtigsten Bedienungsoptionen direkt in LiaScript kennenlernen.
             </span>
-            <span class='course-switcher__cta'>Kurs hier anzeigen</span>
           </button>
           {% for course in site.data.courses %}
           <button
-            class='course-switcher__button course-switcher__button--{{ course.accent }}'
+            class='course-switcher__button'
             type='button'
             data-course-url='{{ course.live_url | escape }}'
             data-course-title='{{ course.title | escape }}'
@@ -175,7 +174,6 @@ body_class: home
             </span>
             <strong>{{ course.title }}</strong>
             <span class='course-switcher__description'>{{ course.description }}</span>
-            <span class='course-switcher__cta'>Kurs hier anzeigen</span>
           </button>
           {% endfor %}
         </div>
@@ -241,7 +239,7 @@ body_class: home
           Filtern Sie Erweiterungen nach ihrem Bereich und öffnen Sie bei
           Bedarf die jeweilige öffentliche Originalquelle.
         </p>
-        <a class='button' href='/templates/'>Templates ansehen</a>
+        <a class='button button--primary' href='/templates/'>Templates ansehen</a>
       </article>
     </div>
 
@@ -331,14 +329,7 @@ body_class: home
       </div>
     </header>
 
-    <div class='reflection-news' aria-labelledby='patchnotes-title'>
-      <div class='section-heading section-heading--center'>
-        <div>
-          <p class='eyebrow'>Neuigkeiten</p>
-          <h3 id='patchnotes-title'>Was sich bei SchulLia verändert</h3>
-        </div>
-      </div>
-
+    <div class='reflection-news' aria-label='SchulLia-Patchnotes'>
       <div class='patchnotes-window' data-patchnotes-window>
         <div
           class='patchnotes-scroll'

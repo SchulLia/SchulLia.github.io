@@ -437,7 +437,7 @@ h3 {
   flex-direction: column;
   gap: 0.5rem;
   border: 1px solid var(--line);
-  border-top: 4px solid #8a72ca;
+  border-top: 4px solid var(--teal-light);
   border-radius: 9px;
   background: var(--surface);
   color: var(--ink);
@@ -448,18 +448,6 @@ h3 {
     border-color 160ms ease,
     background 160ms ease,
     transform 160ms ease;
-}
-
-.course-switcher__button--explore {
-  border-top-color: #f18b2b;
-}
-
-.course-switcher__button--turquoise {
-  border-top-color: var(--teal-light);
-}
-
-.course-switcher__button--yellow {
-  border-top-color: var(--yellow);
 }
 
 .course-switcher__button:hover {
@@ -517,13 +505,6 @@ h3 {
   line-height: 1.35;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-}
-
-.course-switcher__cta {
-  margin-top: auto;
-  color: var(--teal-light);
-  font-size: 0.78rem;
-  font-weight: 800;
 }
 
 .section-subinfo {
@@ -1324,15 +1305,6 @@ h3 {
 
 .reflection-news {
   margin-top: clamp(3rem, 6vw, 5rem);
-}
-
-.reflection-news .section-heading {
-  margin-bottom: 1.5rem;
-}
-
-.reflection-news h3 {
-  margin-bottom: 0;
-  font-size: clamp(1.55rem, 3vw, 2.05rem);
 }
 
 .patchnote h4 {
