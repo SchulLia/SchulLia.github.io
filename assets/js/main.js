@@ -140,3 +140,44 @@ if (patchnotesWindow && patchnotesScroll) {
   window.addEventListener("load", updatePatchnoteFade, { once: true });
   requestAnimationFrame(updatePatchnoteFade);
 }
+
+const courseSwitcherButtons = [
+  ...document.querySelectorAll('[data-course-url]'),
+];
+const coursePreview = document.querySelector('[data-course-preview]');
+const coursePreviewCaption = document.querySelector(
+  '[data-course-preview-caption]',
+);
+
+if (courseSwitcherButtons.length && coursePreview) {
+  coursePreview.addEventListener('load', () => {
+    coursePreview.removeAttribute('aria-busy');
+  });
+
+  courseSwitcherButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (button.classList.contains('is-active')) return;
+
+      courseSwitcherButtons.forEach((item) => {
+        const active = item === button;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+
+      const courseUrl = button.dataset.courseUrl;
+      const courseTitle = button.dataset.courseTitle;
+
+      coursePreview.setAttribute('aria-busy', 'true');
+      coursePreview.setAttribute('src', courseUrl);
+      coursePreview.setAttribute(
+        'title',
+        'Interaktiver LiaScript-Beispielkurs: ' + courseTitle,
+      );
+
+      if (coursePreviewCaption) {
+        coursePreviewCaption.textContent =
+          courseTitle + ' wird hier direkt mit LiaScript geladen.';
+      }
+    });
+  });
+}

@@ -423,6 +423,67 @@ h3 {
   color: var(--muted);
 }
 
+.course-switcher {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.course-switcher__button {
+  display: grid;
+  min-width: 0;
+  min-height: 4.75rem;
+  padding: 0.7rem 0.9rem;
+  align-content: center;
+  gap: 0.2rem;
+  border: 1px solid var(--line);
+  border-top: 4px solid #8a72ca;
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.course-switcher__button--turquoise {
+  border-top-color: var(--teal-light);
+}
+
+.course-switcher__button--yellow {
+  border-top-color: var(--yellow);
+}
+
+.course-switcher__button:hover {
+  border-color: var(--teal-light);
+  background: #292b2b;
+  transform: translateY(-1px);
+}
+
+.course-switcher__button.is-active {
+  border-color: var(--teal-light);
+  background: #293334;
+  box-shadow: inset 0 0 0 1px var(--teal-light);
+}
+
+.course-switcher__meta {
+  color: var(--teal-light);
+  font-size: 0.68rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.course-switcher__button strong {
+  overflow-wrap: anywhere;
+  font-size: 0.98rem;
+  line-height: 1.2;
+}
+
 .section-subinfo {
   width: 100%;
   max-width: none;
@@ -1169,13 +1230,6 @@ h3 {
   margin-top: auto;
 }
 
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
 /* Bedarfe */
 .needs-list {
   display: grid;
@@ -1260,6 +1314,11 @@ h3 {
   background: #dfe4e3;
 }
 
+[data-theme=light] .course-switcher__button:hover,
+[data-theme=light] .course-switcher__button.is-active {
+  background: #e4eeee;
+}
+
 [data-theme=light] .need-card__symbol--fulfilled {
   color: #168735;
 }
@@ -1303,6 +1362,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .course-switcher {
+    grid-template-columns: 1fr;
+  }
+
   .journey-heading {
     align-items: flex-start;
   }
@@ -1338,12 +1401,4 @@ h3 {
     height: 3.75rem;
   }
 
-  .button-row {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .button-row .button {
-    width: 100%;
-  }
 }

@@ -139,35 +139,42 @@ body_class: home
       </div>
     </header>
 
+    {% assign initial_course = site.data.courses | first %}
     <div class='preview-layout'>
       <div class='preview-copy'>
-        <div class='button-row'>
-          <a class='button button--primary' href='/kurse/'>Kurse auswählen</a>
-          <a
-            class='button'
-            href='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'
-            target='_blank'
-            rel='noopener'
+        <div class='course-switcher' role='group' aria-label='Beispielkurs auswählen'>
+          {% for course in site.data.courses %}
+          <button
+            class='course-switcher__button course-switcher__button--{{ course.accent }}{% if forloop.first %} is-active{% endif %}'
+            type='button'
+            data-course-url='{{ course.live_url | escape }}'
+            data-course-title='{{ course.title | escape }}'
+            aria-controls='course-preview-frame'
+            aria-pressed='{% if forloop.first %}true{% else %}false{% endif %}'
           >
-            Beispiel separat öffnen <span aria-hidden='true'>↗</span>
-          </a>
+            <span class='course-switcher__meta'>{{ course.type }}</span>
+            <strong>{{ course.title }}</strong>
+          </button>
+          {% endfor %}
         </div>
       </div>
       <figure class='course-preview'>
         <iframe
+          id='course-preview-frame'
           class='course-preview__frame'
-          src='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'
-          title='Interaktiver LiaScript-Beispielkurs Erkunden'
+          data-course-preview
+          src='{{ initial_course.live_url }}'
+          title='Interaktiver LiaScript-Beispielkurs: {{ initial_course.title }}'
           loading='eager'
           allow='fullscreen; clipboard-read; clipboard-write'
           allowfullscreen
         >
-          <a href='https://liascript.github.io/course/?https://raw.githubusercontent.com/MLomma/Fortbildung26/refs/heads/main/Erkunden.md'>
+          <a href='{{ initial_course.live_url }}'>
             Beispielkurs öffnen
           </a>
         </iframe>
-        <figcaption>
-          Der Beispielkurs wird hier direkt mit LiaScript geladen.
+        <figcaption data-course-preview-caption aria-live='polite'>
+          {{ initial_course.title }} wird hier direkt mit LiaScript geladen.
         </figcaption>
       </figure>
     </div>
