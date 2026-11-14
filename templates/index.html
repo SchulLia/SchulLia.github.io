@@ -41,8 +41,6 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
               data-template-default="{{ group.template | escape }}"
               data-description="{{ item.description | escape }}"
               data-topics="{{ item.topics | join: ' · ' | escape }}"
-              data-cheat-page="{{ group.cheat_page }}"
-              data-cheat-title="{{ group.cheat_title | escape }}"
               data-example-url="{{ item.example_path | relative_url }}"
               data-public-url="{{ site.url }}{{ item.example_path }}"
               data-source-url="{{ item.source_url }}"
@@ -76,8 +74,6 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
           >Originalquelle</a>
         </header>
 
-        <ul class="template-library__topics" data-library-topics></ul>
-
         <div class="template-library__tabs" role="tablist" aria-label="Ansicht wählen">
           <button
             type="button"
@@ -87,14 +83,6 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
             aria-controls="library-preview"
             data-library-tab="preview"
           >Vorschau</button>
-          <button
-            type="button"
-            class="template-library__tab"
-            role="tab"
-            aria-selected="false"
-            aria-controls="library-cheatsheet"
-            data-library-tab="cheatsheet"
-          >CheatSheet</button>
           <button
             type="button"
             class="template-library__tab"
@@ -129,27 +117,6 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
             title="Interaktive LiaScript-Vorschau"
             loading="lazy"
             data-library-preview
-          ></iframe>
-        </section>
-
-        <section
-          class="template-library__panel"
-          id="library-cheatsheet"
-          role="tabpanel"
-          data-library-panel="cheatsheet"
-          hidden
-        >
-          <div class="template-library__panel-heading">
-            <div>
-              <strong data-library-cheat-heading>Passende CheatSheet-Seite</strong>
-              <span>Die Druckfassung bleibt parallel als kompakte Referenz erhalten.</span>
-            </div>
-          </div>
-          <iframe
-            class="template-library__frame template-library__frame--sheet"
-            title="CheatSheet-Vorschau"
-            loading="lazy"
-            data-library-cheatsheet
           ></iframe>
         </section>
 

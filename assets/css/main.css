@@ -979,24 +979,6 @@ p {
   white-space: nowrap;
 }
 
-.template-library__topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin: 1.2rem 0 1.6rem;
-  padding: 0;
-  list-style: none;
-}
-
-.template-library__topics li {
-  padding: 0.28rem 0.55rem;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--teal) 16%, var(--surface));
-  color: var(--teal-light);
-  font-size: 0.72rem;
-  font-weight: 800;
-}
-
 .template-library__tabs {
   display: flex;
   gap: 0.35rem;
@@ -1071,11 +1053,6 @@ p {
 .template-library__frame--course {
   height: min(680px, 72vh);
   min-height: 480px;
-}
-
-.template-library__frame--sheet {
-  height: min(760px, 78vh);
-  min-height: 520px;
 }
 
 .template-library__download {
@@ -1420,8 +1397,7 @@ p {
     align-self: flex-start;
   }
 
-  .template-library__frame--course,
-  .template-library__frame--sheet {
+  .template-library__frame--course {
     min-height: 460px;
   }
 

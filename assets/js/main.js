@@ -201,7 +201,16 @@ if (shareGuideToggle && shareGuide) {
 const templateLibrary = document.querySelector('[data-template-library]');
 
 if (templateLibrary) {
-  const items = [...templateLibrary.querySelectorAll('[data-library-item]')];
+  const itemList = templateLibrary.querySelector('.template-library__items');
+  const collator = new Intl.Collator('de', {
+    numeric: true,
+    sensitivity: 'base',
+  });
+  const items = [...templateLibrary.querySelectorAll('[data-library-item]')]
+    .sort((first, second) =>
+      collator.compare(first.dataset.name, second.dataset.name),
+    );
+  items.forEach((item) => itemList.append(item));
   const search = templateLibrary.querySelector('[data-library-search]');
   const emptyState = templateLibrary.querySelector('[data-library-empty]');
   const templateLabel = templateLibrary.querySelector(
@@ -211,27 +220,15 @@ if (templateLibrary) {
   const description = templateLibrary.querySelector(
     '[data-library-description]',
   );
-  const topics = templateLibrary.querySelector('[data-library-topics]');
   const source = templateLibrary.querySelector('[data-library-source]');
   const preview = templateLibrary.querySelector('[data-library-preview]');
   const openPreview = templateLibrary.querySelector(
     '[data-library-open-preview]',
   );
-  const cheatsheet = templateLibrary.querySelector(
-    '[data-library-cheatsheet]',
-  );
-  const cheatHeading = templateLibrary.querySelector(
-    '[data-library-cheat-heading]',
-  );
   const code = templateLibrary.querySelector('[data-library-code]');
   const copyButton = templateLibrary.querySelector('[data-library-copy]');
   const tabs = [...templateLibrary.querySelectorAll('[data-library-tab]')];
-  const cheatTab = templateLibrary.querySelector(
-    '[data-library-tab="cheatsheet"]',
-  );
   const panels = [...templateLibrary.querySelectorAll('[data-library-panel]')];
-  const cheatsheetBase =
-    'https://raw.githubusercontent.com/MLomma/Fortbildung26/e2f53e2c6c432266b498620f3e2124ff2705d22c/cheatsheet.pdf';
   let currentCode = '';
   let requestId = 0;
 
@@ -301,40 +298,11 @@ if (templateLibrary) {
     description.textContent = item.dataset.description;
     source.href = item.dataset.sourceUrl;
 
-    topics.replaceChildren();
-    splitTopics(item)
-      .filter((topic) => !isPageTopic(topic))
-      .forEach((topic) => {
-        const entry = document.createElement('li');
-        entry.textContent = topic;
-        topics.append(entry);
-      });
-
     const liveUrl =
       'https://liascript.github.io/course/?' + item.dataset.publicUrl;
     if (preview.src !== liveUrl) preview.src = liveUrl;
     preview.title = 'Interaktive LiaScript-Vorschau: ' + item.dataset.name;
     openPreview.href = liveUrl;
-
-    const page = item.dataset.cheatPage;
-    if (cheatTab) cheatTab.hidden = !page;
-
-    if (page) {
-      const sheetUrl =
-        cheatsheetBase +
-        '#page=' +
-        page +
-        '&view=FitH&toolbar=0&navpanes=0';
-      if (cheatsheet.src !== sheetUrl) cheatsheet.src = sheetUrl;
-      cheatsheet.title =
-        'CheatSheet-Seite ' + page + ': ' + item.dataset.cheatTitle;
-      cheatHeading.textContent =
-        'CheatSheet Seite ' + page + ' · ' + item.dataset.cheatTitle;
-    } else if (
-      templateLibrary.querySelector('[data-library-tab].is-active') === cheatTab
-    ) {
-      selectTab('preview');
-    }
 
     loadCode(item.dataset.exampleUrl);
   };
