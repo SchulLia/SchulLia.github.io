@@ -9,9 +9,9 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Mathematische Gleichungen
 
-> **Was passiert hier?** Einfache Dollarzeichen setzen Mathematik innerhalb einer Textzeile, doppelte Dollarzeichen eine abgesetzte Formel. Die mathematischen Befehle werden in LaTeX-Schreibweise notiert.
+> **Was passiert hier?** Einfache Dollarzeichen binden mathematische Ausdrücke oder Gleichungen in eine Textzeile ein; doppelte Dollarzeichen setzen sie als eigenen Block ab. Die mathematischen Befehle werden in LaTeX-Schreibweise notiert.
 
-Inline: $A \cdot B$
+Inline: $a^2+b^2=c^2$
 
 Block:
-$$\neg A \lor (B \land C)$$
+$$f(x)=x^2-4$$
