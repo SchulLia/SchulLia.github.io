@@ -14,5 +14,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-DynFlex/main/README.m
 
 <section class="dynFlex">
 <div class="flex-child">Inhalt A</div>
+
 <div class="flex-child">Inhalt B</div>
 </section>

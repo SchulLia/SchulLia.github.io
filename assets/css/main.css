@@ -1055,8 +1055,8 @@ p {
 }
 
 .template-library__frame--course {
-  height: min(680px, 72vh);
-  min-height: 480px;
+  height: min(1000px, 96vh);
+  min-height: 600px;
 }
 
 .template-library__download {
@@ -1239,6 +1239,11 @@ p {
   .template-library__catalog {
     position: static;
     max-height: none;
+  }
+
+  .template-library__frame--course {
+    height: min(680px, 72vh);
+    min-height: 480px;
   }
 
   .template-library__items {
