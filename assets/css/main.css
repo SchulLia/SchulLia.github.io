@@ -1084,6 +1084,62 @@ p {
   min-width: 130px;
 }
 
+.templates-page .button {
+  border-color: #fff;
+  background: #fff;
+  color: #111;
+}
+
+.templates-page .button:hover {
+  border-color: #e7eef4;
+  background: #e7eef4;
+  color: #111;
+}
+
+@media (min-width: 961px) {
+  .template-library {
+    --template-library-pane-height: max(800px, calc(100dvh - 7.5rem));
+    align-items: stretch;
+  }
+
+  .template-library__catalog,
+  .template-library__detail {
+    height: var(--template-library-pane-height);
+  }
+
+  .template-library__catalog {
+    max-height: none;
+  }
+
+  .template-library__detail {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .template-library__panel.is-active {
+    display: flex;
+    min-height: 0;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .template-library__frame--course,
+  .template-library__code {
+    min-height: 0;
+    flex: 1;
+  }
+
+  .template-library__frame--course {
+    height: auto;
+  }
+
+  .template-library__code {
+    max-height: none;
+  }
+}
+
 .news-list__item {
   display: grid;
   gap: 2rem;
