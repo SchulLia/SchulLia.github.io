@@ -15,5 +15,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 Ein Sprechertext wird mit folgendem LiaScript-Block notiert:
 
-<pre><code>         --&#123;&#123;0&#125;&#125;--
-Dieser Text wird beim Öffnen der Folie vorgelesen.</code></pre>
+```markdown
+         --{{0}}--
+Dieser Text wird beim Öffnen der Folie vorgelesen.
+```

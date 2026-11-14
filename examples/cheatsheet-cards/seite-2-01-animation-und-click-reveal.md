@@ -13,10 +13,12 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 Die LiaScript-Marker für schrittweise Einblendungen sehen so aus:
 
-<pre><code>Sofort sichtbar.
+```markdown
+Sofort sichtbar.
 
-&#123;&#123;1&#125;&#125;
+{{1}}
 Diese Ergänzung erscheint nach dem ersten Klick.
 
-&#123;&#123;2&#125;&#125;
-Diese Ergänzung erscheint nach dem zweiten Klick.</code></pre>
+{{2}}
+Diese Ergänzung erscheint nach dem zweiten Klick.
+```

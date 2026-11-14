@@ -10,7 +10,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README
 
 # Freeze: Bewertung erst bei Abgabe
 
-> **Was passiert hier?** `Send` hält Prüfen während der Bearbeitung neutral und verbirgt Korrektheitsfeedback sowie Lösung. Bewertet wird erst beim Erstellen des Freeze-Abgabelinks; technische Aktivitätssignale sind auch hier keine Täuschungsbeweise.
+> **Was passiert hier?** Das vorgeschaltete native Quiz liefert die zu bewertende Antwort. `Send` hält Prüfen während der Bearbeitung neutral und verbirgt Korrektheitsfeedback sowie Lösung. Bewertet wird erst beim Erstellen des Freeze-Abgabelinks; technische Aktivitätssignale sind auch hier keine Täuschungsbeweise.
+
+**Berechne** $3+4$.
+
+[[ 7 ]]
+**********
+$3+4=7$.
+**********
 
 @Abgabe
 

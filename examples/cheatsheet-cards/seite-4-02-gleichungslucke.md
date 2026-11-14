@@ -12,9 +12,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-Mathe/main/README.md
 
 > **Was passiert hier?** `\liaquiz` setzt ein Eingabefeld direkt in die mathematische Gleichung. Das unmittelbar folgende Makro legt den erwarteten Wert der Lücke fest.
 
-$\frac{\liaquiz}{3}
- = \frac{5}{15}$
+Bestimme den fehlenden Wert in der Gleichung.
+
+$\dfrac{\liaquiz}{3} = \dfrac{5}{15}$
+
 @liaQuiz(1)
 
+Bestimme den fehlenden Summanden.
+
 $x + \liaquiz = 7$
+
 @liaQuizC(3,`<!-- data-solution-button="2" -->`)

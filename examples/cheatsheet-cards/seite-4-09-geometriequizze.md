@@ -11,11 +11,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/main/READM
 
 # Geometriequizze
 
-> **Was passiert hier?** Lernende konstruieren selbst Polygone im Board. Die Quizmakros prüfen Eckenzahl sowie Zielwert und Toleranz für Umfang oder Fläche; ein Konstruktionsquiz könnte zusätzlich Seiten und Winkel kontrollieren.
+> **Was passiert hier?** Das DGS gibt Punkt-, Polygon- und Radiererwerkzeug frei. Lernende konstruieren damit selbst ein Polygon; das Quiz prüft Eckenzahl, Umfang und Toleranz.
 
 @Koordinatensystem(`xmin=-5;xmax=5;ymin=-5;ymax=5;id=B`)
 
-Konstruiere ein Dreieck mit dem Umfang 12.
+@DGS(`B;tools=[200;510;920]`)
+
+**Konstruiere** ein Dreieck mit dem Umfang 12.
+
 @UmfangQuiz(`B;3;12;0.05`,`<!-- data-solution-button="5" -->`)
 **********
 Gültig ist jedes Dreieck mit dem Umfang 12 innerhalb der Toleranz.

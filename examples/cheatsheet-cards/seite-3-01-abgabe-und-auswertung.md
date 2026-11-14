@@ -10,7 +10,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-freeze-v2/main/README
 
 # Abgabe & Auswertung
 
-> **Was passiert hier?** `@Abgabe` erzeugt einen Link zum Einreichen des Bearbeitungsstands. `@Auswertung` ergänzt Zeit- und Aktivitätssignale wie Entwicklertools- oder Fensterwechsel; diese Hinweise sind keine Beweise für eine Täuschung.
+> **Was passiert hier?** Das vorgeschaltete native Quiz liefert eine bewertbare Antwort; ohne `@ADetails` zählt sie in der Auswertung standardmäßig einen Punkt. `@Abgabe` erzeugt den Einreichungslink, `@Auswertung` ergänzt Zeit- und Aktivitätssignale. Diese Signale sind keine Beweise für eine Täuschung.
+
+**Berechne** $2+2$.
+
+[[ 4 ]]
+**********
+$2+2=4$.
+**********
 
 @Abgabe
 
