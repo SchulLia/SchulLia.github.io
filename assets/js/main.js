@@ -274,6 +274,7 @@ if (templateLibrary) {
   const copyButton = templateLibrary.querySelector('[data-library-copy]');
   const tabs = [...templateLibrary.querySelectorAll('[data-library-tab]')];
   const panels = [...templateLibrary.querySelectorAll('[data-library-panel]')];
+  const newItemLifetimeInDays = 28;
   let currentCode = '';
   let requestId = 0;
 
@@ -291,6 +292,56 @@ if (templateLibrary) {
       'LiaScript'
     );
   };
+
+  const parseCatalogDate = (value) => {
+    const parts = String(value || '')
+      .split('-')
+      .map((part) => Number(part));
+    if (
+      parts.length !== 3 ||
+      parts.some((part) => !Number.isInteger(part))
+    ) {
+      return null;
+    }
+
+    const [year, month, day] = parts;
+    const date = new Date(year, month - 1, day);
+    if (
+      date.getFullYear() !== year ||
+      date.getMonth() !== month - 1 ||
+      date.getDate() !== day
+    ) {
+      return null;
+    }
+
+    return date;
+  };
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  items.forEach((item) => {
+    const badge = item.querySelector('[data-library-new-badge]');
+    if (!badge) return;
+
+    const added = parseCatalogDate(item.dataset.added);
+    const ageInDays = added
+      ? Math.floor(
+          (Date.UTC(today.getFullYear(), today.getMonth(), today.getDate()) -
+            Date.UTC(
+              added.getFullYear(),
+              added.getMonth(),
+              added.getDate(),
+            )) /
+            86400000,
+        )
+      : -1;
+    const isNew = ageInDays >= 0 && ageInDays < newItemLifetimeInDays;
+    badge.hidden = !isNew;
+
+    if (isNew) {
+      badge.title = `Neu seit ${added.toLocaleDateString('de-DE')}`;
+    }
+  });
 
   const selectTab = (name) => {
     tabs.forEach((tab) => {

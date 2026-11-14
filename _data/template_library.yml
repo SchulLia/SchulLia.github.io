@@ -1,3 +1,6 @@
+# Seit 2026-11-14 erhalten nur neu hinzukommende Einträge `added: YYYY-MM-DD`.
+# Die Oberfläche zeigt dafür 28 Tage lang „neu“; ältere Einträge werden nicht
+# rückwirkend markiert.
 groups:
   - title: "Markdown — die Basis"
     subtitle: "Seite 1 · 17 Kästen"
@@ -705,3 +708,43 @@ groups:
         topics: ["Strichlisten", "Seite 7", "lia-Mathe"]
         example_path: /examples/cheatsheet-cards/seite-7-13-strichlisten.md
         source_url: https://github.com/MINT-the-GAP/lia-Mathe
+  - title: "Tutorials & Demos"
+    subtitle: "Neue Makros zum direkten Ausprobieren"
+    template: LiaScript
+    items:
+      - id: tutorial-lernpfad
+        added: "2026-11-14"
+        search_terms: ["Lernempfehlung", "Empfehlungen", "nächste Übungen", "Lernstand", "individueller Lernweg", "MathPath"]
+        name: "Lernpfad"
+        category: "Tutorials & Demos"
+        description: "Lernstand auswerten und daraus passende Übungsangebote mit @Lernpfad anzeigen."
+        topics: ["Lernpfad", "lia-mathpath"]
+        example_path: /examples/tutorials-demos/lernpfad.md
+        source_url: https://github.com/MINT-the-GAP/lia-mathpath
+      - id: tutorial-tutorialquiz
+        added: "2026-11-14"
+        search_terms: ["Pflichtquiz", "Tutorialbereich", "Voraussetzung", "Freigabe", "Inhalt sperren", "Quiz zuerst lösen"]
+        name: "TutorialQuiz"
+        category: "Tutorials & Demos"
+        description: "Einen Tutorialbereich erst nach einem gelösten Quiz mit @TutorialQuizStart und @TutorialQuizEnd freigeben."
+        topics: ["TutorialQuiz", "lia-globalquiz"]
+        example_path: /examples/tutorials-demos/tutorialquiz.md
+        source_url: https://github.com/MINT-the-GAP/lia-globalquiz
+      - id: tutorial-tasteneu
+        added: "2026-11-14"
+        search_terms: ["Tastatur", "Tastenkürzel", "Hotkey", "Tastenbelegung", "Navigation", "Leertaste", "Pfeiltasten"]
+        name: "TasteNeu"
+        category: "Tutorials & Demos"
+        description: "Kurstasten lokal oder global sperren und mit @TasteNeu neu belegen."
+        topics: ["TasteNeu", "lia-globalquiz"]
+        example_path: /examples/tutorials-demos/tasteneu.md
+        source_url: https://github.com/MINT-the-GAP/lia-globalquiz
+      - id: tutorial-highscoreinfo-startinventar
+        added: "2026-11-14"
+        search_terms: ["Highscore", "Punktestand", "Fortschritt", "Schild", "Perk", "HighscoreWert", "Startinventar", "Startausstattung"]
+        name: "HighscoreInfo & Perk im Startinventar"
+        category: "Tutorials & Demos"
+        description: "Highscore-Schild und Zahlen-Perk mit startinventar bereits beim Kursstart freischalten."
+        topics: ["HighscoreInfo & Perk im Startinventar", "lia-loot"]
+        example_path: /examples/tutorials-demos/highscoreinfo-startinventar.md
+        source_url: https://github.com/MINT-the-GAP/lia-loot

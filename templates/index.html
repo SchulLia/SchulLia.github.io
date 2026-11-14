@@ -42,12 +42,23 @@ description: LiaScript-Standards sowie SchulLia-Tutorials und -Demos mit CheatSh
               data-description="{{ item.description | escape }}"
               data-topics="{{ item.topics | join: ' · ' | escape }}"
               data-search-terms="{{ item.search_terms | join: ' · ' | escape }}"
+              {% if item.added %}data-added="{{ item.added | escape }}"{% endif %}
               data-example-url="{{ item.example_path | relative_url }}"
               data-public-url="{{ site.url }}{{ item.example_path }}"
               data-source-url="{{ item.source_url }}"
               aria-pressed="false"
             >
-              <span>{{ item.name }}</span>
+              <span class="template-library__item-label">
+                <span class="template-library__item-name">{{ item.name }}</span>
+                {% if item.added %}
+                <span
+                  class="template-library__new-badge"
+                  data-library-new-badge
+                  aria-label="Neu"
+                  hidden
+                >neu</span>
+                {% endif %}
+              </span>
               <small data-library-item-template>{{ group.template }}</small>
             </button>
             {% endfor %}

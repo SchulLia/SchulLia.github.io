@@ -936,11 +936,36 @@ p {
   background: color-mix(in srgb, var(--teal) 16%, var(--surface));
 }
 
-.template-library__item span {
+.template-library__item-label {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.template-library__item-name {
   min-width: 0;
   font-size: 0.86rem;
   font-weight: 800;
   overflow-wrap: anywhere;
+}
+
+.template-library__new-badge {
+  flex: 0 0 auto;
+  padding: 0.04rem 0.32rem;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  color: var(--teal);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.template-library__new-badge[hidden] {
+  display: none;
 }
 
 .template-library__item small {
