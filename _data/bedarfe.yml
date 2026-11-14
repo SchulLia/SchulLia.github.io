@@ -58,6 +58,10 @@ items:
     stage: orientieren
     status: erfuellt
     updated: 2026-11-12
+  - title: Digitale Barrierefreiheit
+    stage: orientieren
+    status: erfuellt
+    updated: 2026-11-14
 
   - title: Ohne Syntaxschulung benutzbar
     stage: reflektieren
