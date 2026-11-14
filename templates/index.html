@@ -5,12 +5,12 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
 
 <header class="page-hero page-hero--templates">
   <div class="shell shell--narrow">
-    <p class="eyebrow">Nach Werkzeugen geordnet</p>
+    <p class="eyebrow">Nach PDF-Seiten geordnet</p>
     <h1>CheatSheets & Templates</h1>
     <p class="lede">
-      Wählen Sie links einen Standard oder ein Template. Rechts finden Sie die
-      passende CheatSheet-Seite, eine direkte Vorschau und ein vollständiges
-      LiaScript-Beispiel einschließlich Dokumentkopf und Importen.
+      Wählen Sie links einen Kasten der CheatSheet-PDF. Rechts finden Sie die
+      passende PDF-Seite, eine direkte Vorschau und ein vollständiges
+      LiaScript-Beispiel mit passendem Dokumentkopf und allen Direktimporten.
     </p>
   </div>
 </header>
@@ -18,24 +18,25 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
 <section class="section section--page">
   <div class="shell">
     <div class="template-library" data-template-library>
-      <aside class="template-library__catalog" aria-label="Bausteine auswählen">
+      <aside class="template-library__catalog" aria-label="CheatSheet-Kasten auswählen">
         <label class="template-library__search">
-          <span>Baustein suchen</span>
+          <span>CheatSheet-Kasten suchen</span>
           <input
             type="search"
-            placeholder="z. B. Koordinaten oder Quiz"
+            placeholder="z. B. Kacheln, OCR oder Header"
             autocomplete="off"
             data-library-search
           />
         </label>
 
+        {% for group in site.data.template_library.groups %}
         <div class="template-library__group" data-library-group>
           <div class="template-library__group-heading">
-            <h2>Standards</h2>
-            <span>kein zusätzlicher Import</span>
+            <h2>{{ group.title }}</h2>
+            <span>{{ group.subtitle }}</span>
           </div>
           <div class="template-library__items">
-            {% for item in site.data.template_library.standards %}
+            {% for item in group.items %}
             <button
               type="button"
               class="template-library__item"
@@ -44,48 +45,20 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
               data-category="{{ item.category | escape }}"
               data-description="{{ item.description | escape }}"
               data-topics="{{ item.topics | join: ' · ' | escape }}"
-              data-cheat-page="{{ item.cheat_page }}"
-              data-cheat-title="{{ item.cheat_title | escape }}"
+              data-cheat-page="{{ group.cheat_page }}"
+              data-cheat-title="{{ group.cheat_title | escape }}"
               data-example-url="{{ item.example_path | relative_url }}"
               data-public-url="{{ site.url }}{{ item.example_path }}"
               data-source-url="{{ item.source_url }}"
               aria-pressed="false"
             >
               <span>{{ item.name }}</span>
-              <small>Standard</small>
+              <small>S. {{ group.cheat_page }}</small>
             </button>
             {% endfor %}
           </div>
         </div>
-
-        <div class="template-library__group" data-library-group>
-          <div class="template-library__group-heading">
-            <h2>Templates</h2>
-            <span>Import erforderlich</span>
-          </div>
-          <div class="template-library__items">
-            {% for item in site.data.template_library.templates %}
-            <button
-              type="button"
-              class="template-library__item"
-              data-library-item
-              data-name="{{ item.name | escape }}"
-              data-category="{{ item.category | escape }}"
-              data-description="{{ item.description | escape }}"
-              data-topics="{{ item.topics | join: ' · ' | escape }}"
-              data-cheat-page="{{ item.cheat_page }}"
-              data-cheat-title="{{ item.cheat_title | escape }}"
-              data-example-url="{{ item.example_path | relative_url }}"
-              data-public-url="{{ site.url }}{{ item.example_path }}"
-              data-source-url="{{ item.source_url }}"
-              aria-pressed="false"
-            >
-              <span>{{ item.name }}</span>
-              <small>{{ item.category }}</small>
-            </button>
-            {% endfor %}
-          </div>
-        </div>
+        {% endfor %}
 
         <p class="template-library__empty" data-library-empty hidden>
           Kein passender Baustein gefunden.
@@ -95,7 +68,7 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
       <article class="template-library__detail" aria-live="polite">
         <header class="template-library__detail-heading">
           <div>
-            <p class="eyebrow" data-library-category>Baustein</p>
+            <p class="eyebrow" data-library-category>CheatSheet-Kasten</p>
             <h2 data-library-title>Auswahl wird geladen</h2>
             <p data-library-description></p>
           </div>
@@ -217,9 +190,10 @@ description: LiaScript-Standards und SchulLia-Templates mit CheatSheet, Live-Vor
     <aside class="source-note">
       <strong>CheatSheets aus der Fortbildung 2026</strong>
       <p>
-        Die Standards und Templates sind nach ihrem Einsatz geordnet. Die
-        Onlinebeispiele ergänzen die kompakte Druckfassung; bei technischen
-        Details bleibt die verlinkte Originalquelle maßgeblich.
+        Die Onlinebeispiele folgen den Kastenüberschriften und der Reihenfolge
+        der PDF. Jeder Kasten besitzt ein eigenes Beispiel mit vollständigem
+        Dokumentkopf; bei technischen Details bleibt die verlinkte
+        Originalquelle maßgeblich.
       </p>
     </aside>
   </div>
