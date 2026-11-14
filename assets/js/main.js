@@ -313,22 +313,37 @@ if (templateLibrary) {
     item.addEventListener('click', () => selectItem(item));
   });
 
+  const normalizeSearchValue = (value) =>
+    String(value || '')
+      .toLocaleLowerCase('de')
+      .replace(/ä/g, 'ae')
+      .replace(/ö/g, 'oe')
+      .replace(/ü/g, 'ue')
+      .replace(/ß/g, 'ss')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+
   if (search) {
     search.addEventListener('input', () => {
-      const query = search.value.trim().toLocaleLowerCase('de');
+      const queryTerms = normalizeSearchValue(search.value)
+        .split(' ')
+        .filter(Boolean);
       let visibleCount = 0;
 
       items.forEach((item) => {
-        const haystack = [
-          item.dataset.name,
-          item.dataset.templateDefault,
-          getTemplateName(item),
-          item.dataset.description,
-          item.dataset.topics,
-        ]
-          .join(' ')
-          .toLocaleLowerCase('de');
-        const visible = !query || haystack.includes(query);
+        const haystack = normalizeSearchValue(
+          [
+            item.dataset.name,
+            item.dataset.templateDefault,
+            getTemplateName(item),
+            item.dataset.description,
+            item.dataset.topics,
+            item.dataset.searchTerms,
+          ].join(' '),
+        );
+        const visible = queryTerms.every((term) => haystack.includes(term));
         item.hidden = !visible;
         if (visible) visibleCount += 1;
       });

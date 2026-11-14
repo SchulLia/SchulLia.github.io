@@ -24,7 +24,7 @@ description: LiaScript-Standards sowie SchulLia-Tutorials und -Demos mit CheatSh
           <span>CheatSheet-Kasten suchen</span>
           <input
             type="search"
-            placeholder="z. B. Kacheln, OCR oder Header"
+            placeholder="z. B. Schrifterkennung, Kacheln oder DGS"
             autocomplete="off"
             data-library-search
           />
@@ -41,6 +41,7 @@ description: LiaScript-Standards sowie SchulLia-Tutorials und -Demos mit CheatSh
               data-template-default="{{ group.template | escape }}"
               data-description="{{ item.description | escape }}"
               data-topics="{{ item.topics | join: ' · ' | escape }}"
+              data-search-terms="{{ item.search_terms | join: ' · ' | escape }}"
               data-example-url="{{ item.example_path | relative_url }}"
               data-public-url="{{ site.url }}{{ item.example_path }}"
               data-source-url="{{ item.source_url }}"

@@ -6,6 +6,7 @@ groups:
     cheat_title: "Markdown-Grundlagen"
     items:
       - id: seite-1-01-yaml-header
+        search_terms: ["Metadaten", "Dokumentkopf", "Kurskopf", "Header", "Konfiguration"]
         name: "YAML-Header"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „YAML-Header“."
@@ -13,6 +14,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-01-yaml-header.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-02-version-und-gespeicherte-eingaben
+        search_terms: ["Fortschritt speichern", "Eingaben behalten", "Speicherstand", "Fortsetzen"]
         name: "Version & gespeicherte Eingaben"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Version & gespeicherte Eingaben“."
@@ -20,6 +22,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-02-version-und-gespeicherte-eingaben.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-03-uberschriften
+        search_terms: ["Titel", "Kapitel", "Gliederung", "Zwischenüberschrift"]
         name: "Überschriften"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Überschriften“."
@@ -27,6 +30,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-03-uberschriften.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-04-textauszeichnung
+        search_terms: ["Fettdruck", "Kursiv", "Hervorhebung", "Durchstreichen", "Formatierung"]
         name: "Textauszeichnung"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Textauszeichnung“."
@@ -34,6 +38,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-04-textauszeichnung.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-05-absatze-und-trennlinie
+        search_terms: ["Absatz", "Leerzeile", "Trenner", "horizontale Linie"]
         name: "Absätze & Trennlinie"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Absätze & Trennlinie“."
@@ -41,6 +46,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-05-absatze-und-trennlinie.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-06-listen
+        search_terms: ["Aufzählung", "Stichpunkte", "Nummerierung", "Bulletpoints"]
         name: "Listen"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Listen“."
@@ -48,6 +54,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-06-listen.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-07-aufgabenliste
+        search_terms: ["Checkliste", "Todo", "Checkbox", "Erledigen"]
         name: "Aufgabenliste"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Aufgabenliste“."
@@ -55,6 +62,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-07-aufgabenliste.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-08-tabellen
+        search_terms: ["Zeilen", "Spalten", "Raster", "Datenübersicht"]
         name: "Tabellen"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Tabellen“."
@@ -62,6 +70,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-08-tabellen.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-09-inline-code-und-codeblock
+        search_terms: ["Quelltext", "Programmcode", "Syntaxhervorhebung", "Codebeispiel"]
         name: "Inline-Code & Codeblock"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Inline-Code & Codeblock“."
@@ -69,6 +78,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-09-inline-code-und-codeblock.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-10-mathematische-gleichungen
+        search_terms: ["Mathematik", "LaTeX", "KaTeX", "Formelsatz", "Termdarstellung"]
         name: "Mathematische Gleichungen"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Mathematische Gleichungen“."
@@ -76,6 +86,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-10-mathematische-gleichungen.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-11-links
+        search_terms: ["Verlinkung", "URL", "Hyperlink", "Webadresse"]
         name: "Links"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Links“."
@@ -83,6 +94,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-11-links.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-12-funoten
+        search_terms: ["Quellenangabe", "Anmerkung", "Beleg", "Fußnote"]
         name: "Fußnoten"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Fußnoten“."
@@ -90,6 +102,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-12-funoten.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-13-bilder
+        search_terms: ["Bild", "Foto", "Grafik", "Illustration", "Abbildung"]
         name: "Bilder einfügen"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Bilder einfügen“."
@@ -97,6 +110,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-13-bilder.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-14-audio
+        search_terms: ["Ton", "Klang", "MP3", "Hörbeispiel", "Audiodatei"]
         name: "Audio"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Audio“."
@@ -104,6 +118,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-14-audio.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-15-medien-abspielbar
+        search_terms: ["Video", "YouTube", "Film", "Player", "Medienwiedergabe"]
         name: "Medien abspielen"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Medien abspielen“."
@@ -111,6 +126,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-15-medien-abspielbar.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-16-eingebettete-ressource
+        search_terms: ["Iframe", "Webseite einbetten", "externe Seite", "Einbettung"]
         name: "Eingebettete Ressource"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Eingebettete Ressource“."
@@ -118,6 +134,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-16-eingebettete-ressource.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-17-zitate-und-hinweise
+        search_terms: ["Blockzitat", "Info", "Warnung", "Merksatz", "Hinweisbox"]
         name: "Zitate & Hinweise"
         category: "Markdown — die Basis · Seite 1"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Zitate & Hinweise“."
@@ -131,6 +148,7 @@ groups:
     cheat_title: "Erweiterungen & Interaktion"
     items:
       - id: seite-2-01-animation-und-click-reveal
+        search_terms: ["schrittweise aufdecken", "Klickanzeige", "Reveal", "Präsentation", "Animation"]
         name: "Animation & Click-Reveal"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Animation & Click-Reveal“."
@@ -138,6 +156,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-01-animation-und-click-reveal.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-02-sprecher-text-tts
+        search_terms: ["Vorlesen", "Sprachausgabe", "Text to Speech", "Stimme", "Audioausgabe"]
         name: "Sprecher-Text (TTS)"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Sprecher-Text (TTS)“."
@@ -145,6 +164,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-02-sprecher-text-tts.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-03-quiz-freitext
+        search_terms: ["Texteingabe", "offene Antwort", "Eingabefeld", "Freitextaufgabe"]
         name: "Quiz: Freitext"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Quiz: Freitext“."
@@ -152,6 +172,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-03-quiz-freitext.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-04-quiz-single-choice
+        search_terms: ["Einfachauswahl", "Radio Button", "eine Antwort", "Auswahlfrage"]
         name: "Quiz: Single-Choice"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Quiz: Single-Choice“."
@@ -159,6 +180,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-04-quiz-single-choice.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-05-quiz-multiple-choice
+        search_terms: ["Mehrfachauswahl", "Checkboxen", "mehrere Antworten", "Auswahlfrage"]
         name: "Quiz: Multiple-Choice"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Quiz: Multiple-Choice“."
@@ -166,6 +188,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-05-quiz-multiple-choice.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-06-quiz-kacheln
+        search_terms: ["Kacheln", "Drag and Drop", "Zuordnung", "Verschieben"]
         name: "Quiz: Kacheln"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Quiz: Kacheln“."
@@ -173,6 +196,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-06-quiz-kacheln.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-2-07-jsxgraph
+        search_terms: ["Diagramm", "Funktionsgraph", "Graph", "Visualisierung", "Plot"]
         name: "JSXGraph"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „JSXGraph“."
@@ -180,6 +204,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-07-jsxgraph.md
         source_url: https://github.com/LiaTemplates/JSXGraph
       - id: seite-2-08-abcjs-musiknotation
+        search_terms: ["Musik", "Noten", "Notenschrift", "Partitur", "Melodie"]
         name: "ABCjs: Musiknotation"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „ABCjs: Musiknotation“."
@@ -187,6 +212,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-08-abcjs-musiknotation.md
         source_url: https://github.com/LiaTemplates/ABCjs
       - id: seite-2-09-algebrite-terme-prufen
+        search_terms: ["CAS", "Termprüfung", "algebraische Gleichwertigkeit", "Umformen", "Terme"]
         name: "Algebrite: Terme prüfen"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Algebrite: Terme prüfen“."
@@ -194,6 +220,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-09-algebrite-terme-prufen.md
         source_url: https://github.com/LiaTemplates/Algebrite
       - id: seite-2-10-speech-recognition-quiz
+        search_terms: ["Spracherkennung", "Spracheingabe", "Mikrofon", "Aussprache", "Diktieren"]
         name: "Speech-Recognition-Quiz"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Speech-Recognition-Quiz“."
@@ -201,6 +228,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-2-10-speech-recognition-quiz.md
         source_url: https://github.com/LiaTemplates/Speech-Recognition-Quiz
       - id: seite-2-11-haufige-quiz-kommentare
+        search_terms: ["Rückmeldung", "Feedback", "Lösung", "Hinweis", "Quizoptionen"]
         name: "Häufige Quiz-Kommentare"
         category: "LiaScript — die Erweiterungen · Seite 2"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Häufige Quiz-Kommentare“."
@@ -214,6 +242,7 @@ groups:
     cheat_title: "Unterricht & Interaktion"
     items:
       - id: seite-3-01-abgabe-und-auswertung
+        search_terms: ["Einreichen", "Ergebnisse", "Bewertung", "Auswerten", "Abgabestatus"]
         name: "Abgabe & Auswertung"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Abgabe & Auswertung“."
@@ -221,6 +250,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-01-abgabe-und-auswertung.md
         source_url: https://github.com/MINT-the-GAP/lia-freeze-v2
       - id: seite-3-02-prufung-und-bewertung
+        search_terms: ["Klausur", "Test", "Zeitlimit", "Punkte", "Bewertung"]
         name: "Prüfung & Bewertung"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Prüfung & Bewertung“."
@@ -228,6 +258,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-02-prufung-und-bewertung.md
         source_url: https://github.com/MINT-the-GAP/lia-freeze-v2
       - id: seite-3-03-text-markieren
+        search_terms: ["Textmarker", "Hervorheben", "Textauswahl", "Markieraufgabe"]
         name: "Text markieren"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Text markieren“."
@@ -235,6 +266,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-03-text-markieren.md
         source_url: https://github.com/MINT-the-GAP/lia-marker
       - id: seite-3-04-kachelfolgen
+        search_terms: ["Reihenfolge", "Sortieren", "Ablauf", "Drag and Drop", "Sequenz"]
         name: "Kachelfolgen"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Kachelfolgen“."
@@ -242,6 +274,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-04-kachelfolgen.md
         source_url: https://github.com/MINT-the-GAP/lia-kachel
       - id: seite-3-05-flexible-spalten-dynflex
+        search_terms: ["Spaltenlayout", "responsiv", "nebeneinander", "Layout", "Raster"]
         name: "Flexible Spalten (DynFlex)"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Flexible Spalten (DynFlex)“."
@@ -249,6 +282,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-05-flexible-spalten-dynflex.md
         source_url: https://github.com/MINT-the-GAP/lia-DynFlex
       - id: seite-3-06-inhalte-nach-ansicht
+        search_terms: ["Präsentationsmodus", "Kursmodus", "Ansicht", "Board Mode", "Darstellung"]
         name: "Inhalte nach Ansicht"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Inhalte nach Ansicht“."
@@ -256,6 +290,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-06-inhalte-nach-ansicht.md
         source_url: https://github.com/MINT-the-GAP/lia-board-mode
       - id: seite-3-07-rechtschreibung-und-diktat
+        search_terms: ["Orthografie", "Schreibübung", "Lückentext", "Fehlersuche", "Diktieren"]
         name: "Rechtschreibung & Diktat"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Rechtschreibung & Diktat“."
@@ -263,6 +298,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-07-rechtschreibung-und-diktat.md
         source_url: https://github.com/MINT-the-GAP/lia-orthography
       - id: seite-3-08-bruchteile-markieren
+        search_terms: ["Bruch", "Anteil", "Kreisbruch", "Rechteckbruch", "Bruchdarstellung"]
         name: "Bruchteile markieren"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Bruchteile markieren“."
@@ -270,6 +306,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-08-bruchteile-markieren.md
         source_url: https://github.com/MINT-the-GAP/lia-Mathe
       - id: seite-3-09-zeitgesteuerte-losung
+        search_terms: ["Timer", "Countdown", "Verzögerung", "Lösung freigeben", "Wartezeit"]
         name: "Zeitgesteuerte Lösung"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Zeitgesteuerte Lösung“."
@@ -277,6 +314,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-09-zeitgesteuerte-losung.md
         source_url: https://github.com/MINT-the-GAP/lia-timer
       - id: seite-3-10-globale-quizregeln
+        search_terms: ["Quizversuche", "Punkte", "Regeln", "Kursweite Einstellungen", "Bewertung"]
         name: "Globale Quizregeln"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Globale Quizregeln“."
@@ -284,6 +322,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-10-globale-quizregeln.md
         source_url: https://github.com/MINT-the-GAP/lia-globalquiz
       - id: seite-3-11-quiz-einzeln-zurucksetzen
+        search_terms: ["Reset", "Wiederholen", "Antwort löschen", "Neustart"]
         name: "Quiz einzeln zurücksetzen"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Quiz einzeln zurücksetzen“."
@@ -291,6 +330,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-11-quiz-einzeln-zurucksetzen.md
         source_url: https://github.com/MINT-the-GAP/lia-resetter
       - id: seite-3-12-handschrift-und-ocr
+        search_terms: ["Schrifterkennung", "Handschrifterkennung", "Texterkennung", "Zeichenerkennung", "Canvas"]
         name: "Handschrift & OCR"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Handschrift & OCR“."
@@ -298,6 +338,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-3-12-handschrift-und-ocr.md
         source_url: https://github.com/MINT-the-GAP/lia-canvas-ocr
       - id: seite-3-13-annotationen
+        search_terms: ["Zeichnen", "Schreiben", "Stift", "Notizen", "Tafelbild"]
         name: "Annotationen"
         category: "Unterricht & Interaktion · Seite 3"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Annotationen“."
@@ -311,6 +352,7 @@ groups:
     cheat_title: "Fächer & Visualisierung"
     items:
       - id: seite-4-01-llm-quiz-freie-antworten
+        search_terms: ["KI", "künstliche Intelligenz", "freie Antwort", "automatisches Feedback", "Sprachmodell"]
         name: "LLM-Quiz: freie Antworten"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „LLM-Quiz: freie Antworten“."
@@ -318,6 +360,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-01-llm-quiz-freie-antworten.md
         source_url: https://github.com/MINT-the-GAP/lia-llm
       - id: seite-4-02-gleichungslucke
+        search_terms: ["Mathematiklücke", "Eingabefeld", "Lückenterm", "Inline Quiz", "Rechenlücke"]
         name: "Gleichungslücke"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Gleichungslücke“."
@@ -325,6 +368,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-02-gleichungslucke.md
         source_url: https://github.com/MINT-the-GAP/lia-Mathe
       - id: seite-4-03-koordinatensystem
+        search_terms: ["Achsen", "Koordinaten", "Diagramm", "Plot", "Kartesisches System"]
         name: "Koordinatensystem"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Koordinatensystem“."
@@ -332,6 +376,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-03-koordinatensystem.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-04-dgs-bauen-und-exportieren
+        search_terms: ["dynamische Geometrie", "Konstruktion", "Export", "Geodreieck", "Zirkel"]
         name: "DGS: bauen & exportieren"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „DGS: bauen & exportieren“."
@@ -339,6 +384,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-04-dgs-bauen-und-exportieren.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-05-flachen-winkel-und-kreise
+        search_terms: ["Fläche", "Winkel", "Kreis", "Geometrie", "Messen"]
         name: "Flächen, Winkel & Kreise"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Flächen, Winkel & Kreise“."
@@ -346,6 +392,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-05-flachen-winkel-und-kreise.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-06-analysepunkte
+        search_terms: ["Nullstellen", "Extrempunkte", "Wendepunkte", "Schnittpunkte", "Kurvendiskussion"]
         name: "Analysepunkte"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Analysepunkte“."
@@ -353,6 +400,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-06-analysepunkte.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-07-funktionen-und-werkzeuge
+        search_terms: ["Funktionsgraph", "Tangente", "Regler", "Plotwerkzeuge", "Graphen"]
         name: "Funktionen & Werkzeuge"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Funktionen & Werkzeuge“."
@@ -360,6 +408,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-07-funktionen-und-werkzeuge.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-08-punkte-und-geraden
+        search_terms: ["Punkt", "Gerade", "Strecke", "Vektor", "Koordinatengeometrie"]
         name: "Punkte & Geraden"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Punkte & Geraden“."
@@ -367,6 +416,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-08-punkte-und-geraden.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-09-geometriequizze
+        search_terms: ["Konstruktionsaufgabe", "DGS Quiz", "Geometrieprüfung", "Werkzeuge", "Zeichenaufgabe"]
         name: "Geometriequizze"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Geometriequizze“."
@@ -374,6 +424,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-09-geometriequizze.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-4-10-erklarhinweis-und-tooltip
+        search_terms: ["Hilfe", "Erklärung", "Glossar", "Tooltip", "Begriffserklärung"]
         name: "Erklärhinweis & Tooltip"
         category: "Fächer & Visualisierung · Seite 4"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Erklärhinweis & Tooltip“."
@@ -387,6 +438,7 @@ groups:
     cheat_title: "lia-loot"
     items:
       - id: seite-5-01-start-ressourcen-highscore-erfolge
+        search_terms: ["Gamification", "Punkte", "Highscore", "Achievements", "Spielstand"]
         name: "Start: Ressourcen, Highscore, Erfolge"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Start: Ressourcen, Highscore, Erfolge“."
@@ -394,6 +446,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-01-start-ressourcen-highscore-erfolge.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-02-gold-diamanten-und-energie
+        search_terms: ["Währung", "Loot", "Energiekiste", "Ressourcen", "Belohnung"]
         name: "Gold, Diamanten & Energie"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Gold, Diamanten & Energie“."
@@ -401,6 +454,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-02-gold-diamanten-und-energie.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-03-schlussel-und-schlosser
+        search_terms: ["Zugang", "Freischalten", "Sperre", "Tür", "Schloss"]
         name: "Schlüssel & Schlösser"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Schlüssel & Schlösser“."
@@ -408,6 +462,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-03-schlussel-und-schlosser.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-04-gemeinsame-fundoptionen
+        search_terms: ["Sichtbarkeit", "Bedingung", "Folie", "Theme", "Fund darstellen"]
         name: "Fundoptionen: Folienbindung & Darstellung"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zu Folienbindung und Darstellungsbedingungen von Funden."
@@ -415,6 +470,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-04-gemeinsame-fundoptionen.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-05-lupe-und-verbergung
+        search_terms: ["Suchen", "Verstecken", "Unsichtbar", "Zauberstaub", "Suchwerkzeug"]
         name: "Lupe & Verbergung"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Lupe & Verbergung“."
@@ -422,6 +478,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-05-lupe-und-verbergung.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-06-aktionswerkzeuge
+        search_terms: ["Werkzeug", "Gießen", "Blume", "Pflanzenblock", "Gießkanne"]
         name: "Gießkanne & Pflanze"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zu Gießkanne, Pflanzenblock und Inline-Pflanze."
@@ -429,6 +486,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-06-aktionswerkzeuge.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-07-erde-block-und-inline
+        search_terms: ["Werkzeug", "Graben", "Erdhaufen", "Schaufel", "Fund ausgraben"]
         name: "Schaufel & Erde"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zu Schaufel, Erdhaufenblock und Inline-Erde."
@@ -436,6 +494,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-07-erde-block-und-inline.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-09-puzzleteile-und-puzzletore
+        search_terms: ["Sammeln", "Puzzle", "Tor öffnen", "Puzzleteil", "Zugang"]
         name: "Puzzleteile & Puzzletore"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Puzzleteile & Puzzletore“."
@@ -443,6 +502,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-09-puzzleteile-und-puzzletore.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-10-zweiweg-und-einwegportale
+        search_terms: ["Navigation", "Sprungziel", "Teleport", "Seitenwechsel", "Portal"]
         name: "Zweiweg- & Einwegportale"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Zweiweg- & Einwegportale“."
@@ -450,6 +510,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-10-zweiweg-und-einwegportale.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-11-bedingte-bereiche
+        search_terms: ["Bedingung", "Einblenden", "Ausblenden", "Freischalten", "Wenn Dann"]
         name: "Bedingte Bereiche"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Bedingte Bereiche“."
@@ -457,6 +518,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-11-bedingte-bereiche.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-12-geheimfolie
+        search_terms: ["Geheimseite", "versteckte Folie", "Zugang", "Freischalten", "verborgener Inhalt"]
         name: "Geheimfolie"
         category: "Gamification mit lia-loot · Seite 5"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Geheimfolie“."
@@ -470,6 +532,7 @@ groups:
     cheat_title: "lia-loot erweitern"
     items:
       - id: seite-6-01-taschenlampe-und-nebel
+        search_terms: ["Werkzeug", "Licht", "Sichtbarkeit", "Nebelbereich", "Radius Perk"]
         name: "Taschenlampe & Nebel"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Taschenlampe & Nebel“."
@@ -477,6 +540,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-01-taschenlampe-und-nebel.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-03-axt-und-holzkisten
+        search_terms: ["Werkzeug", "Holz", "Kiste zerschlagen", "Axt Perk", "Hindernis"]
         name: "Axt & Holzkisten"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Axt & Holzkisten“."
@@ -484,6 +548,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-03-axt-und-holzkisten.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-04-geschenke-und-verschachtelte-items
+        search_terms: ["Geschenk", "Inhalt", "verschachteln", "Belohnung", "Item"]
         name: "Geschenke & verschachtelte Items"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Geschenke & verschachtelte Items“."
@@ -491,6 +556,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-04-geschenke-und-verschachtelte-items.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-05-shop-angebote-und-preise
+        search_terms: ["Kaufen", "Preis", "Angebot", "Laden", "Ressourcen ausgeben"]
         name: "Shop: Angebote & Preise"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Shop: Angebote & Preise“."
@@ -498,6 +564,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-05-shop-angebote-und-preise.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-06-atlaskarte-fortschritt-sichtbar-machen
+        search_terms: ["Übersicht", "Fortschritt", "Karte", "Erfolge", "Fundstatus"]
         name: "Atlaskarte: Fortschritt sichtbar machen"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Atlaskarte: Fortschritt sichtbar machen“."
@@ -505,6 +572,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-06-atlaskarte-fortschritt-sichtbar-machen.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-08-katze-futter-und-halsbander
+        search_terms: ["Begleiter", "Futter", "Halsband", "Tier", "Perk"]
         name: "Katze, Futter & Halsbänder"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Katze, Futter & Halsbänder“."
@@ -512,6 +580,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-08-katze-futter-und-halsbander.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-09-reservefolie-neue-energie-verdienen
+        search_terms: ["Energie leer", "Zusatzaufgabe", "Reserve", "Energie verdienen", "Notfallfolie"]
         name: "Reservefolie: neue Energie verdienen"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Reservefolie: neue Energie verdienen“."
@@ -519,6 +588,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-09-reservefolie-neue-energie-verdienen.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-10-ressourcenbonus-und-timerkosten
+        search_terms: ["Kosten", "Bonus", "Timer", "Highscore", "Ressourcenverbrauch"]
         name: "Ressourcenbonus & Timerkosten"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Ressourcenbonus & Timerkosten“."
@@ -526,6 +596,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-10-ressourcenbonus-und-timerkosten.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-11-funde-und-schlosser-in-anderen-templates
+        search_terms: ["Schatztruhe", "Menüs", "Navigation", "Info", "Einstellungen"]
         name: "Truhen in allen LiaScript-Menüs"
         category: "Gamification: Erweiterungen · Seite 6"
         description: "Vollständiges LiaScript-Beispiel mit je einer Schatztruhe in allen sechs Standardmenüs."
@@ -539,6 +610,7 @@ groups:
     cheat_title: "zusätzliche Aufgabenformen"
     items:
       - id: seite-7-01-ocr-vollstandige-rechenwege
+        search_terms: ["Schrifterkennung", "Handschrifterkennung", "Texterkennung", "Rechenweg", "Mathematikerkennung"]
         name: "OCR: vollständige Rechenwege"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „OCR: vollständige Rechenwege“."
@@ -546,6 +618,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-01-ocr-vollstandige-rechenwege.md
         source_url: https://github.com/MINT-the-GAP/lia-canvas-ocr
       - id: seite-7-02-ocr-ableitung-integral-und-mehr
+        search_terms: ["Schrifterkennung", "Handschrifterkennung", "Texterkennung", "Differentialrechnung", "Integralrechnung"]
         name: "OCR: Ableitung, Integral & mehr"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „OCR: Ableitung, Integral & mehr“."
@@ -553,6 +626,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-02-ocr-ableitung-integral-und-mehr.md
         source_url: https://github.com/MINT-the-GAP/lia-canvas-ocr
       - id: seite-7-03-algebrite-einheiten-mitprufen
+        search_terms: ["CAS", "Einheitenprüfung", "Größen", "Maßeinheit", "Termprüfung"]
         name: "Algebrite: Einheiten mitprüfen"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Algebrite: Einheiten mitprüfen“."
@@ -560,6 +634,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-03-algebrite-einheiten-mitprufen.md
         source_url: https://github.com/liaTemplates/algebrite
       - id: seite-7-04-algebrite-gleichungen-und-mehrere-felder
+        search_terms: ["CAS", "Gleichungsprüfung", "mehrere Eingaben", "Termprüfung", "Eingabefelder"]
         name: "Algebrite: Gleichungen & mehrere Felder"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Algebrite: Gleichungen & mehrere Felder“."
@@ -567,6 +642,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-04-algebrite-gleichungen-und-mehrere-felder.md
         source_url: https://github.com/liaTemplates/algebrite
       - id: seite-7-05-geometrie-mehrere-bedingungen-zugleich
+        search_terms: ["DGS", "Konstruktionsprüfung", "mehrere Kriterien", "Geometriequiz", "Bedingungen"]
         name: "Geometrie: mehrere Bedingungen zugleich"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Geometrie: mehrere Bedingungen zugleich“."
@@ -574,6 +650,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-05-geometrie-mehrere-bedingungen-zugleich.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-7-06-koordinaten-als-statisches-svg
+        search_terms: ["Bildexport", "Vektorgrafik", "Koordinatensystem", "statische Grafik", "SVG"]
         name: "Koordinaten als statisches SVG"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Koordinaten als statisches SVG“."
@@ -581,6 +658,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-06-koordinaten-als-statisches-svg.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-7-07-funktionsscharen-und-regler
+        search_terms: ["Parameter", "Kurvenschar", "Schieberegler", "Funktionsgraph", "dynamischer Graph"]
         name: "Funktionsscharen & Regler"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Funktionsscharen & Regler“."
@@ -588,6 +666,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-07-funktionsscharen-und-regler.md
         source_url: https://github.com/MINT-the-GAP/lia-coordinate
       - id: seite-7-08-polyominos-eine-zielsumme-legen
+        search_terms: ["Pentomino", "Legespiel", "Flächenpuzzle", "Steine legen", "Zielsumme"]
         name: "Polyominos: eine Zielsumme legen"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Polyominos: eine Zielsumme legen“."
@@ -595,6 +674,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-08-polyominos-eine-zielsumme-legen.md
         source_url: https://github.com/MINT-the-GAP/lia-pentominos
       - id: seite-7-09-hinweise-zeitgesteuert-freigeben
+        search_terms: ["Timer", "Tipp", "Hilfe", "Verzögerung", "Hinweis freischalten"]
         name: "Hinweise zeitgesteuert freigeben"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Hinweise zeitgesteuert freigeben“."
@@ -602,6 +682,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-09-hinweise-zeitgesteuert-freigeben.md
         source_url: https://github.com/MINT-the-GAP/lia-timer
       - id: seite-7-11-native-auswahl-und-matrixquiz
+        search_terms: ["Matrix", "Zuordnung", "Tabelle", "Auswahl", "Rasterquiz"]
         name: "Native Auswahl & Matrixquiz"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Native Auswahl & Matrixquiz“."
@@ -609,6 +690,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-11-native-auswahl-und-matrixquiz.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-7-12-textkorrektur
+        search_terms: ["Rechtschreibprüfung", "Fehlerkorrektur", "Korrektur", "Orthografie", "Text verbessern"]
         name: "Textkorrektur"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Textkorrektur“."
@@ -616,6 +698,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-7-12-textkorrektur.md
         source_url: https://github.com/MINT-the-GAP/lia-orthography
       - id: seite-7-13-strichlisten
+        search_terms: ["Zählstriche", "Häufigkeit", "Statistik", "Zählen", "Tally"]
         name: "Strichlisten"
         category: "Weitere Bausteine · Seite 7"
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Strichlisten“."
