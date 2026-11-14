@@ -1,5 +1,7 @@
 - label: Start
   url: /
+- label: Mathe-Aufgaben
+  url: https://mint-the-gap.github.io/Aufgabensammlung/
 - label: Kurse
   url: https://liascript.github.io/course/
 - label: LiveEditor
