@@ -1319,6 +1319,8 @@ h3 {
   color: #e7eeee;
   resize: vertical;
   font: 0.78rem/1.58 ui-monospace, SFMono-Regular, Consolas, monospace;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
   tab-size: 2;
 }
 
