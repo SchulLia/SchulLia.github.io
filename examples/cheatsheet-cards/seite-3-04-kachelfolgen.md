@@ -20,6 +20,8 @@ Zuerst [->[(Planen)|Überarbeiten|Prüfen]], danach [->[Planen|(Überarbeiten)|P
 
 </div>
 
+<!--
 **********
 Die richtige Reihenfolge lautet: **Planen – Überarbeiten – Prüfen**.
 **********
+-->
