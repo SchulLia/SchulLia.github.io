@@ -15,7 +15,3 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 @Geschenk(@Katze)
 
 @Geschenk(`@Schluessel(blau)`)
-
-@Axt
-
-@Kiste(`@Katze(grau)`)

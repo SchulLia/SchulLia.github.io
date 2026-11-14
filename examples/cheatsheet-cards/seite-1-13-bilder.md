@@ -2,13 +2,13 @@
 author: Name
 version: 0.0.1
 language: de
-comment: Beispiel zum CheatSheet-Kasten „Bilder“.
+comment: Beispiel zum CheatSheet-Kasten „Bilder einfügen“.
 tags: LiaScript, CheatSheet, Markdown
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/README.md
 -->
 
-# Bilder
+# Bilder einfügen
 
-> **Was passiert hier?** Das Bild wird über eine vollständige URL geladen. Der Text in den eckigen Klammern ist der Alternativtext und sollte den Bildinhalt verständlich beschreiben.
+> **Was passiert hier?** Der Screenshot einer LiaScript-Kursoberfläche wird über eine vollständige URL geladen. Der Text in den eckigen Klammern ist der Alternativtext und beschreibt den Bildinhalt für den Fall, dass das Bild nicht angezeigt oder nicht gesehen werden kann.
 
-![Jupiter, aufgenommen von der Raumsonde Juno](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Latest_NASA_photo_of_Jupiter_taken_this_Sunday_by_the_Juno_probe.png/1280px-Latest_NASA_photo_of_Jupiter_taken_this_Sunday_by_the_Juno_probe.png)
+![LiaScript-Kursoberfläche mit Inhaltsverzeichnis und geöffneter Tutorialfolie](https://schullia.github.io/assets/img/liascript-kurs.png)

@@ -11,12 +11,8 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/main/READM
 
 # DGS: bauen & exportieren
 
-> **Was passiert hier?** Das DGS stellt ausgewählte Konstruktionswerkzeuge im Board `B` bereit, hier zusätzlich einen Zirkel. Über die Objektliste kann die fertige Konstruktion als Makroblock exportiert und anschließend im LiveEditor weiterbearbeitet werden.
+> **Was passiert hier?** ``@DGS(`B`)`` öffnet im Board `B` das vollständige dynamische Geometriesystem mit den allgemeinen, zweidimensionalen und dreidimensionalen Werkzeugen sowie Geodreieck und Zirkel. Konstruiere die gewünschten Objekte, öffne rechts die **Objektliste** und wähle unten **Export**. Im Exportdialog kannst du Werkzeuge und Berechtigungen für den späteren Import auswählen; **Weiter** erzeugt anschließend einen vollständigen, kopierbaren LiaScript-Makroblock mit neuer Board-ID.
 
 @Koordinatensystem(`xmin=-5;xmax=5;ymin=-4;ymax=4;width=800;id=B`)
 
-@DGS(`B;tools=[200;310;700];restrictions=[200;300]`)
-
-@Zirkel(`B`)
-
-@Geodreieck(`B`)
+@DGS(`B`)

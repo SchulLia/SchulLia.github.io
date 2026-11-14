@@ -10,9 +10,12 @@ import: https://raw.githubusercontent.com/LiaTemplates/Speech-Recognition-Quiz/r
 
 # Speech-Recognition-Quiz
 
-> **Was passiert hier?** Das Quiz hört eine gesprochene Phrase ab und vergleicht sie mit „Hallo“. Bei Abweichungen zeigt die Feedback-Funktion das erkannte Transkript; die Spracherkennung benötigt Chrome, Edge oder Opera.
+> **Was passiert hier?** Der Support-Test meldet zuerst, ob die Browser-API verfügbar ist. Das generische LiaScript-Quiz `[[!]]` startet anschließend die Spracherkennung und vergleicht das Transkript mit „Hallo LiaScript“. Bei Abweichungen gibt die Feedback-Variante den erkannten Text zurück. Benötigt wird ein Chromium-basierter Browser wie Chrome, Edge oder Opera sowie die Freigabe des Mikrofons.
+
+@SpeechRecognition.support
 
 <!-- data-solution-button="off" -->
-Sprich: Hallo.
+Sprich den Satz **„Hallo LiaScript“**.
+
 [[!]]
-@SpeechRecognition(de-DE,Hallo)
+@SpeechRecognition.withFeedback(de-DE,`Hallo LiaScript`)

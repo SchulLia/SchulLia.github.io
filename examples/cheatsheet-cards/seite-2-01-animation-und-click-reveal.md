@@ -9,16 +9,10 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Animation & Click-Reveal
 
-> **Was passiert hier?** Der erste Inhalt ist sofort sichtbar; die folgenden Blöcke werden mit jedem Klick nacheinander eingeblendet. So lässt sich eine Erklärung schrittweise aufbauen, ohne mehrere Folien anzulegen.
+> **Was passiert hier?** Der erste Inhalt ist sofort sichtbar; die beiden markierten Textteile werden mit jedem Klick nacheinander eingeblendet. So lässt sich eine Erklärung schrittweise aufbauen, ohne mehrere Folien anzulegen.
 
-Die LiaScript-Marker für schrittweise Einblendungen sehen so aus:
+Dieser Ausgangspunkt ist sofort sichtbar.
 
-```markdown
-Sofort sichtbar.
+Nach dem ersten Klick erscheint {1}{dieser Erklärungsschritt.}
 
-{{1}}
-Diese Ergänzung erscheint nach dem ersten Klick.
-
-{{2}}
-Diese Ergänzung erscheint nach dem zweiten Klick.
-```
+Nach dem zweiten Klick wird {2}{die Erklärung vervollständigt.} Die schrittweise Anzeige ist im Präsentations- und Folienmodus aktiv; im Lehrbuchmodus sind alle Schritte gemeinsam sichtbar.

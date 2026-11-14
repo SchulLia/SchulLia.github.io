@@ -11,12 +11,12 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-coordinate/main/READM
 
 # Analysepunkte
 
-> **Was passiert hier?** Die benannte Funktion `f` wird dynamisch auf Nullstellen, Extrem- und Wendepunkte untersucht. Das letzte Makro markiert zusätzlich die Schnittpunkte zweier Funktionen, Geraden oder Kreise.
+> **Was passiert hier?** Die benannte Funktion `f` wird dynamisch auf Nullstellen, Extrem- und Wendepunkte untersucht. Die zweite Funktion `g(x)=0{,}5x+1` ist so gewählt, dass ihre Schnittpunkte nicht mit diesen Analysepunkten zusammenfallen und die eingeblendeten Werte lesbar bleiben.
 
 @Koordinatensystem(`xmin=-4;xmax=4;ymin=-5;ymax=5;width=800;id=B`)
 
 @PlotFunktion(`B;f;x^3-3*x;red`)
-@PlotFunktion(`B;g;x;blue`)
+@PlotFunktion(`B;g;0.5*x+1;blue`)
 
 @Nullstellen(`B;f;blue;N;wert=1`)
 

@@ -10,18 +10,17 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-kachel/main/README.md
 
 # Kachelfolgen
 
-> **Was passiert hier?** Die Buchstabenkacheln werden den passenden Zielfeldern zugeordnet. Die einfache Variante akzeptiert die Ziele in beliebiger Reihenfolge; die nummerierte Variante könnte sie schrittweise aufdecken.
+> **Was passiert hier?** Eine feste Abfolge wird zielweise geprüft: Jede Kachel muss im inhaltlich passenden Feld liegen. Dafür umschließt die Klasse `Kachel` die native LiaScript-Aufgabe. Das reihenfolgeunabhängige Kachelfolge-Makro wäre hier ungeeignet, weil es die richtigen Kacheln ausdrücklich in beliebiger Reihenfolge akzeptiert. Die native Musterlösung setzt deshalb die drei richtigen Inhalte ein und liefert keinen booleschen Skriptwert.
 
-Ordne die Buchstaben den passenden Gruppen zu.
+Ordne die Arbeitsschritte den Positionen 1 bis 3 so zu, dass die Reihenfolge **Planen – Überarbeiten – Prüfen** entsteht.
 
-@Kachelfolge(`[->[(A)|B]] [->[(C)|D]]`)
+<div class="Kachel">
+
+<!-- data-randomize="true" -->
+Zuerst [->[(Planen)|Überarbeiten|Prüfen]], danach [->[Planen|(Überarbeiten)|Prüfen]] und zuletzt [->[Planen|Überarbeiten|(Prüfen)]].
+
 **********
-A gehört zur ersten und C zur zweiten Gruppe.
+Die richtige Reihenfolge lautet: **Planen – Überarbeiten – Prüfen**.
 **********
 
-Bringe die Zahlen in die vorgegebene Reihenfolge.
-
-@KachelfolgeN(`[->[(1)|2]] [->[(2)|3]]`)
-**********
-Die richtige Reihenfolge lautet 1, 2.
-**********
+</div>

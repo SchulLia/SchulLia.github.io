@@ -10,9 +10,11 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
 # Lupe & Verbergung
 
-> **Was passiert hier?** Zuerst wird die Lupe eingesammelt und in der Werkzeugleiste aktiviert. Sie deckt vollständig unsichtbaren Text oder schwach funkelnden „Zauberstaub“ auf; diese Verbergung ist ein Spieleffekt und kein Schutz vertraulicher Inhalte.
+> **Was passiert hier?** Zuerst werden Lupe und Lupen-Perk eingesammelt. Der Perk vergrößert den Suchradius um 15 Prozent. Die aktivierte Lupe deckt anschließend vollständig unsichtbaren Text oder schwach funkelnden „Zauberstaub“ auf; diese Verbergung ist ein Spieleffekt und kein Schutz vertraulicher Inhalte.
 
 @Lupe
+
+@Perk(lupenradius-15)
 
 @Unsichtbar(Geheimer Text)
 

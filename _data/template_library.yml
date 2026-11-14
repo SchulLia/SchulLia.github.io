@@ -90,10 +90,10 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-12-funoten.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-13-bilder
-        name: "Bilder"
+        name: "Bilder einfügen"
         category: "Markdown — die Basis · Seite 1"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Bilder“."
-        topics: ["Bilder", "Seite 1"]
+        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Bilder einfügen“."
+        topics: ["Bilder einfügen", "Seite 1"]
         example_path: /examples/cheatsheet-cards/seite-1-13-bilder.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-14-audio
@@ -104,10 +104,10 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-1-14-audio.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-15-medien-abspielbar
-        name: "Medien abspielbar"
+        name: "Medien abspielen"
         category: "Markdown — die Basis · Seite 1"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Medien abspielbar“."
-        topics: ["Medien abspielbar", "Seite 1"]
+        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Medien abspielen“."
+        topics: ["Medien abspielen", "Seite 1"]
         example_path: /examples/cheatsheet-cards/seite-1-15-medien-abspielbar.md
         source_url: https://github.com/LiaScript/docs
       - id: seite-1-16-eingebettete-ressource
@@ -381,7 +381,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-4-10-erklarhinweis-und-tooltip.md
         source_url: https://github.com/MINT-the-GAP/lia-mathpath
   - title: "Gamification mit lia-loot"
-    subtitle: "Seite 5 · 12 Kästen"
+    subtitle: "Seite 5 · 11 Kästen"
     template: lia-loot
     cheat_page: 5
     cheat_title: "lia-loot"
@@ -408,10 +408,10 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-03-schlussel-und-schlosser.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-04-gemeinsame-fundoptionen
-        name: "Gemeinsame Fundoptionen"
+        name: "Fundoptionen: Folienbindung & Darstellung"
         category: "Gamification mit lia-loot · Seite 5"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Gemeinsame Fundoptionen“."
-        topics: ["Gemeinsame Fundoptionen", "Seite 5", "lia-loot"]
+        description: "Vollständiges LiaScript-Beispiel zu Folienbindung und Darstellungsbedingungen von Funden."
+        topics: ["Fundoptionen: Folienbindung & Darstellung", "Seite 5", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-5-04-gemeinsame-fundoptionen.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-05-lupe-und-verbergung
@@ -422,25 +422,18 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-05-lupe-und-verbergung.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-06-aktionswerkzeuge
-        name: "Aktionswerkzeuge"
+        name: "Gießkanne & Pflanze"
         category: "Gamification mit lia-loot · Seite 5"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Aktionswerkzeuge“."
-        topics: ["Aktionswerkzeuge", "Seite 5", "lia-loot"]
+        description: "Vollständiges LiaScript-Beispiel zu Gießkanne, Pflanzenblock und Inline-Pflanze."
+        topics: ["Gießkanne & Pflanze", "Seite 5", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-5-06-aktionswerkzeuge.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-07-erde-block-und-inline
-        name: "Erde: Block & Inline"
+        name: "Schaufel & Erde"
         category: "Gamification mit lia-loot · Seite 5"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Erde: Block & Inline“."
-        topics: ["Erde: Block & Inline", "Seite 5", "lia-loot"]
+        description: "Vollständiges LiaScript-Beispiel zu Schaufel, Erdhaufenblock und Inline-Erde."
+        topics: ["Schaufel & Erde", "Seite 5", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-5-07-erde-block-und-inline.md
-        source_url: https://github.com/MINT-the-GAP/lia-loot
-      - id: seite-5-08-pflanze-block-und-inline
-        name: "Pflanze: Block & Inline"
-        category: "Gamification mit lia-loot · Seite 5"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Pflanze: Block & Inline“."
-        topics: ["Pflanze: Block & Inline", "Seite 5", "lia-loot"]
-        example_path: /examples/cheatsheet-cards/seite-5-08-pflanze-block-und-inline.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-5-09-puzzleteile-und-puzzletore
         name: "Puzzleteile & Puzzletore"
@@ -471,7 +464,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-5-12-geheimfolie.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
   - title: "Gamification: Erweiterungen"
-    subtitle: "Seite 6 · 11 Kästen"
+    subtitle: "Seite 6 · 9 Kästen"
     template: lia-loot
     cheat_page: 6
     cheat_title: "lia-loot erweitern"
@@ -482,13 +475,6 @@ groups:
         description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Taschenlampe & Nebel“."
         topics: ["Taschenlampe & Nebel", "Seite 6", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-6-01-taschenlampe-und-nebel.md
-        source_url: https://github.com/MINT-the-GAP/lia-loot
-      - id: seite-6-02-ganze-bereiche-vernebeln
-        name: "Ganze Bereiche vernebeln"
-        category: "Gamification: Erweiterungen · Seite 6"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Ganze Bereiche vernebeln“."
-        topics: ["Ganze Bereiche vernebeln", "Seite 6", "lia-loot"]
-        example_path: /examples/cheatsheet-cards/seite-6-02-ganze-bereiche-vernebeln.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-03-axt-und-holzkisten
         name: "Axt & Holzkisten"
@@ -518,13 +504,6 @@ groups:
         topics: ["Atlaskarte: Fortschritt sichtbar machen", "Seite 6", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-6-06-atlaskarte-fortschritt-sichtbar-machen.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
-      - id: seite-6-07-perks-dauerhafte-verbesserungen
-        name: "Perks: dauerhafte Verbesserungen"
-        category: "Gamification: Erweiterungen · Seite 6"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Perks: dauerhafte Verbesserungen“."
-        topics: ["Perks: dauerhafte Verbesserungen", "Seite 6", "lia-loot"]
-        example_path: /examples/cheatsheet-cards/seite-6-07-perks-dauerhafte-verbesserungen.md
-        source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-08-katze-futter-und-halsbander
         name: "Katze, Futter & Halsbänder"
         category: "Gamification: Erweiterungen · Seite 6"
@@ -547,14 +526,14 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-10-ressourcenbonus-und-timerkosten.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
       - id: seite-6-11-funde-und-schlosser-in-anderen-templates
-        name: "Funde & Schlösser in anderen Templates"
+        name: "Truhen in allen LiaScript-Menüs"
         category: "Gamification: Erweiterungen · Seite 6"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Funde & Schlösser in anderen Templates“."
-        topics: ["Funde & Schlösser in anderen Templates", "Seite 6", "lia-loot"]
+        description: "Vollständiges LiaScript-Beispiel mit je einer Schatztruhe in allen sechs Standardmenüs."
+        topics: ["Truhen in allen LiaScript-Menüs", "Seite 6", "lia-loot"]
         example_path: /examples/cheatsheet-cards/seite-6-11-funde-und-schlosser-in-anderen-templates.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
   - title: "Weitere Bausteine"
-    subtitle: "Seite 7 · 13 Kästen"
+    subtitle: "Seite 7 · 12 Kästen"
     template: LiaScript
     cheat_page: 7
     cheat_title: "zusätzliche Aufgabenformen"
@@ -622,13 +601,6 @@ groups:
         topics: ["Hinweise zeitgesteuert freigeben", "Seite 7", "lia-timer"]
         example_path: /examples/cheatsheet-cards/seite-7-09-hinweise-zeitgesteuert-freigeben.md
         source_url: https://github.com/MINT-the-GAP/lia-timer
-      - id: seite-7-10-freeze-bewertung-erst-bei-abgabe
-        name: "Freeze: Bewertung erst bei Abgabe"
-        category: "Weitere Bausteine · Seite 7"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Freeze: Bewertung erst bei Abgabe“."
-        topics: ["Freeze: Bewertung erst bei Abgabe", "Seite 7", "lia-freeze-v2"]
-        example_path: /examples/cheatsheet-cards/seite-7-10-freeze-bewertung-erst-bei-abgabe.md
-        source_url: https://github.com/MINT-the-GAP/lia-freeze-v2
       - id: seite-7-11-native-auswahl-und-matrixquiz
         name: "Native Auswahl & Matrixquiz"
         category: "Weitere Bausteine · Seite 7"
