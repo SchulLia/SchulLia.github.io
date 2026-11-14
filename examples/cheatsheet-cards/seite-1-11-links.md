@@ -11,6 +11,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 > **Was passiert hier?** Die erste Variante zeigt einen sprechenden Linktext, die zweite direkt die Webadresse. Ein beschreibender Linktext hilft Lernenden und verbessert die Barrierefreiheit.
 
-[Beschreibung](https://...)
+[LiaScript-Projektseite](https://liascript.github.io)
 
-<https://example.org>
+<https://liascript.github.io>

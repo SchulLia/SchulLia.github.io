@@ -202,10 +202,11 @@ const templateLibrary = document.querySelector('[data-template-library]');
 
 if (templateLibrary) {
   const items = [...templateLibrary.querySelectorAll('[data-library-item]')];
-  const groups = [...templateLibrary.querySelectorAll('[data-library-group]')];
   const search = templateLibrary.querySelector('[data-library-search]');
   const emptyState = templateLibrary.querySelector('[data-library-empty]');
-  const category = templateLibrary.querySelector('[data-library-category]');
+  const templateLabel = templateLibrary.querySelector(
+    '[data-library-template]',
+  );
   const title = templateLibrary.querySelector('[data-library-title]');
   const description = templateLibrary.querySelector(
     '[data-library-description]',
@@ -233,6 +234,21 @@ if (templateLibrary) {
     'https://raw.githubusercontent.com/MLomma/Fortbildung26/e2f53e2c6c432266b498620f3e2124ff2705d22c/cheatsheet.pdf';
   let currentCode = '';
   let requestId = 0;
+
+  const splitTopics = (item) =>
+    item.dataset.topics.split(' · ').filter(Boolean);
+  const isPageTopic = (topic) => /^Seite\s+\d+$/i.test(topic);
+  const getTemplateName = (item) => {
+    const explicitTemplates = splitTopics(item)
+      .slice(1)
+      .filter((topic) => !isPageTopic(topic));
+
+    return (
+      explicitTemplates.join(' · ') ||
+      item.dataset.templateDefault ||
+      'LiaScript'
+    );
+  };
 
   const selectTab = (name) => {
     tabs.forEach((tab) => {
@@ -280,17 +296,19 @@ if (templateLibrary) {
       candidate.setAttribute('aria-pressed', String(active));
     });
 
-    category.textContent = item.dataset.category;
+    templateLabel.textContent = getTemplateName(item);
     title.textContent = item.dataset.name;
     description.textContent = item.dataset.description;
     source.href = item.dataset.sourceUrl;
 
     topics.replaceChildren();
-    item.dataset.topics.split(' · ').forEach((topic) => {
-      const entry = document.createElement('li');
-      entry.textContent = topic;
-      topics.append(entry);
-    });
+    splitTopics(item)
+      .filter((topic) => !isPageTopic(topic))
+      .forEach((topic) => {
+        const entry = document.createElement('li');
+        entry.textContent = topic;
+        topics.append(entry);
+      });
 
     const liveUrl =
       'https://liascript.github.io/course/?' + item.dataset.publicUrl;
@@ -322,6 +340,8 @@ if (templateLibrary) {
   };
 
   items.forEach((item) => {
+    const itemTemplate = item.querySelector('[data-library-item-template]');
+    if (itemTemplate) itemTemplate.textContent = getTemplateName(item);
     item.addEventListener('click', () => selectItem(item));
   });
 
@@ -333,7 +353,8 @@ if (templateLibrary) {
       items.forEach((item) => {
         const haystack = [
           item.dataset.name,
-          item.dataset.category,
+          item.dataset.templateDefault,
+          getTemplateName(item),
           item.dataset.description,
           item.dataset.topics,
         ]
@@ -342,10 +363,6 @@ if (templateLibrary) {
         const visible = !query || haystack.includes(query);
         item.hidden = !visible;
         if (visible) visibleCount += 1;
-      });
-
-      groups.forEach((group) => {
-        group.hidden = !group.querySelector('[data-library-item]:not([hidden])');
       });
 
       emptyState.hidden = visibleCount !== 0;

@@ -5,7 +5,7 @@ language: de
 comment: Beispiel zum CheatSheet-Kasten „Algebrite: Gleichungen & mehrere Felder“.
 tags: LiaScript, CheatSheet, SchulLia
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/README.md
-import: https://raw.githubusercontent.com/liaTemplates/algebrite/master/README.md
+import: https://cdn.jsdelivr.net/gh/LiaTemplates/algebrite@0.6.3/README.md
 -->
 
 # Algebrite: Gleichungen & mehrere Felder

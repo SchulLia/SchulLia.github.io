@@ -9,9 +9,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Eingebettete Ressource
 
-> **Was passiert hier?** Mit `??` wird eine Ressource direkt in die Kursfolie eingebettet, statt nur verlinkt zu werden. So können etwa Webseiten, PDFs, GeoGebra-Inhalte oder 3D-Modelle innerhalb des Kurses erscheinen.
+> **Was passiert hier?** Mit `??` wird eine Ressource direkt in die Kursfolie eingebettet, statt nur verlinkt zu werden. Hier erscheint eine interaktive PhET-Simulation innerhalb des Kurses.
 
-??[Katalog](https://kxp.k10plus.de)
-
-??[Spezifikation](
-  https://dublincore.org/...)
+??[PhET-Simulation: Molekülpolarität](https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_all.html)

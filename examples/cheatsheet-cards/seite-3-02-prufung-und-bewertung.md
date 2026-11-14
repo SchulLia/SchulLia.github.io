@@ -11,7 +11,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-mathpath/master/READM
 
 # Prüfung & Bewertung
 
-> **Was passiert hier?** Die Prüfung wird auf 60 Minuten begrenzt. `@ADetails(2;Arithmetik)` ordnet dem unmittelbar vorhergehenden Quiz zwei Bewertungseinheiten und das Thema „Arithmetik“ zu; `@Auswertung` fasst Punkte und Themen zusammen.
+> **Was passiert hier?** Die Prüfung wird auf 60 Minuten begrenzt. `@ADetails(2;Addition,Grundrechenarten)` ordnet dem unmittelbar vorhergehenden Quiz zwei Bewertungseinheiten und die Themen „Addition“ und „Grundrechenarten“ zu; `@Auswertung` fasst Punkte und Themen zusammen.
 
 @Exam(60min)
 
@@ -23,3 +23,5 @@ $3+4=7$
 **********
 
 @ADetails(2;Addition,Grundrechenarten)
+
+@Auswertung(F12;Tab;Time)

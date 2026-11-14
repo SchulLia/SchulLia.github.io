@@ -11,6 +11,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 > **Was passiert hier?** `[^1]` setzt im Text einen Verweis; die gleichnamige Definition liefert den Fußnotentext. Beide Stellen werden über dieselbe Kennung miteinander verbunden.
 
-Wichtig[^1] zum Lernen.
+LiaScript-Kurse werden in Markdown geschrieben.[^1]
 
-[^1]: Quelle: ...
+[^1]: Weitere Beispiele bietet die [LiaScript-Dokumentation](https://liascript.github.io).

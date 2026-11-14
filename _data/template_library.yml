@@ -1,6 +1,7 @@
 groups:
   - title: "Markdown — die Basis"
     subtitle: "Seite 1 · 17 Kästen"
+    template: LiaScript
     cheat_page: 1
     cheat_title: "Markdown-Grundlagen"
     items:
@@ -125,6 +126,7 @@ groups:
         source_url: https://github.com/LiaScript/docs
   - title: "LiaScript — die Erweiterungen"
     subtitle: "Seite 2 · 11 Kästen"
+    template: LiaScript
     cheat_page: 2
     cheat_title: "Erweiterungen & Interaktion"
     items:
@@ -207,6 +209,7 @@ groups:
         source_url: https://github.com/LiaScript/docs
   - title: "Unterricht & Interaktion"
     subtitle: "Seite 3 · 13 Kästen"
+    template: LiaScript
     cheat_page: 3
     cheat_title: "Unterricht & Interaktion"
     items:
@@ -303,6 +306,7 @@ groups:
         source_url: https://github.com/MINT-the-GAP/lia-annotation
   - title: "Fächer & Visualisierung"
     subtitle: "Seite 4 · 10 Kästen"
+    template: LiaScript
     cheat_page: 4
     cheat_title: "Fächer & Visualisierung"
     items:
@@ -378,6 +382,7 @@ groups:
         source_url: https://github.com/MINT-the-GAP/lia-mathpath
   - title: "Gamification mit lia-loot"
     subtitle: "Seite 5 · 12 Kästen"
+    template: lia-loot
     cheat_page: 5
     cheat_title: "lia-loot"
     items:
@@ -467,6 +472,7 @@ groups:
         source_url: https://github.com/MINT-the-GAP/lia-loot
   - title: "Gamification: Erweiterungen"
     subtitle: "Seite 6 · 11 Kästen"
+    template: lia-loot
     cheat_page: 6
     cheat_title: "lia-loot erweitern"
     items:
@@ -549,6 +555,7 @@ groups:
         source_url: https://github.com/MINT-the-GAP/lia-loot
   - title: "Weitere Bausteine"
     subtitle: "Seite 7 · 12 Kästen"
+    template: LiaScript
     cheat_page: 7
     cheat_title: "zusätzliche Aufgabenformen"
     items:

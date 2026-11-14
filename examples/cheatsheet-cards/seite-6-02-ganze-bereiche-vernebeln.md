@@ -19,5 +19,12 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 @NebelStart
 Dieser Absatz ist verdeckt.
 
+Berechne die Summe.
+
+2 + 2 = [[4]]
+**********
+$2+2=4$
+**********
+
 @Diamanttruhe
 @NebelEnd

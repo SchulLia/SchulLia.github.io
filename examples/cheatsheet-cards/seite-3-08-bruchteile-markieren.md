@@ -16,5 +16,4 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-Mathe/main/README.md
 
 @rectQuiz(1/3)
 
-@circleQuizC(3/8,
- `<!-- data-hint-button="2" -->`)
+@circleQuizC(3/8,`<!-- data-hint-button="2" -->`)

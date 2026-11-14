@@ -17,4 +17,4 @@ $\frac{\liaquiz}{3}
 @liaQuiz(1)
 
 $x + \liaquiz = 7$
-@liaQuizC(3,`<!-- ... -->`)
+@liaQuizC(3,`<!-- data-solution-button="2" -->`)

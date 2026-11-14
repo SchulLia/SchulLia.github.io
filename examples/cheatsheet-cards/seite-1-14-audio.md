@@ -9,9 +9,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Audio
 
-> **Was passiert hier?** Das vorangestellte Fragezeichen kennzeichnet eine Audioressource. LiaScript stellt MP3-, OGG- oder unterstützte Online-Quellen anschließend als Audioplayer dar.
+> **Was passiert hier?** Das vorangestellte Fragezeichen kennzeichnet eine Audioressource. LiaScript stellt die verlinkte MP3-Datei anschließend als Audioplayer dar.
 
-?[Audio](datei.mp3)
-
-?[Hörbeispiel](https://...
-  /aufnahme.ogg)
+?[Ein Pferd](https://www.w3schools.com/html/horse.mp3 "Pferd hören")

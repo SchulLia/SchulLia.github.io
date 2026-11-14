@@ -15,3 +15,11 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 @Schaufel
 
 @Giesskanne
+
+@Erdhaufen
+Die Schaufel hat diesen Text freigelegt.
+@EndeErdhaufen
+
+@Pflanze
+Die geöffnete Blüte gibt diesen Text frei.
+@EndePflanze

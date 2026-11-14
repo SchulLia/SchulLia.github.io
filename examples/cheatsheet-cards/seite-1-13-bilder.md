@@ -9,9 +9,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Bilder
 
-> **Was passiert hier?** Bilder lassen sich über einen lokalen Pfad oder eine URL einfügen. Der Text in den eckigen Klammern ist der Alternativtext und sollte den Bildinhalt verständlich beschreiben.
+> **Was passiert hier?** Das Bild wird über eine vollständige URL geladen. Der Text in den eckigen Klammern ist der Alternativtext und sollte den Bildinhalt verständlich beschreiben.
 
-![Alt-Text](pfad/bild.png)
-
-![Venn-Diagramm AND/OR](
-  https://.../venn.svg)
+![Jupiter, aufgenommen von der Raumsonde Juno](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Latest_NASA_photo_of_Jupiter_taken_this_Sunday_by_the_Juno_probe.png/1280px-Latest_NASA_photo_of_Jupiter_taken_this_Sunday_by_the_Juno_probe.png)

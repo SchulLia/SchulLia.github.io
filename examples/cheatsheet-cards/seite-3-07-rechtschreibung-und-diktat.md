@@ -14,10 +14,7 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-orthography/main/READ
 
 Gib den vollständig korrigierten Satz an.
 
-@orthography(
- `<!-- data-solution-button="2" -->`,
- `Feler im Saz.`,
- `Fehler im Satz.`)
+@orthography(`<!-- data-solution-button="2" -->`,`Feler im Saz.`,`Fehler im Satz.`)
 
 Gib das gehörte Wort an.
 

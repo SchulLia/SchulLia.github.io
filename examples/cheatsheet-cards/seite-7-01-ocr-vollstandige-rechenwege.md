@@ -5,7 +5,7 @@ language: de
 comment: Beispiel zum CheatSheet-Kasten „OCR: vollständige Rechenwege“.
 tags: LiaScript, CheatSheet, SchulLia
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/README.md
-import: https://raw.githubusercontent.com/liaTemplates/algebrite/master/README.md
+import: https://cdn.jsdelivr.net/gh/LiaTemplates/algebrite@0.6.3/README.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-canvas-ocr/main/README.md
 -->
 

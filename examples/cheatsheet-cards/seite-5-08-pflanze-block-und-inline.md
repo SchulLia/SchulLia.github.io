@@ -10,13 +10,14 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
 # Pflanze: Block & Inline
 
-> **Was passiert hier?** Die Pflanze muss zuerst mit der Gießkanne gegossen und danach in der Blüte angeklickt werden. Erst dann wird der Inhalt des Blocks beziehungsweise der Inline-Variante sichtbar.
+> **Was passiert hier?** Beide Pflanzen müssen zuerst mit der Gießkanne gegossen und danach in der Blüte angeklickt werden. Der Block verwendet die robuste Grundform ohne Zusatzoption; bei der Inline-Pflanze macht die Lupe zunächst den `zauberstaub` sichtbar.
 
-@Lupe
 @Giesskanne
 
-@Pflanze(zauberstaub)
+@Pflanze
 Verborgener Inhalt
 @EndePflanze
 
-Text @Pflanze.inline(Hinweis)
+@Lupe
+
+Text @Pflanze.inline(Hinweis, zauberstaub)

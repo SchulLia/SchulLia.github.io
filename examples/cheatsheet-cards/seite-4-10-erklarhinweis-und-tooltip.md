@@ -20,6 +20,8 @@ Berechne die Summe.
 $3+4=7$
 **********
 
+@ADetails(2;Addition,Grundrechenarten)
+
 <div class="notip">
 Ohne Glossar-Tooltip
 </div>

@@ -9,9 +9,6 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/READM
 
 # Medien abspielbar
 
-> **Was passiert hier?** Die Kombination `!?` bindet Bild und Ton als abspielbares Video ein. Das funktioniert sowohl mit Videoplattformen als auch mit direkten Videodateien.
+> **Was passiert hier?** Die Kombination `!?` bindet Bild und Ton als abspielbares Video ein. LiaScript erkennt den YouTube-Link und erzeugt daraus direkt den passenden Player.
 
-!?[Titel](https://www.youtube
-.com/watch?v=VIDEO_ID)
-
-!?[Video](datei.mp4)
+!?[The Future of Programming](https://www.youtube.com/watch?v=8pTEmbeENF4)

@@ -17,14 +17,12 @@ import: https://raw.githubusercontent.com/MINT-the-GAP/lia-loot/main/README.md
 
 Ordne die roten Puzzleteile den Positionen 2, 1 zu.
 @Puzzletor(rot; [[2;1]])
-**********
-Die richtige Reihenfolge ist 2, 1.
-**********
 
 @Puzzleteil(blau; 1)
 
 Ordne das blaue Puzzleteil der einzigen Position zu.
 @Puzzletor(blau; [[1]]; anker)
-**********
-Das blaue Puzzleteil gehört an Position 1.
-**********
+
+## Bereich hinter dem Tor
+
+Dieser Folieninhalt wird erst nach dem korrekt gelösten blauen Puzzletor freigegeben.
