@@ -1221,6 +1221,10 @@ h3 {
   font-size: 1.08rem;
 }
 
+#orientieren .journey-heading__intro {
+  max-width: 120ch;
+}
+
 .action-card {
   padding: clamp(1.4rem, 3vw, 2rem);
   border: 1px solid var(--line);
@@ -1498,12 +1502,6 @@ h3 {
 
   .needs-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-  #orientieren .journey-heading__intro {
-    white-space: nowrap;
   }
 }
 
