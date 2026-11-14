@@ -16,11 +16,10 @@ Ordne die Arbeitsschritte den Positionen 1 bis 3 so zu, dass die Reihenfolge **P
 
 <div class="Kachel">
 
-<!-- data-randomize="true" -->
 Zuerst [->[(Planen)|Überarbeiten|Prüfen]], danach [->[Planen|(Überarbeiten)|Prüfen]] und zuletzt [->[Planen|Überarbeiten|(Prüfen)]].
+
+</div>
 
 **********
 Die richtige Reihenfolge lautet: **Planen – Überarbeiten – Prüfen**.
 **********
-
-</div>
