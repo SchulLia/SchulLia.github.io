@@ -6,22 +6,20 @@ comment: Beispiel zum CheatSheet-Kasten „Gleichungslücke“.
 tags: LiaScript, CheatSheet, SchulLia
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-board-mode/main/README.md
 import: https://raw.githubusercontent.com/MINT-the-GAP/lia-Mathe/main/README.md
-
-formula:  \liaquiz \htmlClass{lia-math-quiz-slot}{\vphantom{\rule{0pt}{1.5em}}\hspace{2.2em}}
 -->
 
 # Gleichungslücke
 
-> **Was passiert hier?** `\liaquiz` setzt ein Eingabefeld direkt in die mathematische Gleichung. Das unmittelbar folgende Makro legt den erwarteten Wert der Lücke fest.
+> **Was passiert hier?** Der mit `lia-math-quiz-slot` markierte Bereich reserviert die Lücke direkt in der mathematischen Gleichung. Das unmittelbar folgende `@liaQuiz`-Makro erzeugt das native Eingabefeld, legt den erwarteten Wert fest und verbindet die Eingabe mit diesem Formelslot.
 
 Bestimme den fehlenden Wert in der Gleichung.
 
-$\dfrac{\liaquiz}{3} = \dfrac{5}{15}$
+$\dfrac{\htmlClass{lia-math-quiz-slot}{\vphantom{\rule{0pt}{1.5em}}\hspace{2.2em}}}{3} = \dfrac{5}{15}$
 
 @liaQuiz(1)
 
 Bestimme den fehlenden Summanden.
 
-$x + \liaquiz = 7$
+$x + \htmlClass{lia-math-quiz-slot}{\vphantom{\rule{0pt}{1.5em}}\hspace{2.2em}} = 7$
 
 @liaQuizC(3,`<!-- data-solution-button="2" -->`)
