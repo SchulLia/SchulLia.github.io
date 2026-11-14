@@ -91,6 +91,10 @@ items:
     stage: erkunden
     status: noch_einzuordnen
     updated: 2026-11-12
+  - title: Offene Aufgaben über AFB I hinaus
+    stage: erkunden
+    status: noch_einzuordnen
+    updated: 2026-11-14
   - title: Statistische Auswertungen und Analysen für Lehrkräfte
     stage: ordnen
     status: noch_einzuordnen
