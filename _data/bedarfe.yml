@@ -99,6 +99,10 @@ items:
     stage: ordnen
     status: noch_einzuordnen
     updated: 2026-11-12
+  - title: Motivierende Gamifizierung
+    stage: reflektieren
+    status: noch_einzuordnen
+    updated: 2026-11-14
 
   - title: In Lernmanagementsysteme wie OPAL oder Moodle integrierbar
     stage: vernetzen
