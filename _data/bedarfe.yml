@@ -84,9 +84,9 @@ items:
     status: erfuellt
     updated: 2026-11-12
   - title: Automatisierte Korrekturen mit händischer Nachkontrolle
-    stage: ordnen
+    stage: erkunden
     status: noch_einzuordnen
-    updated: 2026-11-12
+    updated: 2026-11-14
   - title: Individuelle Lernpfade
     stage: erkunden
     status: noch_einzuordnen
