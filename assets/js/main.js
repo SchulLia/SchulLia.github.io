@@ -182,6 +182,51 @@ if (courseSwitcherButtons.length && coursePreview) {
   });
 }
 
+const browserPrompt = document.querySelector('[data-browser-prompt]');
+const browserPromptCopy = document.querySelector('[data-browser-prompt-copy]');
+const browserPromptStatus = document.querySelector(
+  '[data-browser-prompt-status]',
+);
+
+if (browserPrompt && browserPromptCopy) {
+  const initialCopyLabel = browserPromptCopy.textContent;
+  let resetCopyLabel;
+
+  browserPromptCopy.addEventListener('click', async () => {
+    const prompt = browserPrompt.value.trim();
+
+    try {
+      if (!navigator.clipboard || !window.isSecureContext) {
+        browserPrompt.focus();
+        browserPrompt.select();
+        if (!document.execCommand('copy')) throw new Error('copy failed');
+        browserPrompt.setSelectionRange(0, 0);
+      } else {
+        await navigator.clipboard.writeText(prompt);
+      }
+
+      browserPromptCopy.textContent = 'Prompt kopiert';
+      if (browserPromptStatus) {
+        browserPromptStatus.textContent =
+          'Der Startprompt wurde kopiert. Ersetzen Sie jetzt die Platzhalter im Chat.';
+      }
+    } catch (_error) {
+      browserPrompt.focus();
+      browserPrompt.select();
+      browserPromptCopy.textContent = 'Prompt markieren';
+      if (browserPromptStatus) {
+        browserPromptStatus.textContent =
+          'Automatisches Kopieren ist blockiert. Der vollständige Prompt ist markiert.';
+      }
+    }
+
+    window.clearTimeout(resetCopyLabel);
+    resetCopyLabel = window.setTimeout(() => {
+      browserPromptCopy.textContent = initialCopyLabel;
+    }, 2400);
+  });
+}
+
 const shareGuideToggle = document.querySelector('[data-share-guide-toggle]');
 const shareGuide = document.querySelector('[data-share-guide]');
 
