@@ -554,7 +554,7 @@ groups:
         example_path: /examples/cheatsheet-cards/seite-6-11-funde-und-schlosser-in-anderen-templates.md
         source_url: https://github.com/MINT-the-GAP/lia-loot
   - title: "Weitere Bausteine"
-    subtitle: "Seite 7 · 12 Kästen"
+    subtitle: "Seite 7 · 13 Kästen"
     template: LiaScript
     cheat_page: 7
     cheat_title: "zusätzliche Aufgabenformen"
@@ -636,10 +636,17 @@ groups:
         topics: ["Native Auswahl & Matrixquiz", "Seite 7"]
         example_path: /examples/cheatsheet-cards/seite-7-11-native-auswahl-und-matrixquiz.md
         source_url: https://github.com/LiaScript/docs
-      - id: seite-7-12-textkorrektur-und-strichlisten
-        name: "Textkorrektur & Strichlisten"
+      - id: seite-7-12-textkorrektur
+        name: "Textkorrektur"
         category: "Weitere Bausteine · Seite 7"
-        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Textkorrektur & Strichlisten“."
-        topics: ["Textkorrektur & Strichlisten", "Seite 7", "lia-orthography", "lia-Mathe"]
-        example_path: /examples/cheatsheet-cards/seite-7-12-textkorrektur-und-strichlisten.md
+        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Textkorrektur“."
+        topics: ["Textkorrektur", "Seite 7", "lia-orthography"]
+        example_path: /examples/cheatsheet-cards/seite-7-12-textkorrektur.md
+        source_url: https://github.com/MINT-the-GAP/lia-orthography
+      - id: seite-7-13-strichlisten
+        name: "Strichlisten"
+        category: "Weitere Bausteine · Seite 7"
+        description: "Vollständiges LiaScript-Beispiel zum CheatSheet-Kasten „Strichlisten“."
+        topics: ["Strichlisten", "Seite 7", "lia-Mathe"]
+        example_path: /examples/cheatsheet-cards/seite-7-13-strichlisten.md
         source_url: https://github.com/MINT-the-GAP/lia-Mathe

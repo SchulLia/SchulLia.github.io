@@ -919,6 +919,10 @@ p {
   text-align: left;
 }
 
+.template-library__item[hidden] {
+  display: none;
+}
+
 .template-library__item:hover {
   border-color: var(--line);
   background: var(--paper);
